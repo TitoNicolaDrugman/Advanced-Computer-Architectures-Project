@@ -1,16 +1,17 @@
-<h1>Demonstration of a Simple Transformer Running on the NPU of an STM32N6</h1>
+# Demonstration of a Simple Transformer Running on the NPU of an STM32N6
 
-<h2>Table of contents</h2>
+## Table of contents
 
-- [Overview](#overview)
-- [Outcomes](#outcomes)
-- [Outline](#outline)
-- [Useful Links](#useful-links)
-  - [STM32N6 Resources](#stm32n6-resources)
-  - [STM32AI Model Zoo](#stm32ai-model-zoo)
-  - [Transformers](#transformers)
-
----
+- [Demonstration of a Simple Transformer Running on the NPU of an STM32N6](#demonstration-of-a-simple-transformer-running-on-the-npu-of-an-stm32n6)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Outcomes](#outcomes)
+  - [Outline](#outline)
+  - [Useful Links](#useful-links)
+    - [STM32N6 Resources](#stm32n6-resources)
+    - [STM32AI Model Zoo](#stm32ai-model-zoo)
+    - [Transformers](#transformers)
+  - [Project Structure](#project-structure)
 
 ## Overview
 
@@ -18,20 +19,16 @@ This project aims at realizing a functioning demonstration of a simple Transform
 
 The specific board you will work with is the **STM32N6570-DK**. Instead, the target Transformer model will need to be decided during the project’s development, but quantized variants of **BERT** and **GPT-2** are strong candidates.
 
----
-
 ## Outcomes
 
 Deploying AI models on edge is challenging due to the limited resources and the highly specialized nature of the available hardware. Many tools and techniques come into play to enable AI on the edge, such as:
 
-- Model distillation and quantization  
-- Approximation of activation functions  
-- Deep learning hardware accelerators  
-- Custom solutions to interface with accelerators  
+- Model distillation and quantization
+- Approximation of activation functions
+- Deep learning hardware accelerators
+- Custom solutions to interface with accelerators
 
 During this project, students will need to steel themselves and dive into the challenges of running modern AI models on the edge. They will touch first-hand the full stack, from preparing such models to piecing together the firmware that will run them.
-
----
 
 ## Outline
 
@@ -50,8 +47,6 @@ During this project, students will need to steel themselves and dive into the ch
 5. **Project Report, Presentation, and Demonstration**  
    Students will write a brief report describing their final toolchain and hold a presentation focused on a demonstration of their project.
 
----
-
 ## Useful Links
 
 ### STM32N6 Resources
@@ -68,8 +63,6 @@ During this project, students will need to steel themselves and dive into the ch
 - STM32Cube.AI:  
   https://wiki.st.com/stm32mcu/wiki/Category:STM32Cube.AI
 
----
-
 ### STM32AI Model Zoo
 
 - **Models Repository**:  
@@ -80,8 +73,6 @@ During this project, students will need to steel themselves and dive into the ch
 
 - **A Good Starting Point**:  
   https://github.com/STMicroelectronics/stm32ai-modelzoo-services/tree/main/pose_estimation/deployment
-
----
 
 ### Transformers
 
@@ -96,3 +87,10 @@ During this project, students will need to steel themselves and dive into the ch
 
 - **BERT-tiny**:  
   https://huggingface.co/prajjwal1/bert-tiny
+
+## Project Structure
+
+- **standard_models:** examples and tests with 'desktop' models, mainly using hugging-face models.
+- **model_zoo:** examples and tests with models from the STM32AI Model Zoo.
+- **src:** source code for the project, including the main application and utilities.
+- **tools:** tools and scripts to help with the project, such as model conversion and quantization.
