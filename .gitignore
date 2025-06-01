@@ -1,1 +1,8 @@
 .venv
+.meta
+
+# STM32CubeIde
+.metadata/
+embedded/**/.settings/
+embedded/FSBL/.settings
+*.ld

@@ -90,7 +90,6 @@ During this project, students will need to steel themselves and dive into the ch
 
 ## Project Structure
 
-- **standard_models:** examples and tests with 'desktop' models, mainly using hugging-face models.
-- **model_zoo:** examples and tests with models from the STM32AI Model Zoo.
+- **pretrained_models:** examples and tests with 'desktop' models, mainly using hugging-face models.
 - **src:** source code for the project, including the main application and utilities.
 - **tools:** tools and scripts to help with the project, such as model conversion and quantization.

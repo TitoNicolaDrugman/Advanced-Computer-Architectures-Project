@@ -1,0 +1,16 @@
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:140:19:HAL_ICACHE_ConfigAssociativityMode	24	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:164:19:HAL_ICACHE_DeInit	4	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:192:19:HAL_ICACHE_Enable	4	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:205:19:HAL_ICACHE_Disable	16	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:240:10:HAL_ICACHE_IsEnabled	4	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:251:19:HAL_ICACHE_Invalidate	16	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:275:19:HAL_ICACHE_Invalidate_IT	16	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:304:19:HAL_ICACHE_WaitForInvalidateComplete	16	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:346:19:HAL_ICACHE_Monitor_Start	16	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:366:19:HAL_ICACHE_Monitor_Stop	16	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:385:19:HAL_ICACHE_Monitor_Reset	16	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:402:10:HAL_ICACHE_Monitor_GetHitValue	4	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:412:10:HAL_ICACHE_Monitor_GetMissValue	4	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:442:6:HAL_ICACHE_IRQHandler	16	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:478:13:HAL_ICACHE_InvalidateCompleteCallback	4	static
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/Drivers/STM32N6xx_HAL_Driver/Src/stm32n6xx_hal_icache.c:488:13:HAL_ICACHE_ErrorCallback	4	static
