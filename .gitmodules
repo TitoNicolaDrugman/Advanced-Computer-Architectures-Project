@@ -1,0 +1,3 @@
+[submodule "custom_models/ggcnn"]
+	path = custom_models/ggcnn
+	url = https://github.com/dougsm/ggcnn

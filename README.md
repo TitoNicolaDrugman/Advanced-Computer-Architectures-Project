@@ -11,7 +11,11 @@
     - [STM32N6 Resources](#stm32n6-resources)
     - [STM32AI Model Zoo](#stm32ai-model-zoo)
     - [Transformers](#transformers)
+  - [Really Useful Links](#really-useful-links)
   - [Project Structure](#project-structure)
+  - [Get started](#get-started)
+    - [Raw Notes](#raw-notes)
+    - [Model Limits](#model-limits)
 
 ## Overview
 
@@ -88,8 +92,46 @@ During this project, students will need to steel themselves and dive into the ch
 - **BERT-tiny**:  
   https://huggingface.co/prajjwal1/bert-tiny
 
+## Really Useful Links
+
+- https://stedgeai-dc-qa.st.com/assets/embedded-docs/index.html
+- https://stedgeai-dc-qa.st.com/assets/embedded-docs/stneuralart_programming_model.html
+- https://stedgeai-dc-qa.st.com/assets/embedded-docs/stneuralart_operator_support.html
+- https://stedgeai-dc-qa.st.com/assets/embedded-docs/stneuralart_stm32n6_projects.html
+- https://stedgeai-dc-qa.st.com/assets/embedded-docs/command_line_interface.html
+- Most important one: https://community.st.com/t5/edge-ai/bd-p/edge-ai
+
+---
+
+- [Build (and train) your own transformer-based TensorFlow model](https://www.tensorflow.org/text/tutorials/transformer)
+
 ## Project Structure
 
 - **pretrained_models:** examples and tests with 'desktop' models, mainly using hugging-face models.
 - **src:** source code for the project, including the main application and utilities.
 - **tools:** tools and scripts to help with the project, such as model conversion and quantization.
+
+## Get started
+
+- Download STM32CubeIde and relative softwares.
+- Open STM32CubeIde, click File -> Open Projects from File System -> Directory -> choose this project `embedded` folder. Deploy it to your board
+
+### Raw Notes
+
+STEdgeAI CLI tool generates the necessary files to run a given model on the STM32N6 based boards. For other boards it creates an STM32CubeIDE project or a .ioc configuration file.
+
+For the STM32N6, the CLI tool generates only the files related to the network, the user must create the main application and the necessary files to run it on the board.
+
+---
+
+MobileBERT is not supported out of the box by stedgeai CLI tool due to the use of a dynamic batch/tensor sizes. It brokes at 12%.
+
+### Model Limits
+
+- Input and output tensors must be static
+- Variable-length batch dimension (i.e. (None,)) is considered as equal to 1
+- Operator with un-connected output is not supported
+- Mixed data operations (i.e hybrid operator) are not supported, activations and weights should be quantized
+- Data type for the weights/activations tensors must be:
+- int8 (scale/offset format) ss/sa scheme (see Quantized models – per-channel)
+- if float32 operation is requested, it will be mapped on a SW operation
