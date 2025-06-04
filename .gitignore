@@ -6,3 +6,4 @@
 embedded/**/.settings/
 embedded/FSBL/.settings
 *.ld
+**/__pycache__
