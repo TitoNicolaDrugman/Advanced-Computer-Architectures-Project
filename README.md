@@ -107,14 +107,17 @@ During this project, students will need to steel themselves and dive into the ch
 
 ## Project Structure
 
-- **pretrained_models:** examples and tests with 'desktop' models, mainly using hugging-face models.
-- **src:** source code for the project, including the main application and utilities.
+- **custom_models:** custom models definition and training scripts. This folder is the place to store custom models that are not part of the STM32AI Model Zoo.
+- **pretrained_models:** pretrained models used in the project. This folder is the place to store weights and configurations of third-party, trained models or converted models
 - **tools:** tools and scripts to help with the project, such as model conversion and quantization.
+  - `torch_to_onnx`: scripts to convert PyTorch models to ONNX format.
+- **embedded:** STM32CubeIDE project for the STM32N6 board. This folder contains the necessary files to run the model on the STM32N6 board, including the main application and configuration files.`
+- **st_ai_output** and **st_ai_ws:** output folders for the `stedgeai` CLI tool
 
 ## Get started
 
 - Download STM32CubeIde and relative softwares.
-- Open STM32CubeIde, click File -> Open Projects from File System -> Directory -> choose this project `embedded` folder. Deploy it to your board
+- Open STM32CubeIDE, click File -> Open Projects from File System -> Directory -> choose this project `embedded` folder. Deploy it to your board.
 
 ### Raw Notes
 
