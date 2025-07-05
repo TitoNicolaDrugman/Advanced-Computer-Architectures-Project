@@ -1,7 +1,0 @@
-../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:1407:22:LL_AHB4_GRP1_EnableClock	24	static
-../Core/Src/main.c:29:5:main	16	static
-../Core/Src/main.c:73:6:SystemClock_Config	224	static
-../Core/Src/main.c:168:13:MX_ICACHE_Init	8	static
-../Core/Src/main.c:200:13:MX_GPIO_Init	32	static
-../Core/Src/main.c:266:6:BSP_PB_Callback	16	static
-../Core/Src/main.c:278:6:Error_Handler	4	static,ignoring_inline_asm

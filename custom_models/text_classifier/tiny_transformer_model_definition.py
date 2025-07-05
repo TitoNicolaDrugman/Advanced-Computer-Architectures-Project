@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow.keras import layers, models
 
 def create_tiny_transformer(seq_len=16, vocab_size=100, d_model=32):
-    inputs = tf.keras.Input(shape=(seq_len,), batch_size=1, dtype='int32')
+    inputs = tf.keras.Input(shape=(seq_len,), batch_size=1, batch_shape="", dtype='int32')
 
     x = layers.Embedding(input_dim=vocab_size, output_dim=d_model)(inputs)
 

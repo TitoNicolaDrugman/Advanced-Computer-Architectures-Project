@@ -9,13 +9,13 @@
                 }
             ],
             "name": "network",
-            "generated_time": "2025-06-03T15:44:13+0200"
+            "generated_time": "2025-06-13T17:33:52+0200"
         },
         "tools": [
             {
                 "name": "ST.EdgeAI.Core",
                 "version": "2.1.0-20194 329b0e98d",
-                "arguments": "analyze --model pretrained_models/gg-cnn.onnx --target stm32n6 --st-neural-art --verbosity 3 --with-report",
+                "arguments": "analyze --model pretrained_models/gg-cnn/gg-cnn.onnx --target stm32n6 --st-neural-art --verbosity 3 --no-onnx-optimizer",
                 "environment": [],
                 "input_model": {
                     "model_files": [
@@ -32,7 +32,7 @@
             }
         ],
         "test_name": "",
-        "network_signature": "0x086b4f54a92d6a4b"
+        "network_signature": "0x2daef2f921275561"
     },
     "model_info": {
         "original_inputs": [

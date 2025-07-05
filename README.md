@@ -16,6 +16,8 @@
   - [Get started](#get-started)
     - [Raw Notes](#raw-notes)
     - [Model Limits](#model-limits)
+  - [Performance](#performance)
+  - [Quantizzazione evaluation](#quantizzazione-evaluation)
 
 ## Overview
 
@@ -138,3 +140,19 @@ MobileBERT is not supported out of the box by stedgeai CLI tool due to the use o
 - Data type for the weights/activations tensors must be:
 - int8 (scale/offset format) ss/sa scheme (see Quantized models – per-channel)
 - if float32 operation is requested, it will be mapped on a SW operation
+
+## Performance
+
+- Performance counter hw:
+  - Cicli di clock e quanto succede durante l'esecuzione del modello
+  - Trasferimenti di memoria
+  - Cache miss, cache hit
+  - TOPS
+  -
+
+## Quantizzazione evaluation
+
+- quantizzato su cpu
+- quantizzato su npu
+- non quantizzato su cpu
+  plot di confronto

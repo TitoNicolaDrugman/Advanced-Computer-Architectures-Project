@@ -1,3 +1,6 @@
 [submodule "custom_models/ggcnn"]
 	path = custom_models/ggcnn
 	url = https://github.com/dougsm/ggcnn
+[submodule "custom_models/dinov2"]
+	path = custom_models/dinov2
+	url = https://github.com/facebookresearch/dinov2.git
