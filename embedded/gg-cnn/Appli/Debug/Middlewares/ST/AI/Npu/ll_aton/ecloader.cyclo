@@ -1,0 +1,7 @@
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:122:6:ec_copy_program	10
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:240:6:ec_copy_reloc_table	9
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:325:20:ec_get_reloc_table_ptr	3
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:360:14:ec_get_num_relocs	2
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:382:13:ec_get_reloc_id	3
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:422:6:ec_reloc	6
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ecloader.c:487:6:ec_reloc_by_id	7
