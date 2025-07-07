@@ -6,6 +6,7 @@
 "./Core/Src/system_stm32n6xx_s.o"
 "./Core/Startup/startup_stm32n657x0hxq.o"
 "./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal.o"
+"./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cacheaxi.o"
 "./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_cortex.o"
 "./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma.o"
 "./Drivers/STM32N6xx_HAL_Driver/stm32n6xx_hal_dma_ex.o"
