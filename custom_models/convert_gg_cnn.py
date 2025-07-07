@@ -11,7 +11,6 @@ output_path = os.path.abspath(os.path.join(script_dir, "../pretrained_models/gg-
 model = GGCNN2()
 model.load_state_dict(torch.load(weights_path, weights_only=False, map_location=torch.device("mps")))
 
-
 dummy_input = torch.randn(1, 1, 300, 300)
 export_to_onnx(torch_model=model, dummy_input=dummy_input, output_path=output_path)
 
