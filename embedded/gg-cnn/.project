@@ -14,5 +14,7 @@
 		<nature>com.st.stm32cube.ide.mcu.MCURootPythonProjectNature</nature>
 		<nature>com.st.stm32cube.ide.mcu.MCUAppliPythonEnabledProjectNature</nature>
 		<nature>com.st.stm32cube.ide.mcu.MCUSingleCpuProjectNature</nature>
+		<nature>com.st.stm32cube.ide.mcu.MCUFsblEnabledProjectNature</nature>
+		<nature>com.st.stm32cube.ide.mcu.MCUExtMemLoaderEnabledProjectNature</nature>
 	</natures>
 </projectDescription>

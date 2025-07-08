@@ -1,0 +1,3 @@
+../Core/Src/system_stm32n6xx_fsbl.c:175:6:SystemInit	1
+../Core/Src/system_stm32n6xx_fsbl.c:317:6:SystemCoreClockUpdate	24
+../Core/Src/system_stm32n6xx_fsbl.c:470:24:SECURE_SystemCoreClockUpdate	1

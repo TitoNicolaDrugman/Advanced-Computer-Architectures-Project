@@ -1,0 +1,6 @@
+../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:679:22:LL_MEM_EnableClock	8	static
+../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:785:22:LL_MEM_EnableClockLowPower	8	static
+../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_ll_bus.h:2065:22:LL_AHB5_GRP1_EnableClockLowPower	8	static
+../X-CUBE-AI/App/app_x-cube-ai.c:58:6:set_clk_sleep_mode	32	static
+../X-CUBE-AI/App/app_x-cube-ai.c:97:6:MX_X_CUBE_AI_Init	16	static
+../X-CUBE-AI/App/app_x-cube-ai.c:113:6:MX_X_CUBE_AI_Process	16	static,ignoring_inline_asm

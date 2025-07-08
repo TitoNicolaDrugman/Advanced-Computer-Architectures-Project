@@ -10,8 +10,6 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include X-CUBE-AI/App/subdir.mk
--include Middlewares/ST/AI/Npu/ll_aton/subdir.mk
--include Middlewares/ST/AI/Npu/Devices/STM32N6XX/subdir.mk
 -include Drivers/STM32N6xx_HAL_Driver/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -60,7 +58,8 @@ gg-cnn_Appli.bin \
 
 
 # All Target
-all: main-build
+all:
+	+@$(MAKE) --no-print-directory main-build && $(MAKE) --no-print-directory post-build
 
 # Main-build Target
 main-build: gg-cnn_Appli.elf secondary-outputs
@@ -91,6 +90,10 @@ clean:
 	-$(RM) default.size.stdout gg-cnn_Appli.bin gg-cnn_Appli.elf gg-cnn_Appli.list gg-cnn_Appli.map
 	-@echo ' '
 
+post-build:
+	echo y | "/Applications/ST/STM32Cube/STM32CubeProgrammer/STM32CubeProgrammer.app/Contents/MacOs/bin/STM32_SigningTool_CLI" -bin "gg-cnn_Appli.bin" -nk -of 0x80000000 -t fsbl -o "gg-cnn_Appli-trusted.bin" -hv 2.3 -dump "gg-cnn_Appli-trusted.bin"
+	-@echo ' '
+
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
 
 fail-specified-linker-script-missing:
@@ -100,6 +103,6 @@ fail-specified-linker-script-missing:
 warn-no-linker-script-specified:
 	@echo 'Warning: No linker script specified. Check the linker settings in the build configuration.'
 
-.PHONY: all clean dependents main-build fail-specified-linker-script-missing warn-no-linker-script-specified
+.PHONY: all clean dependents main-build fail-specified-linker-script-missing warn-no-linker-script-specified post-build
 
 -include ../makefile.targets

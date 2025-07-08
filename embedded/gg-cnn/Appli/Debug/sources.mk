@@ -26,7 +26,5 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32N6xx_HAL_Driver \
-Middlewares/ST/AI/Npu/Devices/STM32N6XX \
-Middlewares/ST/AI/Npu/ll_aton \
 X-CUBE-AI/App \
 
