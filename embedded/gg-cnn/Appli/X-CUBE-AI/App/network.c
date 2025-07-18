@@ -24,7 +24,7 @@
  *
  * Command Line options:
  * --onnx-input = "/Users/lucabrini/.stm32cubemx/network_output/gg-cnn_quantize_random_OE_3_2_0.onnx"
- * --out-dir-prefix = "/private/var/folders/kv/x6hg6vps7fv8lfdrhzj6clgc0000gn/T/mxAI_workspace10736120832666616251391919387991520/neural_art__network/"
+ * --out-dir-prefix = "/private/var/folders/kv/x6hg6vps7fv8lfdrhzj6clgc0000gn/T/mxAI_workspace38944901124420816934866641912230292/neural_art__network/"
  * --all-buffers-info = true
  * --mvei = true
  * --load-mdesc-file = "/Users/lucabrini/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.1.0/scripts/N6_scripts/my_mdescs/stm32n6"

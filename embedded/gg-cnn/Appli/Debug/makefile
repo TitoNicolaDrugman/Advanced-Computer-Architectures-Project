@@ -10,6 +10,8 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include X-CUBE-AI/App/subdir.mk
+-include Middlewares/ST/AI/Npu/ll_aton/subdir.mk
+-include Middlewares/ST/AI/Npu/Devices/STM32N6XX/subdir.mk
 -include Drivers/STM32N6xx_HAL_Driver/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -65,8 +67,8 @@ all:
 main-build: gg-cnn_Appli.elf secondary-outputs
 
 # Tool invocations
-gg-cnn_Appli.elf gg-cnn_Appli.map: $(OBJS) $(USER_OBJS) /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Appli/STM32N657X0HXQ_LRUN.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "gg-cnn_Appli.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m55 -T"/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Appli/STM32N657X0HXQ_LRUN.ld" --specs=nosys.specs -Wl,-Map="gg-cnn_Appli.map" -Wl,--gc-sections -static -Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o -L../../Middlewares/ST/AI/Lib --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+gg-cnn_Appli.elf gg-cnn_Appli.map: $(OBJS) $(USER_OBJS) /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Appli/STM32N657X0HXQ_ROMxspi1.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "gg-cnn_Appli.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m55 -T"/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Appli/STM32N657X0HXQ_ROMxspi1.ld" --specs=nosys.specs -Wl,-Map="gg-cnn_Appli.map" -Wl,--gc-sections -static -Wl,--cmse-implib -Wl,--out-implib=./secure_nsclib.o -L../../Middlewares/ST/AI/Lib --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

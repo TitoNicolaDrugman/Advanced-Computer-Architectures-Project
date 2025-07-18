@@ -1,0 +1,14 @@
+// This file is for configuring N6 loader, the util used to gather a .c file, embed it in a project,
+// compile the project, and load the results on the board.
+{
+  // The 2lines below are _only used if you call n6_loader.py ALONE (memdump is optional and will be the parent dir of network.c by default)
+  "network.c": "/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/st_ai_output/network.c",
+  //"memdump_path": "C:/Users/foobar/CODE/stm.ai/stm32ai_output",
+  // Location of the "validation" project  + build config name to be built (if applicable)
+  // If using the provided project, valid build_conf names are "N6-DK" (CR5 boards), "N6-DK-legacy" (older-than-CR5-boards); "N6-Nucleo" can also be used for IAR project.
+  "project_path": "/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/stedgeaicore/Projects/STM32N6570-DK/Applications/NPU_Validation",
+  "project_build_conf": "N6-Nucleo-USB",
+  // Skip programming weights to earn time (but lose accuracy) -- useful for performance tests
+  "skip_external_flash_programming": false,
+  "skip_ram_data_programming": false
+}

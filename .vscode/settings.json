@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Before Script",
+      "type": "shell",
+      "command": "export PYTHONPATH=$STEDGEAI_CORE_DIR/scripts/ai_runner:$PYTHONPATH",
+      "problemMatcher": []
+    }
+  ],
+  "python.analysis.extraPaths": ["./stedgeaicore/scripts/ai_runner"]
+}

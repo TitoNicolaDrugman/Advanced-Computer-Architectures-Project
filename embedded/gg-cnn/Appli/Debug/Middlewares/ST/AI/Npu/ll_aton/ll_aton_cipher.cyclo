@@ -1,0 +1,5 @@
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_cipher.c:44:5:LL_Streng_EncryptionInit	2
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_cipher.c:65:5:LL_Streng_WeightEncryptionInit	1
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_cipher.c:84:5:LL_Busif_SetKeys	4
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_cipher.c:120:5:LL_EpochCtrl_EncryptionInit	2
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_cipher.c:148:5:LL_DmaCypherInit	8

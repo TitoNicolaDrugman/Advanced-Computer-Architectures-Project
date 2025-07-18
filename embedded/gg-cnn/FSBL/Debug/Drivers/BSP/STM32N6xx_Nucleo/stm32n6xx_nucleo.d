@@ -31,6 +31,7 @@ Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.o: \
  ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr_ex.h \
  ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart.h \
  ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart_ex.h \
+ ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_xspi.h \
  /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo_errno.h
 /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.h:
 ../Core/Inc/stm32n6xx_nucleo_conf.h:
@@ -63,4 +64,5 @@ Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo.o: \
 ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr_ex.h:
 ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart.h:
 ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart_ex.h:
+../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_xspi.h:
 /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Drivers/BSP/STM32N6xx_Nucleo/stm32n6xx_nucleo_errno.h:

@@ -1,0 +1,15 @@
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_NN_interface.h:579:32:LL_Buffer_addr_start	2
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:71:13:__set_all_buffers	4
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:45:37:__get_buffer	6
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:81:14:Q_to_floating.isra	2
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_NN_interface.h:599:26:LL_Buffer_bits.isra	1
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:40:20:LL_ATON_physical_to_virtual	1
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:640:13:__dump_buffer.part.0	98
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:707:13:__dump_epoch_buffers	5
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:720:7:get_buffer	2
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:733:5:get_buffer_info	2
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:747:6:set_all_buffers	4
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:757:6:dump_buffer	2
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:764:6:dump_all_buffers	4
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:776:6:dump_epoch_buffers	1
+/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/embedded/gg-cnn/Middlewares/ST/AI/Npu/ll_aton/ll_aton_debug.c:785:14:get_params_len	3

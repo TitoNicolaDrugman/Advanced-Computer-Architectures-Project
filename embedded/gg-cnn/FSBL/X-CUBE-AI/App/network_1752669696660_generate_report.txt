@@ -1,0 +1,221 @@
+ST Edge AI Core v2.1.0-20194 329b0e98d
+Created date          : 2025-07-16 14:49:55
+Parameters            : generate --target stm32n6 --name network_1752669696660 -m /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/pretrained_models/gg-cnn/gg-cnn_quantize_random.onnx --st-neural-art n6-allmems-O3@/Users/lucabrini/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.1.0/scripts/N6_scripts/user_neuralart.json --workspace /var/folders/kv/x6hg6vps7fv8lfdrhzj6clgc0000gn/T/mxAI_workspace38943039625891718017842675539124930 --output /Users/lucabrini/.stm32cubemx/network_1752669696660_output
+
+Model name - ggcnn_quantize_random
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+m_id   layer (original)                                    oshape                   param/size                macc                     connected to 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+0      input ()                                            [b:1,h:300,w:300,c:1]                                                                    
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+19     input_QuantizeLinear_Output (QuantizeLinear)        [b:1,h:300,w:300,c:1]                           180,000                            input 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+26     input_DequantizeLinear_Output (DequantizeLinear)    [b:1,h:300,w:300,c:1]                           180,000      input_QuantizeLinear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+27     _features_features..u_output_0 (Conv)               [b:1,h:300,w:300,c:16]   1,952/7,808        174,240,016    input_DequantizeLinear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+28     _features_features..ear_Output (QuantizeLinear)     [b:1,h:300,w:300,c:16]                        2,880,000   _features_features..u_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+29     _features_features..ear_Output (DequantizeLinear)   [b:1,h:300,w:300,c:16]                        2,880,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+30     _features_features..u_output_0 (Conv)               [b:1,h:300,w:300,c:16]   6,416/25,664       576,000,016   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+31     _features_features..ear_Output (QuantizeLinear)     [b:1,h:300,w:300,c:16]                        2,880,000   _features_features..u_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+32     _features_features..ear_Output (DequantizeLinear)   [b:1,h:300,w:300,c:16]                        2,880,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+33     _features_features..l_output_0 (MaxPool)            [b:1,h:150,w:150,c:16]                        1,440,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+34     _features_features..ear_Output (QuantizeLinear)     [b:1,h:150,w:150,c:16]                          720,000   _features_features..l_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+35     _features_features..ear_Output (DequantizeLinear)   [b:1,h:150,w:150,c:16]                          720,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+36     _features_features..u_output_0 (Conv)               [b:1,h:150,w:150,c:16]   6,416/25,664       144,000,016   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+37     _features_features..ear_Output (QuantizeLinear)     [b:1,h:150,w:150,c:16]                          720,000   _features_features..u_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+38     _features_features..ear_Output (DequantizeLinear)   [b:1,h:150,w:150,c:16]                          720,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+39     _features_features..u_output_0 (Conv)               [b:1,h:150,w:150,c:16]   6,416/25,664       144,000,016   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+40     _features_features..ear_Output (QuantizeLinear)     [b:1,h:150,w:150,c:16]                          720,000   _features_features..u_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+41     _features_features..ear_Output (DequantizeLinear)   [b:1,h:150,w:150,c:16]                          720,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+42     _features_features..l_output_0 (MaxPool)            [b:1,h:75,w:75,c:16]                            360,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+43     _features_features..ear_Output (QuantizeLinear)     [b:1,h:75,w:75,c:16]                            180,000   _features_features..l_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+44     _features_features..ear_Output (DequantizeLinear)   [b:1,h:75,w:75,c:16]                            180,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+45     _features_features..u_output_0 (Conv)               [b:1,h:75,w:75,c:32]     12,832/51,328       72,000,032   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+46     _features_features..ear_Output (QuantizeLinear)     [b:1,h:75,w:75,c:32]                            360,000   _features_features..u_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+47     _features_features..ear_Output (DequantizeLinear)   [b:1,h:75,w:75,c:32]                            360,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+48     _features_features..u_output_0 (Conv)               [b:1,h:75,w:75,c:32]     25,632/102,528     144,000,032   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+49     _features_features..ear_Output (QuantizeLinear)     [b:1,h:75,w:75,c:32]                            360,000   _features_features..u_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+50     _features_features..ear_Output (DequantizeLinear)   [b:1,h:75,w:75,c:32]                            360,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+51     _features_features..e_output_0 (Resize)             [b:1,h:150,w:150,c:32]                                    _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+52     _features_features..ear_Output (QuantizeLinear)     [b:1,h:150,w:150,c:32]                        1,440,000   _features_features..e_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+53     _features_features..ear_Output (DequantizeLinear)   [b:1,h:150,w:150,c:32]                        1,440,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+54     _features_features..u_output_0 (Conv)               [b:1,h:150,w:150,c:16]   4,624/18,496       103,680,016   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+55     _features_features..ear_Output (QuantizeLinear)     [b:1,h:150,w:150,c:16]                          720,000   _features_features..u_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+56     _features_features..ear_Output (DequantizeLinear)   [b:1,h:150,w:150,c:16]                          720,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+57     _features_features..e_output_0 (Resize)             [b:1,h:300,w:300,c:16]                                    _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+58     _features_features..ear_Output (QuantizeLinear)     [b:1,h:300,w:300,c:16]                        2,880,000   _features_features..e_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+59     _features_features..ear_Output (DequantizeLinear)   [b:1,h:300,w:300,c:16]                        2,880,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+60     _features_features..u_output_0 (Conv)               [b:1,h:300,w:300,c:16]   2,320/9,280        207,360,016   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+61     _features_features..ear_Output (QuantizeLinear)     [b:1,h:300,w:300,c:16]                        2,880,000   _features_features..u_output_0 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+62     _features_features..ear_Output (DequantizeLinear)   [b:1,h:300,w:300,c:16]                        2,880,000   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+63     node_56_QuantizeLinear_Input (Conv)                 [b:1,h:300,w:300,c:1]    17/68                1,440,001   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+64     node_55_QuantizeLinear_Input (Conv)                 [b:1,h:300,w:300,c:1]    17/68                1,440,001   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+65     node_54_QuantizeLinear_Input (Conv)                 [b:1,h:300,w:300,c:1]    17/68                1,440,001   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+66     output_QuantizeLinear_Input (Conv)                  [b:1,h:300,w:300,c:1]    17/68                1,440,001   _features_features..ear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+67     node_56_QuantizeLinear_Output (QuantizeLinear)      [b:1,h:300,w:300,c:1]                           180,000     node_56_QuantizeLinear_Input 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+68     node_55_QuantizeLinear_Output (QuantizeLinear)      [b:1,h:300,w:300,c:1]                           180,000     node_55_QuantizeLinear_Input 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+69     node_54_QuantizeLinear_Output (QuantizeLinear)      [b:1,h:300,w:300,c:1]                           180,000     node_54_QuantizeLinear_Input 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+70     output_QuantizeLinear_Output (QuantizeLinear)       [b:1,h:300,w:300,c:1]                           180,000      output_QuantizeLinear_Input 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+71     node_56 (DequantizeLinear)                          [b:1,h:300,w:300,c:1]                           180,000    node_56_QuantizeLinear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+72     node_55 (DequantizeLinear)                          [b:1,h:300,w:300,c:1]                           180,000    node_55_QuantizeLinear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+73     node_54 (DequantizeLinear)                          [b:1,h:300,w:300,c:1]                           180,000    node_54_QuantizeLinear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+74     output (DequantizeLinear)                           [b:1,h:300,w:300,c:1]                           180,000     output_QuantizeLinear_Output 
+------ --------------------------------------------------- ------------------------ ---------------- ------------- -------------------------------- 
+model: macc=1,608,120,164 weights=266,704 activations=-- io=--
+
+
+
+
+
+Compilation details
+------------------------------------------------------------------------------------
+Compiler version: 1.1.0-31
+Compiler arguments:  -i /Users/lucabrini/.stm32cubemx/network_1752669696660_output/gg-cnn_quantize_random_OE_3_2_0.onnx --json-quant-file /Users/lucabrini/.stm32cubemx/network_1752669696660_output/gg-cnn_quantize_random_OE_3_2_0_Q.json -g network_1752669696660.c --load-mdesc /Users/lucabrini/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.1.0/scripts/N6_scripts/my_mdescs/stm32n6.mdesc --load-mpool /Users/lucabrini/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/10.1.0/scripts/N6_scripts/my_mpools/stm32n6.mpool --save-mpool-file /private/var/folders/kv/x6hg6vps7fv8lfdrhzj6clgc0000gn/T/mxAI_workspace38943039625891718017842675539124930/neural_art__network_1752669696660/stm32n6.mpool --out-dir-prefix /private/var/folders/kv/x6hg6vps7fv8lfdrhzj6clgc0000gn/T/mxAI_workspace38943039625891718017842675539124930/neural_art__network_1752669696660/ --optimization 3 --all-buffers-info --mvei --cache-maintenance --Oauto-sched --native-float --enable-virtual-mem-pools --Omax-ca-pipe 4 --Ocache-opt --Os --output-info-file c_info.json --network-name network_1752669696660
+====================================================================================
+
+Memory usage information  (input/output buffers are included in activations)
+------------------------------------------------------------------------------------
+	flexMEM    [0x34000000 - 0x34000000]:          0  B /          0  B  (  0.00 % used) -- weights:          0  B (  0.00 % used)  activations:          0  B (  0.00 % used)
+	cpuRAM1    [0x34064000 - 0x34064000]:          0  B /          0  B  (  0.00 % used) -- weights:          0  B (  0.00 % used)  activations:          0  B (  0.00 % used)
+	cpuRAM2    [0x34100000 - 0x34200000]:      1.000 MB /      1.000 MB  (100.00 % used) -- weights:          0  B (  0.00 % used)  activations:      1.000 MB (100.00 % used)
+	npuRAM3    [0x34200000 - 0x34270000]:    448.000 kB /    448.000 kB  (100.00 % used) -- weights:          0  B (  0.00 % used)  activations:    448.000 kB (100.00 % used)
+	npuRAM4    [0x34270000 - 0x342E0000]:    448.000 kB /    448.000 kB  (100.00 % used) -- weights:          0  B (  0.00 % used)  activations:    448.000 kB (100.00 % used)
+	npuRAM5    [0x342E0000 - 0x34350000]:    448.000 kB /    448.000 kB  (100.00 % used) -- weights:          0  B (  0.00 % used)  activations:    448.000 kB (100.00 % used)
+	npuRAM6    [0x34350000 - 0x343C0000]:    444.500 kB /    448.000 kB  ( 99.22 % used) -- weights:          0  B (  0.00 % used)  activations:    444.500 kB ( 99.22 % used)
+	octoFlash  [0x71000000 - 0x78000000]:    179.204 kB /    112.000 MB  (  0.16 % used) -- weights:    179.204 kB (  0.16 % used)  activations:          0  B (  0.00 % used)
+	hyperRAM   [0x90000000 - 0x92000000]:      5.493 MB /     32.000 MB  ( 17.17 % used) -- weights:          0  B (  0.00 % used)  activations:      5.493 MB ( 17.17 % used)
+---
+Total:                                             8.415 MB                                  -- weights:    179.204 kB                  activations:      8.240 MB                   
+====================================================================================
+
+
+Used memory ranges
+------------------------------------------------------------------------------------
+	cpuRAM2    [0x34100000 - 0x34200000]: 0x34100000-0x34200000
+	npuRAM3    [0x34200000 - 0x34270000]: 0x34200000-0x34270000
+	npuRAM4    [0x34270000 - 0x342E0000]: 0x34270000-0x342E0000
+	npuRAM5    [0x342E0000 - 0x34350000]: 0x342E0000-0x34350000
+	npuRAM6    [0x34350000 - 0x343C0000]: 0x34350000-0x343BF200
+	octoFlash  [0x71000000 - 0x78000000]: 0x71000000-0x7102CCE0
+	hyperRAM   [0x90000000 - 0x92000000]: 0x90000000-0x9057E400
+====================================================================================
+
+Epochs details
+------------------------------------------------------------------------------------
+Total number of epochs: 36 of which 12 implemented in software
+---
+epoch ID   HW/SW/EC Operation (SW only)
+epoch 1       HW    
+epoch 2       HW    
+epoch 3       HW    
+epoch 4       HW    
+epoch 5       HW    
+epoch 6       HW    
+epoch 7       HW    
+epoch 8       HW    
+epoch 9       HW    
+epoch 10      HW    
+epoch 11      HW    
+epoch 12      HW    
+epoch 13     -SW-   (    SpaceToDepth    )
+epoch 14     -SW-   (  DequantizeLinear  )
+epoch 15     -SW-   (        Conv        )
+epoch 16     -SW-   (        Cast        )
+epoch 17     -SW-   (    DepthToSpace    )
+epoch 18      HW    
+epoch 19      HW    
+epoch 20     -SW-   (    SpaceToDepth    )
+epoch 21     -SW-   (  DequantizeLinear  )
+epoch 22     -SW-   (        Conv        )
+epoch 23     -SW-   (        Cast        )
+epoch 24     -SW-   (    DepthToSpace    )
+epoch 25      HW    
+epoch 26      HW    
+epoch 27     -SW-   (       Resize       )
+epoch 28      HW    
+epoch 29      HW    
+epoch 30     -SW-   (       Resize       )
+epoch 31      HW    
+epoch 32      HW    
+epoch 33      HW    
+epoch 34      HW    
+epoch 35      HW    
+epoch 36      HW    
+==================================================================================== 
+ Requested memory size by section - "stm32n6npu" target
+ ------------------------------- -------- --------- ------ ----------- 
+ module                              text    rodata   data         bss 
+ ------------------------------- -------- --------- ------ ----------- 
+ network_1752669696660.o            5,756    42,408      0           0 
+ NetworkRuntime1010_CM55_GCC.a      9,156        16      0           0 
+ lib (toolchain)*                     902       624      0           0 
+ ll atonn runtime                  12,066     4,382    112       1,621 
+ ------------------------------- -------- --------- ------ ----------- 
+ RT total**                        27,880    47,430    112       1,621 
+ ------------------------------- -------- --------- ------ ----------- 
+ weights                                0   183,505      0           0 
+ activations                            0         0      0   8,640,000 
+ io                                     0         0      0           0 
+ ------------------------------- -------- --------- ------ ----------- 
+ TOTAL                             27,880   230,935    112   8,641,621 
+ ------------------------------- -------- --------- ------ ----------- 
+ *  toolchain objects (libm/libgcc*)
+ ** RT AI runtime objects (kernels+infrastructure)
+  
+  Summary - "stm32n6npu" target
+  ---------------------------------------------------
+               FLASH (ro)      %*    RAM (rw)      % 
+  ---------------------------------------------------
+  RT total         75,422   29.1%       1,733   0.0% 
+  ---------------------------------------------------
+  TOTAL           258,927           8,641,733        
+  ---------------------------------------------------
+  *  rt/total
+

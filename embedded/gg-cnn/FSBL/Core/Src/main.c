@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "extmem_manager.h"
+#include "app_x-cube-ai.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -88,12 +89,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-#ifndef NO_OTP_FUSE
-  /* Set OTP fuses for XSPI IO pins speed optimization */
-  if(OTP_Config() != 0){
-    Error_Handler();
-  }
-#endif /* NO_OTP_FUSE */
+
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -101,6 +97,7 @@ int main(void)
   MX_ICACHE_Init();
   MX_XSPI1_Init();
   MX_XSPI2_Init();
+  MX_X_CUBE_AI_Init();
   MX_EXTMEM_MANAGER_Init();
   /* USER CODE BEGIN 2 */
 
@@ -124,13 +121,12 @@ int main(void)
   }
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
-  BOOT_Application();
-
   while (1)
   {
+
     /* USER CODE END WHILE */
 
+  MX_X_CUBE_AI_Process();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

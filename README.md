@@ -146,7 +146,7 @@ MobileBERT is not supported out of the box by stedgeai CLI tool due to the use o
 - Performance counter hw:
   - Cicli di clock e quanto succede durante l'esecuzione del modello
   - Trasferimenti di memoria
-  - Cache miss, cache hit
+- Cache miss, cache hit
   - TOPS
   -
 

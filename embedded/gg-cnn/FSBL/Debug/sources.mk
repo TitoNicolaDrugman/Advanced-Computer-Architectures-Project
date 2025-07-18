@@ -27,4 +27,5 @@ Core/Src \
 Core/Startup \
 Drivers/BSP/STM32N6xx_Nucleo \
 Drivers/STM32N6xx_HAL_Driver \
+Middlewares/ST/STM32_ExtMem_Manager \
 

@@ -1,0 +1,27 @@
+#!/bin/zsh
+
+#take param $1 as the model name
+# Example usage: ./evaluate.sh mobilenet_v2_0.35_224_fft_int8.tflite
+
+# Check if the model name is provided
+if [ -z "$1" ]; then
+  echo "Usage: $0 <model_name>"
+  exit 1
+fi
+# Set the model name
+MODEL_NAME=$1
+
+OUTPUT_DIR=${MODEL_NAME%.*}_output_$(date +"%Y%m%d_%H%M%S")
+# Create output directory if it doesn't exist
+mkdir -p $OUTPUT_DIR
+
+stedgeai generate -m $MODEL_NAME --target stm32n6 --st-neural-art profile-allmems--O3
+
+python $STEDGEAI_CORE_DIR/scripts/N6_scripts/n6_loader.py --n6-loader-config ./config_n6l.json # or N6-Nucleo-USB
+
+#stedgeai validate -m $MODEL_NAME --target stm32 --mode -d /dev/tty
+
+export PYTHONPATH=$STEDGEAI_CORE_DIR/scripts/ai_runner:$PYTHONPATH
+python $STEDGEAI_CORE_DIR/scripts/ai_runner/examples/checker.py -d serial:/dev/tty.usbmodemCDC_ACM0011
+
+

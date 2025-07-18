@@ -27,7 +27,8 @@ Core/Src/system_stm32n6xx_fsbl.o: ../Core/Src/system_stm32n6xx_fsbl.c \
  ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr.h \
  ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr_ex.h \
  ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart.h \
- ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart_ex.h
+ ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart_ex.h \
+ ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_xspi.h
 ../../Drivers/CMSIS/Device/ST/STM32N6xx/Include/stm32n6xx.h:
 ../../Drivers/CMSIS/Device/ST/STM32N6xx/Include/stm32n657xx.h:
 ../../Drivers/CMSIS/Include/core_cm55.h:
@@ -57,3 +58,4 @@ Core/Src/system_stm32n6xx_fsbl.o: ../Core/Src/system_stm32n6xx_fsbl.c \
 ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_pwr_ex.h:
 ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart.h:
 ../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_uart_ex.h:
+../../Drivers/STM32N6xx_HAL_Driver/Inc/stm32n6xx_hal_xspi.h:
