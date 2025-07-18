@@ -17,7 +17,7 @@ mkdir -p $OUTPUT_DIR
 
 stedgeai generate -m $MODEL_NAME --target stm32n6 --st-neural-art profile-allmems--O3
 
-python $STEDGEAI_CORE_DIR/scripts/N6_scripts/n6_loader.py --n6-loader-config ./config_n6l.json # or N6-Nucleo-USB
+python $STEDGEAI_CORE_DIR/scripts/N6_scripts/n6_loader.py --n6-loader-config ./config_files/mac/config_n6l.json # or N6-Nucleo-USB
 
 #stedgeai validate -m $MODEL_NAME --target stm32 --mode -d /dev/tty
 

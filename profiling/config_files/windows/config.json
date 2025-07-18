@@ -1,0 +1,18 @@
+{
+	// Set Compiler_type to either gcc or iar
+	"compiler_type": "gcc",
+	// Set Compiler_binary_path to your bin/ directory where IAR or GCC can be found
+	//     If "Compiler_type" == gcc, then gdb_server_path shall point to where ST-LINK_gdbserver.exe can be found
+	// Path to gdbserver directory (ends up in bin/)
+	"gdb_server_path": "C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.stlink-gdb-server.win32_2.2.100.202501151542/tools/bin/",
+	// Path to gcc directory (ends up in bin/)
+	"gcc_binary_path": "C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/",
+	// Path to IAR directory (ends up in bin/)
+	"iar_binary_path": "C:/Users/foobar/TOOLS/IAR/IAR9.30.1/common/bin/",
+	// Full path to arm-none-eabi-objcopy program
+	"objcopy_binary_path": "C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/arm-none-eabi-objcopy.exe",
+	// Full path to STM32_Programmer_CLI program
+	"cubeProgrammerCLI_binary_path": "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammerP/bin/STM32_Programmer_CLI.exe",
+	// Path to CubeIDE directory (ends up in STM32CubeIDE)
+	"cubeide_path":"C:/ST/STM32CubeIDE_1.18.1/STM32CubeIDE"
+}

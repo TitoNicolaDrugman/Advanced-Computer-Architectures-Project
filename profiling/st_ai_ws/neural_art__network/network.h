@@ -2,7 +2,7 @@
   ******************************************************************************
   * @file    network.h
   * @author  STEdgeAI
-  * @date    2025-07-18 16:39:53
+  * @date    2025-07-18 18:25:56
   * @brief   Minimal description of the generated c-implemention of the network
   ******************************************************************************
   * @attention
@@ -20,7 +20,7 @@
 
 /******************************************************************************/
 #define LL_ATON_DEFAULT_C_MODEL_NAME        "Default"
-#define LL_ATON_DEFAULT_ORIGIN_MODEL_NAME   "ggcnn_quantize_random"
+#define LL_ATON_DEFAULT_ORIGIN_MODEL_NAME   "hand_landmarks"
 
 /************************** USER ALLOCATED IOs ********************************/
 // No user allocated inputs
@@ -30,21 +30,21 @@
 #define LL_ATON_DEFAULT_IN_NUM        (1)    // Total number of input buffers
 // Input buffer 1 -- Input_0_out_0
 #define LL_ATON_DEFAULT_IN_1_ALIGNMENT   (32)
-#define LL_ATON_DEFAULT_IN_1_SIZE_BYTES  (90000)
+#define LL_ATON_DEFAULT_IN_1_SIZE_BYTES  (150528)
 
 /************************** OUTPUTS *******************************************/
 #define LL_ATON_DEFAULT_OUT_NUM        (4)    // Total number of output buffers
-// Output buffer 1 -- Quantize_40_out_0
+// Output buffer 1 -- Dequantize_223_out_0
 #define LL_ATON_DEFAULT_OUT_1_ALIGNMENT   (32)
-#define LL_ATON_DEFAULT_OUT_1_SIZE_BYTES  (90000)
-// Output buffer 2 -- Quantize_42_out_0
+#define LL_ATON_DEFAULT_OUT_1_SIZE_BYTES  (4)
+// Output buffer 2 -- Dequantize_229_out_0
 #define LL_ATON_DEFAULT_OUT_2_ALIGNMENT   (32)
-#define LL_ATON_DEFAULT_OUT_2_SIZE_BYTES  (90000)
-// Output buffer 3 -- Quantize_44_out_0
+#define LL_ATON_DEFAULT_OUT_2_SIZE_BYTES  (252)
+// Output buffer 3 -- Dequantize_219_out_0
 #define LL_ATON_DEFAULT_OUT_3_ALIGNMENT   (32)
-#define LL_ATON_DEFAULT_OUT_3_SIZE_BYTES  (90000)
-// Output buffer 4 -- Quantize_46_out_0
+#define LL_ATON_DEFAULT_OUT_3_SIZE_BYTES  (4)
+// Output buffer 4 -- Dequantize_226_out_0
 #define LL_ATON_DEFAULT_OUT_4_ALIGNMENT   (32)
-#define LL_ATON_DEFAULT_OUT_4_SIZE_BYTES  (90000)
+#define LL_ATON_DEFAULT_OUT_4_SIZE_BYTES  (252)
 
 #endif /* LL_ATON_DEFAULT_H */
