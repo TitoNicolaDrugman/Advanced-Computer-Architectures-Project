@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": "-d serial:COM4:921600 -b 10 -v 2 --cfile \"C:/Users/brink/Documents/University/Polimi/ACA/Advanced-Computer-Architectures-Project/profiling/st_ai_output/network.c\""
+        }
+    ]
+}

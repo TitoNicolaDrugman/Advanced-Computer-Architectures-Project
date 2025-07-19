@@ -41,4 +41,4 @@ REM Set PYTHONPATH
 set "PYTHONPATH=%STEDGEAI_CORE_DIR%\scripts\ai_runner;%PYTHONPATH%"
 
 REM Run the checker
-python "%STEDGEAI_CORE_DIR%\scripts\ai_runner\examples\checker.py" -d serial:COM4:921600 -b 10
+python "%STEDGEAI_CORE_DIR%\scripts\ai_runner\examples\checker.py" -d serial:COM4:921600 -b 10 -v 2 --debug
