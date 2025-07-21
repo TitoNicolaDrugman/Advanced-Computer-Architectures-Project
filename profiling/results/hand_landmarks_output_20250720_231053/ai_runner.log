@@ -1,0 +1,2429 @@
+[D:AiRunner] creating "AiRunner" object (v3.2)
+[D:AiRunner] resolving('desc' parameter: 'serial:/dev/tty.usbmodemCDC_ACM0011')..
+[D:AiRunner] creating <stm_ai_runner.pb_mgr_drv.AiPbMsg object at 0x11004ea10> (v2.0)
+[D:AiRunner] creating <stm_ai_runner.serial_hw_drv.SerialHwDriver object at 0x11004e6e0>
+[D:AiRunner] 'desc' parameter for 'AiPbMsg' driver: '/dev/tty.usbmodemCDC_ACM0011'
+[D:AiRunner] connecting..
+[D:AiRunner] baud=115200 device=/dev/tty.usbmodemCDC_ACM0011 timeout=0.1 io_hw_log=None
+[D:AiRunner] 0: {'device': '/dev/tty.usbmodemCDC_ACM0011'}
+[D:AiRunner] -> [sync msg]
+[D:AiRunner]    version: 769
+[D:AiRunner]    capability: 1
+[D:AiRunner]    rtid: 65540
+[D:AiRunner] <- [sync msg]
+[D:AiRunner] CMD_SYNC v3.1
+[D:AiRunner] connection successful
+[D:AiRunner] -> [sys_info msg]
+[D:AiRunner]    devid: 1158
+[D:AiRunner]    sclock: 800000000
+[D:AiRunner]    hclock: 400000000
+[D:AiRunner]    cache: 83954688
+[D:AiRunner]    com_param: 382
+[D:AiRunner]    extra: 0
+[D:AiRunner]    extra: 1000000000
+[D:AiRunner]    extra: 900000000
+[D:AiRunner]    extra: 0
+[D:AiRunner] <- [sys_info msg]
+[D:AiRunner] -> [model_info msg]
+[D:AiRunner]    name: "network"
+[D:AiRunner]    rtid: 117506052
+[D:AiRunner]    signature: ""
+[D:AiRunner]    compile_datetime: "Jul 20 2025 23:11:43"
+[D:AiRunner]    runtime_version: 167837696
+[D:AiRunner]    tool_version: 16843008
+[D:AiRunner]    n_macc: 0
+[D:AiRunner]    n_nodes: 68
+[D:AiRunner]    n_inputs: 1
+[D:AiRunner]    inputs {
+[D:AiRunner]      name: "Input_0_out_0"
+[D:AiRunner]      format: 263232
+[D:AiRunner]      size: 150528
+[D:AiRunner]      n_dims: 4
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 224
+[D:AiRunner]      dims: 224
+[D:AiRunner]      dims: 3
+[D:AiRunner]      scale: 0.0039215684
+[D:AiRunner]      zeropoint: 0
+[D:AiRunner]      addr: 875429888
+[D:AiRunner]      flags: 1025
+[D:AiRunner]    }
+[D:AiRunner]    n_outputs: 4
+[D:AiRunner]    outputs {
+[D:AiRunner]      name: "Dequantize_223_out_0"
+[D:AiRunner]      format: 8523840
+[D:AiRunner]      size: 1
+[D:AiRunner]      n_dims: 2
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 1
+[D:AiRunner]      scale: 0.0
+[D:AiRunner]      zeropoint: 0
+[D:AiRunner]      addr: 875430416
+[D:AiRunner]      flags: 1026
+[D:AiRunner]    }
+[D:AiRunner]    outputs {
+[D:AiRunner]      name: "Dequantize_229_out_0"
+[D:AiRunner]      format: 8523840
+[D:AiRunner]      size: 63
+[D:AiRunner]      n_dims: 2
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 63
+[D:AiRunner]      scale: 0.0
+[D:AiRunner]      zeropoint: 0
+[D:AiRunner]      addr: 875430144
+[D:AiRunner]      flags: 1026
+[D:AiRunner]    }
+[D:AiRunner]    outputs {
+[D:AiRunner]      name: "Dequantize_219_out_0"
+[D:AiRunner]      format: 8523840
+[D:AiRunner]      size: 1
+[D:AiRunner]      n_dims: 2
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 1
+[D:AiRunner]      scale: 0.0
+[D:AiRunner]      zeropoint: 0
+[D:AiRunner]      addr: 875430400
+[D:AiRunner]      flags: 1026
+[D:AiRunner]    }
+[D:AiRunner]    outputs {
+[D:AiRunner]      name: "Dequantize_226_out_0"
+[D:AiRunner]      format: 8523840
+[D:AiRunner]      size: 63
+[D:AiRunner]      n_dims: 2
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 63
+[D:AiRunner]      scale: 0.0
+[D:AiRunner]      zeropoint: 0
+[D:AiRunner]      addr: 875429888
+[D:AiRunner]      flags: 1026
+[D:AiRunner]    }
+[D:AiRunner]    n_activations: 1
+[D:AiRunner]    activations {
+[D:AiRunner]      name: ""
+[D:AiRunner]      format: 263232
+[D:AiRunner]      size: 0
+[D:AiRunner]      n_dims: 1
+[D:AiRunner]      dims: 0
+[D:AiRunner]      scale: 0.0
+[D:AiRunner]      zeropoint: 0
+[D:AiRunner]      addr: 0
+[D:AiRunner]      flags: 8
+[D:AiRunner]    }
+[D:AiRunner]    n_params: 1
+[D:AiRunner]    params {
+[D:AiRunner]      name: ""
+[D:AiRunner]      format: 263232
+[D:AiRunner]      size: 0
+[D:AiRunner]      n_dims: 1
+[D:AiRunner]      dims: 0
+[D:AiRunner]      scale: 0.0
+[D:AiRunner]      zeropoint: 0
+[D:AiRunner]      addr: 0
+[D:AiRunner]      flags: 8
+[D:AiRunner]    }
+[D:AiRunner]    runtime_desc: "atonn-v1.1.1-14-ge619e860 AE536891"
+[D:AiRunner] <- [model_info msg]
+[D:AiRunner] RT_DECODER: ST Neural ART (LL_ATON api), id=0x7010004, compiler=GCC, act=False, params=False, macc=False
+[D:AiRunner] DEV_DECODER: stm32 family - 0x486 - STM32N6xx @800/400MHz, ['fpu', 'core_icache', 'core_dcache', 'npu_freq=1000MHz', 'nic_freq=900MHz']
+[D:AiRunner] discover() found="network"
+[D:AiRunner] -> Requested RUN mode: Mode.DEBUG|PER_LAYER (param=0b100000011, option=0x1)
+[D:AiRunner]    SEND INPUT TENSOR #0 ((1, 224, 224, 3)/uint8) last=True..
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=0, name=EpochBlock_2)
+[D:AiRunner]     name="" counters="CPU cycles"[4656, 121495, 1848] dur=0.160ms id=2.2 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=1, name=EpochBlock_3)
+[D:AiRunner]     name="" counters="CPU cycles"[18406, 363856, 3292] dur=0.482ms id=3.3 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=2, name=EpochBlock_4)
+[D:AiRunner]     name="" counters="CPU cycles"[5817, 241689, 1363] dur=0.311ms id=4.4 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=3, name=EpochBlock_5)
+[D:AiRunner]     name="" counters="CPU cycles"[8873, 242537, 2027] dur=0.317ms id=5.5 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=4, name=EpochBlock_6)
+[D:AiRunner]     name="" counters="CPU cycles"[18697, 644329, 2331] dur=0.832ms id=6.6 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=5, name=EpochBlock_7)
+[D:AiRunner]     name="" counters="CPU cycles"[18009, 643289, 2312] dur=0.830ms id=7.7 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=6, name=EpochBlock_8)
+[D:AiRunner]     name="" counters="CPU cycles"[9641, 64073, 2027] dur=0.095ms id=8.8 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=7, name=EpochBlock_9)
+[D:AiRunner]     name="" counters="CPU cycles"[33881, 363945, 2331] dur=0.500ms id=9.9 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=8, name=EpochBlock_10)
+[D:AiRunner]     name="" counters="CPU cycles"[33361, 377401, 2353] dur=0.516ms id=10.10 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=9, name=EpochBlock_11)
+[D:AiRunner]     name="" counters="CPU cycles"[12201, 67953, 3283] dur=0.104ms id=11.11 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=10, name=EpochBlock_12)
+[D:AiRunner]     name="" counters="CPU cycles"[33297, 363857, 2468] dur=0.500ms id=12.12 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=11, name=EpochBlock_13)
+[D:AiRunner]     name="" counters="CPU cycles"[1929, 405681, 832] dur=0.511ms id=13.13 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=12, name=EpochBlock_14)
+[D:AiRunner]     name="" counters="CPU cycles"[36201, 366705, 3608] dur=0.508ms id=14.14 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=13, name=EpochBlock_15)
+[D:AiRunner]     name="" counters="CPU cycles"[14321, 36593, 2661] dur=0.067ms id=15.15 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=14, name=EpochBlock_16)
+[D:AiRunner]     name="" counters="CPU cycles"[53753, 153569, 2971] dur=0.263ms id=16.16 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=15, name=EpochBlock_17)
+[D:AiRunner]     name="" counters="CPU cycles"[2017, 181889, 795] dur=0.231ms id=17.17 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=16, name=EpochBlock_18)
+[D:AiRunner]     name="" counters="CPU cycles"[54577, 194513, 3547] dur=0.316ms id=18.18 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=17, name=EpochBlock_19)
+[D:AiRunner]     name="" counters="CPU cycles"[15769, 60651, 3275] dur=0.100ms id=19.19 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=18, name=EpochBlock_20)
+[D:AiRunner]     name="" counters="CPU cycles"[53945, 153394, 3053] dur=0.263ms id=20.20 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=19, name=EpochBlock_21)
+[D:AiRunner]     name="" counters="CPU cycles"[51897, 152740, 2342] dur=0.259ms id=21.21 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=20, name=EpochBlock_22)
+[D:AiRunner]     name="" counters="CPU cycles"[22473, 45449, 2611] dur=0.088ms id=22.22 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=21, name=EpochBlock_23)
+[D:AiRunner]     name="" counters="CPU cycles"[102479, 81347, 4350] dur=0.235ms id=23.23 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=22, name=EpochBlock_24)
+[D:AiRunner]     name="" counters="CPU cycles"[98577, 89225, 2411] dur=0.238ms id=24.24 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=23, name=EpochBlock_25)
+[D:AiRunner]     name="" counters="CPU cycles"[26449, 87753, 4616] dur=0.149ms id=25.25 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=24, name=EpochBlock_26)
+[D:AiRunner]     name="" counters="CPU cycles"[102358, 81388, 4312] dur=0.235ms id=26.26 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=25, name=EpochBlock_27)
+[D:AiRunner]     name="" counters="CPU cycles"[98385, 89193, 2406] dur=0.237ms id=27.27 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=26, name=EpochBlock_28)
+[D:AiRunner]     name="" counters="CPU cycles"[26921, 87761, 4579] dur=0.149ms id=28.28 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=27, name=EpochBlock_29)
+[D:AiRunner]     name="" counters="CPU cycles"[102457, 81033, 4320] dur=0.235ms id=29.29 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=28, name=EpochBlock_30)
+[D:AiRunner]     name="" counters="CPU cycles"[2017, 97761, 792] dur=0.126ms id=30.30 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=29, name=EpochBlock_31)
+[D:AiRunner]     name="" counters="CPU cycles"[101191, 106533, 3566] dur=0.264ms id=31.31 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=30, name=EpochBlock_32)
+[D:AiRunner]     name="" counters="CPU cycles"[31577, 118137, 3971] dur=0.192ms id=32.32 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=31, name=EpochBlock_33)
+[D:AiRunner]     name="" counters="CPU cycles"[1881, 9483, 795] dur=0.015ms id=33.33 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=32, name=EpochBlock_34)
+[D:AiRunner]     name="" counters="CPU cycles"[12342, 418228, 5491] dur=0.545ms id=34.34 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=33, name=EpochBlock_35)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 136641, 755] dur=0.174ms id=35.35 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=34, name=EpochBlock_36)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 648049, 4155] dur=0.827ms id=36.36 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=35, name=EpochBlock_37)
+[D:AiRunner]     name="" counters="CPU cycles"[32697, 160017, 4547] dur=0.247ms id=37.37 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=36, name=EpochBlock_38)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 9521, 755] dur=0.015ms id=38.38 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=37, name=EpochBlock_39)
+[D:AiRunner]     name="" counters="CPU cycles"[12449, 427097, 5560] dur=0.556ms id=39.39 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=38, name=EpochBlock_40)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 136684, 792] dur=0.174ms id=40.40 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=39, name=EpochBlock_41)
+[D:AiRunner]     name="" counters="CPU cycles"[9081, 648627, 4179] dur=0.827ms id=41.41 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=40, name=EpochBlock_42)
+[D:AiRunner]     name="" counters="CPU cycles"[32694, 159804, 4467] dur=0.246ms id=42.42 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=41, name=EpochBlock_43)
+[D:AiRunner]     name="" counters="CPU cycles"[1921, 9521, 795] dur=0.015ms id=43.43 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=42, name=EpochBlock_44)
+[D:AiRunner]     name="" counters="CPU cycles"[12241, 418361, 5459] dur=0.545ms id=44.44 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=43, name=EpochBlock_45)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 136649, 755] dur=0.174ms id=45.45 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=44, name=EpochBlock_46)
+[D:AiRunner]     name="" counters="CPU cycles"[9169, 300161, 4238] dur=0.392ms id=46.46 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=45, name=EpochBlock_47)
+[D:AiRunner]     name="" counters="CPU cycles"[46865, 260665, 3976] dur=0.389ms id=47.47 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=46, name=EpochBlock_48)
+[D:AiRunner]     name="" counters="CPU cycles"[12249, 542273, 5499] dur=0.700ms id=48.48 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=47, name=EpochBlock_49)
+[D:AiRunner]     name="" counters="CPU cycles"[2009, 81177, 835] dur=0.105ms id=49.49 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=48, name=EpochBlock_50)
+[D:AiRunner]     name="" counters="CPU cycles"[9273, 501937, 4163] dur=0.644ms id=50.50 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=49, name=EpochBlock_51)
+[D:AiRunner]     name="" counters="CPU cycles"[47974, 445436, 4531] dur=0.622ms id=51.51 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=50, name=EpochBlock_52)
+[D:AiRunner]     name="" counters="CPU cycles"[12273, 534275, 5501] dur=0.690ms id=52.52 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=51, name=EpochBlock_53)
+[D:AiRunner]     name="" counters="CPU cycles"[1985, 81209, 755] dur=0.105ms id=53.53 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=52, name=EpochBlock_54)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 499969, 4155] dur=0.641ms id=54.54 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=53, name=EpochBlock_55)
+[D:AiRunner]     name="" counters="CPU cycles"[47938, 445383, 4544] dur=0.622ms id=55.55 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=54, name=EpochBlock_56)
+[D:AiRunner]     name="" counters="CPU cycles"[12297, 540457, 5499] dur=0.698ms id=56.56 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=55, name=EpochBlock_57)
+[D:AiRunner]     name="" counters="CPU cycles"[1857, 81193, 795] dur=0.105ms id=57.57 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=56, name=EpochBlock_58)
+[D:AiRunner]     name="" counters="CPU cycles"[9241, 502462, 4176] dur=0.645ms id=58.58 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=57, name=EpochBlock_59)
+[D:AiRunner]     name="" counters="CPU cycles"[47745, 445172, 4603] dur=0.622ms id=59.59 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=58, name=EpochBlock_60)
+[D:AiRunner]     name="" counters="CPU cycles"[12249, 533681, 5491] dur=0.689ms id=60.60 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=59, name=EpochBlock_61)
+[D:AiRunner]     name="" counters="CPU cycles"[7327, 346979, 3275] dur=0.447ms id=61.61 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=60, name=EpochBlock_62)
+[D:AiRunner]     name="" counters="CPU cycles"[8609, 1722, 3778] dur=0.018ms id=62.62 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=61, name=EpochBlock_63)
+[D:AiRunner]     name="" counters="CPU cycles"[18297, 468081, 5096] dur=0.614ms id=63.63 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=62, name=EpochBlock_64)
+[D:AiRunner]     name="" counters="CPU cycles"[82, 37, 4469] dur=0.006ms id=64.64 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, E.64.0, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=63, name=EpochBlock_65)
+[D:AiRunner]     name="" counters="CPU cycles"[16233, 3361, 3587] dur=0.029ms id=65.65 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=64, name=EpochBlock_66)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 37, 3362] dur=0.004ms id=66.66 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, E.66.0, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=65, name=EpochBlock_67)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 37, 2908] dur=0.004ms id=67.67 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, E.67.0, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=66, name=EpochBlock_68)
+[D:AiRunner]     name="" counters="CPU cycles"[4529, 563, 1746] dur=0.009ms id=68.68 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=67, name=EpochBlock_69)
+[D:AiRunner]     name="" counters="CPU cycles"[46, 37, 2407] dur=0.003ms id=69.69 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, E.69.0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INFERENCE DONE
+[D:AiRunner]     name="network" counters="CPU cycles"[1665585, 16100725, 214547, 17993934, 0] dur=22.492ms id=0.0 type=0x0/NONE,"epoch"
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #0 last=False..
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, O_0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #1 last=False..
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, O_1, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #2 last=False..
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, O_2, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #3 last=True..
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, O_3, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner] <- done (target dur=22.476ms)
+[D:AiRunner] -> Requested RUN mode: Mode.DEBUG|PER_LAYER (param=0b100000011, option=0x0)
+[D:AiRunner]    SEND INPUT TENSOR #0 ((1, 224, 224, 3)/uint8) last=True..
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=0, name=EpochBlock_2)
+[D:AiRunner]     name="" counters="CPU cycles"[3751, 121271, 1647] dur=0.158ms id=2.2 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=1, name=EpochBlock_3)
+[D:AiRunner]     name="" counters="CPU cycles"[15441, 363857, 3211] dur=0.478ms id=3.3 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=2, name=EpochBlock_4)
+[D:AiRunner]     name="" counters="CPU cycles"[5641, 241689, 1363] dur=0.311ms id=4.4 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=3, name=EpochBlock_5)
+[D:AiRunner]     name="" counters="CPU cycles"[8569, 242537, 2027] dur=0.316ms id=5.5 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=4, name=EpochBlock_6)
+[D:AiRunner]     name="" counters="CPU cycles"[18321, 644372, 2328] dur=0.831ms id=6.6 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=5, name=EpochBlock_7)
+[D:AiRunner]     name="" counters="CPU cycles"[17945, 643325, 2364] dur=0.830ms id=7.7 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=6, name=EpochBlock_8)
+[D:AiRunner]     name="" counters="CPU cycles"[9577, 64111, 1989] dur=0.095ms id=8.8 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=7, name=EpochBlock_9)
+[D:AiRunner]     name="" counters="CPU cycles"[33777, 363945, 2291] dur=0.500ms id=9.9 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=8, name=EpochBlock_10)
+[D:AiRunner]     name="" counters="CPU cycles"[33441, 377401, 2315] dur=0.516ms id=10.10 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=9, name=EpochBlock_11)
+[D:AiRunner]     name="" counters="CPU cycles"[12185, 67953, 3316] dur=0.104ms id=11.11 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=10, name=EpochBlock_12)
+[D:AiRunner]     name="" counters="CPU cycles"[33497, 363857, 2406] dur=0.500ms id=12.12 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=11, name=EpochBlock_13)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 405681, 832] dur=0.511ms id=13.13 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=12, name=EpochBlock_14)
+[D:AiRunner]     name="" counters="CPU cycles"[36137, 366681, 3571] dur=0.508ms id=14.14 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=13, name=EpochBlock_15)
+[D:AiRunner]     name="" counters="CPU cycles"[14353, 36547, 2627] dur=0.067ms id=15.15 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=14, name=EpochBlock_16)
+[D:AiRunner]     name="" counters="CPU cycles"[53361, 153570, 2930] dur=0.262ms id=16.16 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=15, name=EpochBlock_17)
+[D:AiRunner]     name="" counters="CPU cycles"[1945, 181913, 755] dur=0.231ms id=17.17 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=16, name=EpochBlock_18)
+[D:AiRunner]     name="" counters="CPU cycles"[54465, 194441, 3488] dur=0.315ms id=18.18 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=17, name=EpochBlock_19)
+[D:AiRunner]     name="" counters="CPU cycles"[15753, 60770, 3234] dur=0.100ms id=19.19 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=18, name=EpochBlock_20)
+[D:AiRunner]     name="" counters="CPU cycles"[53390, 153356, 2977] dur=0.262ms id=20.20 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=19, name=EpochBlock_21)
+[D:AiRunner]     name="" counters="CPU cycles"[51937, 152740, 2280] dur=0.259ms id=21.21 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=20, name=EpochBlock_22)
+[D:AiRunner]     name="" counters="CPU cycles"[22721, 45487, 2573] dur=0.088ms id=22.22 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=21, name=EpochBlock_23)
+[D:AiRunner]     name="" counters="CPU cycles"[102121, 81428, 4399] dur=0.235ms id=23.23 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=22, name=EpochBlock_24)
+[D:AiRunner]     name="" counters="CPU cycles"[98121, 89276, 2357] dur=0.237ms id=24.24 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=23, name=EpochBlock_25)
+[D:AiRunner]     name="" counters="CPU cycles"[26481, 87798, 4536] dur=0.149ms id=25.25 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=24, name=EpochBlock_26)
+[D:AiRunner]     name="" counters="CPU cycles"[102422, 81351, 4235] dur=0.235ms id=26.26 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=25, name=EpochBlock_27)
+[D:AiRunner]     name="" counters="CPU cycles"[98511, 89155, 2366] dur=0.238ms id=27.27 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=26, name=EpochBlock_28)
+[D:AiRunner]     name="" counters="CPU cycles"[26809, 87761, 4616] dur=0.149ms id=28.28 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=27, name=EpochBlock_29)
+[D:AiRunner]     name="" counters="CPU cycles"[102489, 81033, 4318] dur=0.235ms id=29.29 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=28, name=EpochBlock_30)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 97761, 752] dur=0.126ms id=30.30 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=29, name=EpochBlock_31)
+[D:AiRunner]     name="" counters="CPU cycles"[101041, 106529, 3513] dur=0.264ms id=31.31 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=30, name=EpochBlock_32)
+[D:AiRunner]     name="" counters="CPU cycles"[31513, 118179, 3931] dur=0.192ms id=32.32 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=31, name=EpochBlock_33)
+[D:AiRunner]     name="" counters="CPU cycles"[1921, 9529, 755] dur=0.015ms id=33.33 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=32, name=EpochBlock_34)
+[D:AiRunner]     name="" counters="CPU cycles"[12270, 418268, 5451] dur=0.545ms id=34.34 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=33, name=EpochBlock_35)
+[D:AiRunner]     name="" counters="CPU cycles"[1857, 136657, 715] dur=0.174ms id=35.35 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=34, name=EpochBlock_36)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 648193, 4115] dur=0.827ms id=36.36 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=35, name=EpochBlock_37)
+[D:AiRunner]     name="" counters="CPU cycles"[33025, 160017, 4579] dur=0.247ms id=37.37 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=36, name=EpochBlock_38)
+[D:AiRunner]     name="" counters="CPU cycles"[1969, 9521, 755] dur=0.015ms id=38.38 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=37, name=EpochBlock_39)
+[D:AiRunner]     name="" counters="CPU cycles"[12401, 427193, 5536] dur=0.556ms id=39.39 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=38, name=EpochBlock_40)
+[D:AiRunner]     name="" counters="CPU cycles"[1945, 136657, 792] dur=0.174ms id=40.40 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=39, name=EpochBlock_41)
+[D:AiRunner]     name="" counters="CPU cycles"[9129, 648525, 4179] dur=0.827ms id=41.41 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=40, name=EpochBlock_42)
+[D:AiRunner]     name="" counters="CPU cycles"[32966, 159804, 4491] dur=0.247ms id=42.42 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=41, name=EpochBlock_43)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 9521, 755] dur=0.015ms id=43.43 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=42, name=EpochBlock_44)
+[D:AiRunner]     name="" counters="CPU cycles"[12265, 418369, 5523] dur=0.545ms id=44.44 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=43, name=EpochBlock_45)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 136657, 755] dur=0.174ms id=45.45 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=44, name=EpochBlock_46)
+[D:AiRunner]     name="" counters="CPU cycles"[9073, 300217, 4237] dur=0.392ms id=46.46 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=45, name=EpochBlock_47)
+[D:AiRunner]     name="" counters="CPU cycles"[46774, 260628, 3976] dur=0.389ms id=47.47 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=46, name=EpochBlock_48)
+[D:AiRunner]     name="" counters="CPU cycles"[12169, 543777, 5536] dur=0.702ms id=48.48 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=47, name=EpochBlock_49)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 81177, 795] dur=0.105ms id=49.49 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=48, name=EpochBlock_50)
+[D:AiRunner]     name="" counters="CPU cycles"[9241, 502137, 4091] dur=0.644ms id=50.50 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=49, name=EpochBlock_51)
+[D:AiRunner]     name="" counters="CPU cycles"[48169, 445473, 4459] dur=0.623ms id=51.51 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=50, name=EpochBlock_52)
+[D:AiRunner]     name="" counters="CPU cycles"[12177, 534157, 5528] dur=0.690ms id=52.52 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=51, name=EpochBlock_53)
+[D:AiRunner]     name="" counters="CPU cycles"[1929, 81185, 715] dur=0.105ms id=53.53 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=52, name=EpochBlock_54)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 499713, 4192] dur=0.641ms id=54.54 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=53, name=EpochBlock_55)
+[D:AiRunner]     name="" counters="CPU cycles"[47926, 445380, 4547] dur=0.622ms id=55.55 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=54, name=EpochBlock_56)
+[D:AiRunner]     name="" counters="CPU cycles"[12321, 539155, 5499] dur=0.696ms id=56.56 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=55, name=EpochBlock_57)
+[D:AiRunner]     name="" counters="CPU cycles"[1857, 81193, 795] dur=0.105ms id=57.57 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=56, name=EpochBlock_58)
+[D:AiRunner]     name="" counters="CPU cycles"[9185, 502499, 4179] dur=0.645ms id=58.58 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=57, name=EpochBlock_59)
+[D:AiRunner]     name="" counters="CPU cycles"[48137, 445129, 4542] dur=0.622ms id=59.59 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=58, name=EpochBlock_60)
+[D:AiRunner]     name="" counters="CPU cycles"[12185, 533609, 5528] dur=0.689ms id=60.60 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=59, name=EpochBlock_61)
+[D:AiRunner]     name="" counters="CPU cycles"[7129, 347017, 3235] dur=0.447ms id=61.61 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=60, name=EpochBlock_62)
+[D:AiRunner]     name="" counters="CPU cycles"[8665, 1722, 3738] dur=0.018ms id=62.62 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=61, name=EpochBlock_63)
+[D:AiRunner]     name="" counters="CPU cycles"[18470, 468012, 5083] dur=0.614ms id=63.63 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=62, name=EpochBlock_64)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 3975] dur=0.005ms id=64.64 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, E.64.0, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=63, name=EpochBlock_65)
+[D:AiRunner]     name="" counters="CPU cycles"[15745, 3321, 3587] dur=0.028ms id=65.65 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=64, name=EpochBlock_66)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 3429] dur=0.004ms id=66.66 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, E.66.0, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=65, name=EpochBlock_67)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 2905] dur=0.004ms id=67.67 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, E.67.0, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=66, name=EpochBlock_68)
+[D:AiRunner]     name="" counters="CPU cycles"[4489, 563, 1746] dur=0.008ms id=68.68 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=67, name=EpochBlock_69)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 2329] dur=0.003ms id=69.69 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, E.69.0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INFERENCE DONE
+[D:AiRunner]     name="network" counters="CPU cycles"[1658939, 16100894, 212594, 17985195, 0] dur=22.481ms id=0.0 type=0x0/NONE,"epoch"
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #0 last=False..
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, O_0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #1 last=False..
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, O_1, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #2 last=False..
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, O_2, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #3 last=True..
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, O_3, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner] <- done (target dur=22.466ms)
+[D:AiRunner] -> Requested RUN mode: Mode.DEBUG|PER_LAYER (param=0b100000011, option=0x0)
+[D:AiRunner]    SEND INPUT TENSOR #0 ((1, 224, 224, 3)/uint8) last=True..
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=0, name=EpochBlock_2)
+[D:AiRunner]     name="" counters="CPU cycles"[3593, 121156, 1652] dur=0.158ms id=2.2 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=1, name=EpochBlock_3)
+[D:AiRunner]     name="" counters="CPU cycles"[15393, 363857, 3291] dur=0.478ms id=3.3 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=2, name=EpochBlock_4)
+[D:AiRunner]     name="" counters="CPU cycles"[5673, 241689, 1323] dur=0.311ms id=4.4 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=3, name=EpochBlock_5)
+[D:AiRunner]     name="" counters="CPU cycles"[8657, 242537, 2027] dur=0.317ms id=5.5 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=4, name=EpochBlock_6)
+[D:AiRunner]     name="" counters="CPU cycles"[18497, 644329, 2331] dur=0.831ms id=6.6 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=5, name=EpochBlock_7)
+[D:AiRunner]     name="" counters="CPU cycles"[17889, 643289, 2275] dur=0.829ms id=7.7 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=6, name=EpochBlock_8)
+[D:AiRunner]     name="" counters="CPU cycles"[9561, 64111, 1989] dur=0.095ms id=8.8 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=7, name=EpochBlock_9)
+[D:AiRunner]     name="" counters="CPU cycles"[33873, 363945, 2291] dur=0.500ms id=9.9 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=8, name=EpochBlock_10)
+[D:AiRunner]     name="" counters="CPU cycles"[33489, 377401, 2315] dur=0.517ms id=10.10 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=9, name=EpochBlock_11)
+[D:AiRunner]     name="" counters="CPU cycles"[12177, 67953, 3316] dur=0.104ms id=11.11 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=10, name=EpochBlock_12)
+[D:AiRunner]     name="" counters="CPU cycles"[33281, 363857, 2430] dur=0.499ms id=12.12 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=11, name=EpochBlock_13)
+[D:AiRunner]     name="" counters="CPU cycles"[1977, 405689, 830] dur=0.511ms id=13.13 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=12, name=EpochBlock_14)
+[D:AiRunner]     name="" counters="CPU cycles"[36577, 366681, 3646] dur=0.509ms id=14.14 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=13, name=EpochBlock_15)
+[D:AiRunner]     name="" counters="CPU cycles"[14217, 36585, 2573] dur=0.067ms id=15.15 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=14, name=EpochBlock_16)
+[D:AiRunner]     name="" counters="CPU cycles"[53857, 153570, 2930] dur=0.263ms id=16.16 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=15, name=EpochBlock_17)
+[D:AiRunner]     name="" counters="CPU cycles"[1945, 181932, 752] dur=0.231ms id=17.17 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=16, name=EpochBlock_18)
+[D:AiRunner]     name="" counters="CPU cycles"[55113, 194443, 3451] dur=0.316ms id=18.18 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=17, name=EpochBlock_19)
+[D:AiRunner]     name="" counters="CPU cycles"[15985, 60732, 3232] dur=0.100ms id=19.19 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=18, name=EpochBlock_20)
+[D:AiRunner]     name="" counters="CPU cycles"[53793, 153393, 3014] dur=0.263ms id=20.20 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=19, name=EpochBlock_21)
+[D:AiRunner]     name="" counters="CPU cycles"[51857, 152689, 2283] dur=0.259ms id=21.21 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=20, name=EpochBlock_22)
+[D:AiRunner]     name="" counters="CPU cycles"[22505, 45449, 2627] dur=0.088ms id=22.22 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=21, name=EpochBlock_23)
+[D:AiRunner]     name="" counters="CPU cycles"[102241, 81385, 4378] dur=0.235ms id=23.23 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=22, name=EpochBlock_24)
+[D:AiRunner]     name="" counters="CPU cycles"[98271, 89270, 2381] dur=0.237ms id=24.24 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=23, name=EpochBlock_25)
+[D:AiRunner]     name="" counters="CPU cycles"[26457, 87715, 4539] dur=0.148ms id=25.25 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=24, name=EpochBlock_26)
+[D:AiRunner]     name="" counters="CPU cycles"[102710, 81348, 4235] dur=0.235ms id=26.26 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=25, name=EpochBlock_27)
+[D:AiRunner]     name="" counters="CPU cycles"[98513, 89193, 2328] dur=0.238ms id=27.27 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=26, name=EpochBlock_28)
+[D:AiRunner]     name="" counters="CPU cycles"[26257, 87761, 4576] dur=0.148ms id=28.28 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=27, name=EpochBlock_29)
+[D:AiRunner]     name="" counters="CPU cycles"[102177, 81114, 4279] dur=0.234ms id=29.29 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=28, name=EpochBlock_30)
+[D:AiRunner]     name="" counters="CPU cycles"[1977, 97761, 715] dur=0.126ms id=30.30 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=29, name=EpochBlock_31)
+[D:AiRunner]     name="" counters="CPU cycles"[100879, 106493, 3589] dur=0.264ms id=31.31 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=30, name=EpochBlock_32)
+[D:AiRunner]     name="" counters="CPU cycles"[31697, 118139, 3931] dur=0.192ms id=32.32 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=31, name=EpochBlock_33)
+[D:AiRunner]     name="" counters="CPU cycles"[1929, 9601, 755] dur=0.015ms id=33.33 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=32, name=EpochBlock_34)
+[D:AiRunner]     name="" counters="CPU cycles"[12241, 418201, 5451] dur=0.545ms id=34.34 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=33, name=EpochBlock_35)
+[D:AiRunner]     name="" counters="CPU cycles"[1857, 136633, 715] dur=0.174ms id=35.35 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=34, name=EpochBlock_36)
+[D:AiRunner]     name="" counters="CPU cycles"[9017, 648201, 4115] dur=0.827ms id=36.36 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=35, name=EpochBlock_37)
+[D:AiRunner]     name="" counters="CPU cycles"[32521, 160017, 4563] dur=0.246ms id=37.37 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=36, name=EpochBlock_38)
+[D:AiRunner]     name="" counters="CPU cycles"[1921, 9521, 755] dur=0.015ms id=38.38 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=37, name=EpochBlock_39)
+[D:AiRunner]     name="" counters="CPU cycles"[12401, 427033, 5499] dur=0.556ms id=39.39 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=38, name=EpochBlock_40)
+[D:AiRunner]     name="" counters="CPU cycles"[1945, 136649, 755] dur=0.174ms id=40.40 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=39, name=EpochBlock_41)
+[D:AiRunner]     name="" counters="CPU cycles"[9001, 648555, 4139] dur=0.827ms id=41.41 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=40, name=EpochBlock_42)
+[D:AiRunner]     name="" counters="CPU cycles"[32809, 159841, 4491] dur=0.246ms id=42.42 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=41, name=EpochBlock_43)
+[D:AiRunner]     name="" counters="CPU cycles"[1921, 9521, 755] dur=0.015ms id=43.43 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=42, name=EpochBlock_44)
+[D:AiRunner]     name="" counters="CPU cycles"[12185, 418281, 5491] dur=0.545ms id=44.44 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=43, name=EpochBlock_45)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 136641, 755] dur=0.174ms id=45.45 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=44, name=EpochBlock_46)
+[D:AiRunner]     name="" counters="CPU cycles"[8985, 300217, 4203] dur=0.392ms id=46.46 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=45, name=EpochBlock_47)
+[D:AiRunner]     name="" counters="CPU cycles"[46998, 260591, 3939] dur=0.389ms id=47.47 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=46, name=EpochBlock_48)
+[D:AiRunner]     name="" counters="CPU cycles"[12201, 541835, 5498] dur=0.699ms id=48.48 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=47, name=EpochBlock_49)
+[D:AiRunner]     name="" counters="CPU cycles"[1969, 81193, 795] dur=0.105ms id=49.49 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=48, name=EpochBlock_50)
+[D:AiRunner]     name="" counters="CPU cycles"[9289, 502057, 4123] dur=0.644ms id=50.50 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=49, name=EpochBlock_51)
+[D:AiRunner]     name="" counters="CPU cycles"[48065, 445473, 4427] dur=0.622ms id=51.51 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=50, name=EpochBlock_52)
+[D:AiRunner]     name="" counters="CPU cycles"[12225, 534034, 5566] dur=0.690ms id=52.52 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=51, name=EpochBlock_53)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 81169, 715] dur=0.105ms id=53.53 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=52, name=EpochBlock_54)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 499833, 4152] dur=0.641ms id=54.54 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=53, name=EpochBlock_55)
+[D:AiRunner]     name="" counters="CPU cycles"[47953, 445384, 4544] dur=0.622ms id=55.55 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=54, name=EpochBlock_56)
+[D:AiRunner]     name="" counters="CPU cycles"[12297, 539825, 5459] dur=0.697ms id=56.56 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=55, name=EpochBlock_57)
+[D:AiRunner]     name="" counters="CPU cycles"[1825, 81177, 755] dur=0.105ms id=57.57 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=56, name=EpochBlock_58)
+[D:AiRunner]     name="" counters="CPU cycles"[9113, 502339, 4139] dur=0.644ms id=58.58 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=57, name=EpochBlock_59)
+[D:AiRunner]     name="" counters="CPU cycles"[48297, 445129, 4560] dur=0.622ms id=59.59 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=58, name=EpochBlock_60)
+[D:AiRunner]     name="" counters="CPU cycles"[12057, 533561, 5451] dur=0.689ms id=60.60 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=59, name=EpochBlock_61)
+[D:AiRunner]     name="" counters="CPU cycles"[7089, 346979, 3272] dur=0.447ms id=61.61 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=60, name=EpochBlock_62)
+[D:AiRunner]     name="" counters="CPU cycles"[8585, 1683, 3739] dur=0.018ms id=62.62 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=61, name=EpochBlock_63)
+[D:AiRunner]     name="" counters="CPU cycles"[18473, 468017, 5019] dur=0.614ms id=63.63 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=62, name=EpochBlock_64)
+[D:AiRunner]     name="" counters="CPU cycles"[82, 76, 3857] dur=0.005ms id=64.64 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, E.64.0, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=63, name=EpochBlock_65)
+[D:AiRunner]     name="" counters="CPU cycles"[15870, 3244, 3579] dur=0.028ms id=65.65 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=64, name=EpochBlock_66)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 3317] dur=0.004ms id=66.66 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, E.66.0, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=65, name=EpochBlock_67)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 2903] dur=0.004ms id=67.67 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, E.67.0, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=66, name=EpochBlock_68)
+[D:AiRunner]     name="" counters="CPU cycles"[4569, 563, 1722] dur=0.009ms id=68.68 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=67, name=EpochBlock_69)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 2325] dur=0.003ms id=69.69 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, E.69.0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INFERENCE DONE
+[D:AiRunner]     name="network" counters="CPU cycles"[1659748, 16098648, 211827, 17982821, 0] dur=22.479ms id=0.0 type=0x0/NONE,"epoch"
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #0 last=False..
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, O_0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #1 last=False..
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, O_1, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #2 last=False..
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, O_2, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #3 last=True..
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, O_3, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner] <- done (target dur=22.463ms)
+[D:AiRunner] -> Requested RUN mode: Mode.DEBUG|PER_LAYER (param=0b100000011, option=0x0)
+[D:AiRunner]    SEND INPUT TENSOR #0 ((1, 224, 224, 3)/uint8) last=True..
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=0, name=EpochBlock_2)
+[D:AiRunner]     name="" counters="CPU cycles"[3525, 121156, 1652] dur=0.158ms id=2.2 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=1, name=EpochBlock_3)
+[D:AiRunner]     name="" counters="CPU cycles"[15321, 363897, 3291] dur=0.478ms id=3.3 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=2, name=EpochBlock_4)
+[D:AiRunner]     name="" counters="CPU cycles"[5673, 241689, 1363] dur=0.311ms id=4.4 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=3, name=EpochBlock_5)
+[D:AiRunner]     name="" counters="CPU cycles"[8633, 242537, 1987] dur=0.316ms id=5.5 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=4, name=EpochBlock_6)
+[D:AiRunner]     name="" counters="CPU cycles"[18481, 644329, 2331] dur=0.831ms id=6.6 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=5, name=EpochBlock_7)
+[D:AiRunner]     name="" counters="CPU cycles"[17873, 643289, 2312] dur=0.829ms id=7.7 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=6, name=EpochBlock_8)
+[D:AiRunner]     name="" counters="CPU cycles"[9561, 64073, 1987] dur=0.095ms id=8.8 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=7, name=EpochBlock_9)
+[D:AiRunner]     name="" counters="CPU cycles"[33857, 363945, 2329] dur=0.500ms id=9.9 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=8, name=EpochBlock_10)
+[D:AiRunner]     name="" counters="CPU cycles"[33401, 377401, 2350] dur=0.516ms id=10.10 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=9, name=EpochBlock_11)
+[D:AiRunner]     name="" counters="CPU cycles"[12209, 67953, 3356] dur=0.104ms id=11.11 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=10, name=EpochBlock_12)
+[D:AiRunner]     name="" counters="CPU cycles"[33473, 363857, 2470] dur=0.500ms id=12.12 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=11, name=EpochBlock_13)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 405681, 795] dur=0.510ms id=13.13 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=12, name=EpochBlock_14)
+[D:AiRunner]     name="" counters="CPU cycles"[36521, 366649, 3568] dur=0.508ms id=14.14 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=13, name=EpochBlock_15)
+[D:AiRunner]     name="" counters="CPU cycles"[14601, 36585, 2666] dur=0.067ms id=15.15 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=14, name=EpochBlock_16)
+[D:AiRunner]     name="" counters="CPU cycles"[53833, 153569, 2968] dur=0.263ms id=16.16 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=15, name=EpochBlock_17)
+[D:AiRunner]     name="" counters="CPU cycles"[1985, 181929, 755] dur=0.231ms id=17.17 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=16, name=EpochBlock_18)
+[D:AiRunner]     name="" counters="CPU cycles"[54585, 194459, 3488] dur=0.316ms id=18.18 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=17, name=EpochBlock_19)
+[D:AiRunner]     name="" counters="CPU cycles"[15881, 60689, 3235] dur=0.100ms id=19.19 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=18, name=EpochBlock_20)
+[D:AiRunner]     name="" counters="CPU cycles"[53881, 153434, 2938] dur=0.263ms id=20.20 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=19, name=EpochBlock_21)
+[D:AiRunner]     name="" counters="CPU cycles"[51953, 152697, 2235] dur=0.259ms id=21.21 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=20, name=EpochBlock_22)
+[D:AiRunner]     name="" counters="CPU cycles"[22321, 45449, 2627] dur=0.088ms id=22.22 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=21, name=EpochBlock_23)
+[D:AiRunner]     name="" counters="CPU cycles"[102161, 81385, 4378] dur=0.235ms id=23.23 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=22, name=EpochBlock_24)
+[D:AiRunner]     name="" counters="CPU cycles"[98089, 89193, 2376] dur=0.237ms id=24.24 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=23, name=EpochBlock_25)
+[D:AiRunner]     name="" counters="CPU cycles"[26177, 87798, 4536] dur=0.148ms id=25.25 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=24, name=EpochBlock_26)
+[D:AiRunner]     name="" counters="CPU cycles"[102550, 81351, 4235] dur=0.235ms id=26.26 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=25, name=EpochBlock_27)
+[D:AiRunner]     name="" counters="CPU cycles"[98409, 89193, 2291] dur=0.237ms id=27.27 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=26, name=EpochBlock_28)
+[D:AiRunner]     name="" counters="CPU cycles"[26385, 87761, 4576] dur=0.148ms id=28.28 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=27, name=EpochBlock_29)
+[D:AiRunner]     name="" counters="CPU cycles"[102465, 81071, 4213] dur=0.235ms id=29.29 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=28, name=EpochBlock_30)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 97761, 715] dur=0.126ms id=30.30 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=29, name=EpochBlock_31)
+[D:AiRunner]     name="" counters="CPU cycles"[101087, 106453, 3488] dur=0.264ms id=31.31 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=30, name=EpochBlock_32)
+[D:AiRunner]     name="" counters="CPU cycles"[31513, 118182, 3928] dur=0.192ms id=32.32 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=31, name=EpochBlock_33)
+[D:AiRunner]     name="" counters="CPU cycles"[1961, 9521, 755] dur=0.015ms id=33.33 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=32, name=EpochBlock_34)
+[D:AiRunner]     name="" counters="CPU cycles"[12342, 418292, 5451] dur=0.545ms id=34.34 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=33, name=EpochBlock_35)
+[D:AiRunner]     name="" counters="CPU cycles"[1857, 136649, 715] dur=0.174ms id=35.35 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=34, name=EpochBlock_36)
+[D:AiRunner]     name="" counters="CPU cycles"[8969, 648081, 4115] dur=0.826ms id=36.36 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=35, name=EpochBlock_37)
+[D:AiRunner]     name="" counters="CPU cycles"[33017, 160025, 4539] dur=0.247ms id=37.37 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=36, name=EpochBlock_38)
+[D:AiRunner]     name="" counters="CPU cycles"[1881, 9521, 755] dur=0.015ms id=38.38 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=37, name=EpochBlock_39)
+[D:AiRunner]     name="" counters="CPU cycles"[12439, 427099, 5574] dur=0.556ms id=39.39 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=38, name=EpochBlock_40)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 136641, 795] dur=0.174ms id=40.40 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=39, name=EpochBlock_41)
+[D:AiRunner]     name="" counters="CPU cycles"[9041, 648731, 4179] dur=0.827ms id=41.41 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=40, name=EpochBlock_42)
+[D:AiRunner]     name="" counters="CPU cycles"[33337, 159841, 4491] dur=0.247ms id=42.42 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=41, name=EpochBlock_43)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 9521, 755] dur=0.015ms id=43.43 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=42, name=EpochBlock_44)
+[D:AiRunner]     name="" counters="CPU cycles"[12193, 418409, 5427] dur=0.545ms id=44.44 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=43, name=EpochBlock_45)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 136633, 755] dur=0.174ms id=45.45 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=44, name=EpochBlock_46)
+[D:AiRunner]     name="" counters="CPU cycles"[9065, 300201, 4198] dur=0.392ms id=46.46 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=45, name=EpochBlock_47)
+[D:AiRunner]     name="" counters="CPU cycles"[46614, 260636, 4000] dur=0.389ms id=47.47 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=46, name=EpochBlock_48)
+[D:AiRunner]     name="" counters="CPU cycles"[12233, 542302, 5456] dur=0.700ms id=48.48 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=47, name=EpochBlock_49)
+[D:AiRunner]     name="" counters="CPU cycles"[2009, 81177, 795] dur=0.105ms id=49.49 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=48, name=EpochBlock_50)
+[D:AiRunner]     name="" counters="CPU cycles"[9305, 502017, 4123] dur=0.644ms id=50.50 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=49, name=EpochBlock_51)
+[D:AiRunner]     name="" counters="CPU cycles"[47785, 445473, 4555] dur=0.622ms id=51.51 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=50, name=EpochBlock_52)
+[D:AiRunner]     name="" counters="CPU cycles"[12209, 534069, 5562] dur=0.690ms id=52.52 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=51, name=EpochBlock_53)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 81185, 752] dur=0.105ms id=53.53 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=52, name=EpochBlock_54)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 499945, 4115] dur=0.641ms id=54.54 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=53, name=EpochBlock_55)
+[D:AiRunner]     name="" counters="CPU cycles"[47998, 445303, 4547] dur=0.622ms id=55.55 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=54, name=EpochBlock_56)
+[D:AiRunner]     name="" counters="CPU cycles"[12256, 540777, 5459] dur=0.698ms id=56.56 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=55, name=EpochBlock_57)
+[D:AiRunner]     name="" counters="CPU cycles"[1824, 81169, 755] dur=0.105ms id=57.57 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=56, name=EpochBlock_58)
+[D:AiRunner]     name="" counters="CPU cycles"[9280, 502139, 4139] dur=0.644ms id=58.58 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=57, name=EpochBlock_59)
+[D:AiRunner]     name="" counters="CPU cycles"[48609, 445129, 4491] dur=0.623ms id=59.59 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=58, name=EpochBlock_60)
+[D:AiRunner]     name="" counters="CPU cycles"[12089, 533553, 5387] dur=0.689ms id=60.60 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=59, name=EpochBlock_61)
+[D:AiRunner]     name="" counters="CPU cycles"[6937, 346977, 3235] dur=0.446ms id=61.61 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=60, name=EpochBlock_62)
+[D:AiRunner]     name="" counters="CPU cycles"[8569, 1681, 3739] dur=0.017ms id=62.62 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=61, name=EpochBlock_63)
+[D:AiRunner]     name="" counters="CPU cycles"[18321, 468065, 5019] dur=0.614ms id=63.63 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=62, name=EpochBlock_64)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 3897] dur=0.005ms id=64.64 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, E.64.0, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=63, name=EpochBlock_65)
+[D:AiRunner]     name="" counters="CPU cycles"[16233, 3321, 3507] dur=0.029ms id=65.65 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=64, name=EpochBlock_66)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 3393] dur=0.004ms id=66.66 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, E.66.0, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=65, name=EpochBlock_67)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 2755] dur=0.004ms id=67.67 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, E.67.0, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=66, name=EpochBlock_68)
+[D:AiRunner]     name="" counters="CPU cycles"[4569, 603, 1730] dur=0.009ms id=68.68 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=67, name=EpochBlock_69)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 2215] dur=0.003ms id=69.69 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, E.69.0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INFERENCE DONE
+[D:AiRunner]     name="network" counters="CPU cycles"[1659977, 16100245, 211569, 17984152, 0] dur=22.480ms id=0.0 type=0x0/NONE,"epoch"
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #0 last=False..
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, O_0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #1 last=False..
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, O_1, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #2 last=False..
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, O_2, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #3 last=True..
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, O_3, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner] <- done (target dur=22.465ms)
+[D:AiRunner] -> Requested RUN mode: Mode.DEBUG|PER_LAYER (param=0b100000011, option=0x0)
+[D:AiRunner]    SEND INPUT TENSOR #0 ((1, 224, 224, 3)/uint8) last=True..
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=0, name=EpochBlock_2)
+[D:AiRunner]     name="" counters="CPU cycles"[3524, 121160, 1612] dur=0.158ms id=2.2 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=1, name=EpochBlock_3)
+[D:AiRunner]     name="" counters="CPU cycles"[15433, 363857, 3291] dur=0.478ms id=3.3 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=2, name=EpochBlock_4)
+[D:AiRunner]     name="" counters="CPU cycles"[5665, 241689, 1323] dur=0.311ms id=4.4 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=3, name=EpochBlock_5)
+[D:AiRunner]     name="" counters="CPU cycles"[8585, 242537, 2027] dur=0.316ms id=5.5 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=4, name=EpochBlock_6)
+[D:AiRunner]     name="" counters="CPU cycles"[18513, 644329, 2331] dur=0.831ms id=6.6 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=5, name=EpochBlock_7)
+[D:AiRunner]     name="" counters="CPU cycles"[17905, 643325, 2327] dur=0.829ms id=7.7 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=6, name=EpochBlock_8)
+[D:AiRunner]     name="" counters="CPU cycles"[9545, 64155, 1985] dur=0.095ms id=8.8 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=7, name=EpochBlock_9)
+[D:AiRunner]     name="" counters="CPU cycles"[33857, 363981, 2333] dur=0.500ms id=9.9 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=8, name=EpochBlock_10)
+[D:AiRunner]     name="" counters="CPU cycles"[33545, 377437, 2317] dur=0.517ms id=10.10 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=9, name=EpochBlock_11)
+[D:AiRunner]     name="" counters="CPU cycles"[12177, 67989, 3312] dur=0.104ms id=11.11 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=10, name=EpochBlock_12)
+[D:AiRunner]     name="" counters="CPU cycles"[33513, 363893, 2434] dur=0.500ms id=12.12 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=11, name=EpochBlock_13)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 405673, 833] dur=0.511ms id=13.13 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=12, name=EpochBlock_14)
+[D:AiRunner]     name="" counters="CPU cycles"[36705, 366673, 3568] dur=0.509ms id=14.14 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=13, name=EpochBlock_15)
+[D:AiRunner]     name="" counters="CPU cycles"[14313, 36585, 2629] dur=0.067ms id=15.15 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=14, name=EpochBlock_16)
+[D:AiRunner]     name="" counters="CPU cycles"[53825, 153489, 2968] dur=0.263ms id=16.16 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=15, name=EpochBlock_17)
+[D:AiRunner]     name="" counters="CPU cycles"[1945, 181881, 755] dur=0.231ms id=17.17 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=16, name=EpochBlock_18)
+[D:AiRunner]     name="" counters="CPU cycles"[54401, 194421, 3488] dur=0.315ms id=18.18 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=17, name=EpochBlock_19)
+[D:AiRunner]     name="" counters="CPU cycles"[15777, 60689, 3235] dur=0.100ms id=19.19 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=18, name=EpochBlock_20)
+[D:AiRunner]     name="" counters="CPU cycles"[53473, 153394, 2938] dur=0.262ms id=20.20 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=19, name=EpochBlock_21)
+[D:AiRunner]     name="" counters="CPU cycles"[51937, 152689, 2283] dur=0.259ms id=21.21 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=20, name=EpochBlock_22)
+[D:AiRunner]     name="" counters="CPU cycles"[22281, 45449, 2571] dur=0.088ms id=22.22 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=21, name=EpochBlock_23)
+[D:AiRunner]     name="" counters="CPU cycles"[102279, 81347, 4304] dur=0.235ms id=23.23 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=22, name=EpochBlock_24)
+[D:AiRunner]     name="" counters="CPU cycles"[98025, 89193, 2379] dur=0.237ms id=24.24 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=23, name=EpochBlock_25)
+[D:AiRunner]     name="" counters="CPU cycles"[26681, 87675, 4539] dur=0.149ms id=25.25 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=24, name=EpochBlock_26)
+[D:AiRunner]     name="" counters="CPU cycles"[102233, 81347, 4272] dur=0.235ms id=26.26 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=25, name=EpochBlock_27)
+[D:AiRunner]     name="" counters="CPU cycles"[98401, 89193, 2328] dur=0.237ms id=27.27 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=26, name=EpochBlock_28)
+[D:AiRunner]     name="" counters="CPU cycles"[26561, 87801, 4539] dur=0.149ms id=28.28 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=27, name=EpochBlock_29)
+[D:AiRunner]     name="" counters="CPU cycles"[102073, 81033, 4243] dur=0.234ms id=29.29 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=28, name=EpochBlock_30)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 97753, 715] dur=0.126ms id=30.30 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=29, name=EpochBlock_31)
+[D:AiRunner]     name="" counters="CPU cycles"[101073, 106609, 3513] dur=0.264ms id=31.31 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=30, name=EpochBlock_32)
+[D:AiRunner]     name="" counters="CPU cycles"[31465, 118099, 3968] dur=0.192ms id=32.32 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=31, name=EpochBlock_33)
+[D:AiRunner]     name="" counters="CPU cycles"[1921, 9561, 755] dur=0.015ms id=33.33 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=32, name=EpochBlock_34)
+[D:AiRunner]     name="" counters="CPU cycles"[12305, 418249, 5387] dur=0.545ms id=34.34 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=33, name=EpochBlock_35)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 136633, 715] dur=0.174ms id=35.35 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=34, name=EpochBlock_36)
+[D:AiRunner]     name="" counters="CPU cycles"[9009, 648201, 4115] dur=0.827ms id=36.36 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=35, name=EpochBlock_37)
+[D:AiRunner]     name="" counters="CPU cycles"[32697, 160017, 4531] dur=0.247ms id=37.37 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=36, name=EpochBlock_38)
+[D:AiRunner]     name="" counters="CPU cycles"[1881, 9521, 755] dur=0.015ms id=38.38 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=37, name=EpochBlock_39)
+[D:AiRunner]     name="" counters="CPU cycles"[12401, 427217, 5496] dur=0.556ms id=39.39 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=38, name=EpochBlock_40)
+[D:AiRunner]     name="" counters="CPU cycles"[1985, 136633, 795] dur=0.174ms id=40.40 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=39, name=EpochBlock_41)
+[D:AiRunner]     name="" counters="CPU cycles"[9113, 648769, 4139] dur=0.828ms id=41.41 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=40, name=EpochBlock_42)
+[D:AiRunner]     name="" counters="CPU cycles"[32961, 159841, 4491] dur=0.247ms id=42.42 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=41, name=EpochBlock_43)
+[D:AiRunner]     name="" counters="CPU cycles"[1881, 9521, 755] dur=0.015ms id=43.43 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=42, name=EpochBlock_44)
+[D:AiRunner]     name="" counters="CPU cycles"[12153, 418361, 5459] dur=0.545ms id=44.44 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=43, name=EpochBlock_45)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 136633, 755] dur=0.174ms id=45.45 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=44, name=EpochBlock_46)
+[D:AiRunner]     name="" counters="CPU cycles"[9137, 300185, 4224] dur=0.392ms id=46.46 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=45, name=EpochBlock_47)
+[D:AiRunner]     name="" counters="CPU cycles"[46702, 260620, 3939] dur=0.389ms id=47.47 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=46, name=EpochBlock_48)
+[D:AiRunner]     name="" counters="CPU cycles"[12209, 541065, 5496] dur=0.698ms id=48.48 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=47, name=EpochBlock_49)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 81193, 755] dur=0.105ms id=49.49 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=48, name=EpochBlock_50)
+[D:AiRunner]     name="" counters="CPU cycles"[9273, 501905, 4059] dur=0.644ms id=50.50 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=49, name=EpochBlock_51)
+[D:AiRunner]     name="" counters="CPU cycles"[48238, 445436, 4427] dur=0.623ms id=51.51 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=50, name=EpochBlock_52)
+[D:AiRunner]     name="" counters="CPU cycles"[12185, 533957, 5521] dur=0.690ms id=52.52 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=51, name=EpochBlock_53)
+[D:AiRunner]     name="" counters="CPU cycles"[1977, 81177, 715] dur=0.105ms id=53.53 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=52, name=EpochBlock_54)
+[D:AiRunner]     name="" counters="CPU cycles"[8969, 499721, 4115] dur=0.641ms id=54.54 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=53, name=EpochBlock_55)
+[D:AiRunner]     name="" counters="CPU cycles"[47966, 445263, 4507] dur=0.622ms id=55.55 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=54, name=EpochBlock_56)
+[D:AiRunner]     name="" counters="CPU cycles"[12285, 540100, 5459] dur=0.697ms id=56.56 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=55, name=EpochBlock_57)
+[D:AiRunner]     name="" counters="CPU cycles"[1825, 81201, 755] dur=0.105ms id=57.57 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=56, name=EpochBlock_58)
+[D:AiRunner]     name="" counters="CPU cycles"[9145, 502441, 4139] dur=0.645ms id=58.58 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=57, name=EpochBlock_59)
+[D:AiRunner]     name="" counters="CPU cycles"[47785, 445129, 4529] dur=0.622ms id=59.59 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=58, name=EpochBlock_60)
+[D:AiRunner]     name="" counters="CPU cycles"[12209, 533561, 5488] dur=0.689ms id=60.60 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=59, name=EpochBlock_61)
+[D:AiRunner]     name="" counters="CPU cycles"[6961, 346977, 3235] dur=0.446ms id=61.61 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=60, name=EpochBlock_62)
+[D:AiRunner]     name="" counters="CPU cycles"[8625, 1681, 3739] dur=0.018ms id=62.62 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=61, name=EpochBlock_63)
+[D:AiRunner]     name="" counters="CPU cycles"[18553, 468065, 5083] dur=0.615ms id=63.63 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=62, name=EpochBlock_64)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 75, 3898] dur=0.005ms id=64.64 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, E.64.0, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=63, name=EpochBlock_65)
+[D:AiRunner]     name="" counters="CPU cycles"[16257, 3281, 3584] dur=0.029ms id=65.65 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=64, name=EpochBlock_66)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 3281] dur=0.004ms id=66.66 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, E.66.0, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=65, name=EpochBlock_67)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 2869] dur=0.004ms id=67.67 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, E.67.0, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=66, name=EpochBlock_68)
+[D:AiRunner]     name="" counters="CPU cycles"[4561, 563, 1718] dur=0.009ms id=68.68 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=67, name=EpochBlock_69)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 2293] dur=0.003ms id=69.69 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, E.69.0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INFERENCE DONE
+[D:AiRunner]     name="network" counters="CPU cycles"[1658626, 16098206, 211336, 17980568, 0] dur=22.476ms id=0.0 type=0x0/NONE,"epoch"
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #0 last=False..
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, O_0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #1 last=False..
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, O_1, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #2 last=False..
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, O_2, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #3 last=True..
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, O_3, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner] <- done (target dur=22.460ms)
+[D:AiRunner] -> Requested RUN mode: Mode.DEBUG|PER_LAYER (param=0b100000011, option=0x0)
+[D:AiRunner]    SEND INPUT TENSOR #0 ((1, 224, 224, 3)/uint8) last=True..
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=0, name=EpochBlock_2)
+[D:AiRunner]     name="" counters="CPU cycles"[3519, 121245, 1607] dur=0.158ms id=2.2 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=1, name=EpochBlock_3)
+[D:AiRunner]     name="" counters="CPU cycles"[15449, 363893, 3255] dur=0.478ms id=3.3 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=2, name=EpochBlock_4)
+[D:AiRunner]     name="" counters="CPU cycles"[5665, 241689, 1441] dur=0.311ms id=4.4 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=3, name=EpochBlock_5)
+[D:AiRunner]     name="" counters="CPU cycles"[8585, 242537, 2027] dur=0.316ms id=5.5 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=4, name=EpochBlock_6)
+[D:AiRunner]     name="" counters="CPU cycles"[18401, 644329, 2331] dur=0.831ms id=6.6 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=5, name=EpochBlock_7)
+[D:AiRunner]     name="" counters="CPU cycles"[17897, 643325, 2316] dur=0.829ms id=7.7 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=6, name=EpochBlock_8)
+[D:AiRunner]     name="" counters="CPU cycles"[9625, 64111, 1989] dur=0.095ms id=8.8 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=7, name=EpochBlock_9)
+[D:AiRunner]     name="" counters="CPU cycles"[33817, 363983, 2331] dur=0.500ms id=9.9 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=8, name=EpochBlock_10)
+[D:AiRunner]     name="" counters="CPU cycles"[33441, 377401, 2350] dur=0.516ms id=10.10 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=9, name=EpochBlock_11)
+[D:AiRunner]     name="" counters="CPU cycles"[12257, 67953, 3323] dur=0.104ms id=11.11 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=10, name=EpochBlock_12)
+[D:AiRunner]     name="" counters="CPU cycles"[33729, 363857, 2364] dur=0.500ms id=12.12 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=11, name=EpochBlock_13)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 405681, 832] dur=0.511ms id=13.13 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=12, name=EpochBlock_14)
+[D:AiRunner]     name="" counters="CPU cycles"[36649, 366673, 3608] dur=0.509ms id=14.14 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=13, name=EpochBlock_15)
+[D:AiRunner]     name="" counters="CPU cycles"[14361, 36585, 2627] dur=0.067ms id=15.15 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=14, name=EpochBlock_16)
+[D:AiRunner]     name="" counters="CPU cycles"[53361, 153529, 2931] dur=0.262ms id=16.16 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=15, name=EpochBlock_17)
+[D:AiRunner]     name="" counters="CPU cycles"[1945, 181921, 755] dur=0.231ms id=17.17 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=16, name=EpochBlock_18)
+[D:AiRunner]     name="" counters="CPU cycles"[54681, 194489, 3544] dur=0.316ms id=18.18 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=17, name=EpochBlock_19)
+[D:AiRunner]     name="" counters="CPU cycles"[15705, 60689, 3235] dur=0.100ms id=19.19 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=18, name=EpochBlock_20)
+[D:AiRunner]     name="" counters="CPU cycles"[53559, 153356, 2975] dur=0.262ms id=20.20 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=19, name=EpochBlock_21)
+[D:AiRunner]     name="" counters="CPU cycles"[51897, 152651, 2235] dur=0.258ms id=21.21 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=20, name=EpochBlock_22)
+[D:AiRunner]     name="" counters="CPU cycles"[22777, 45530, 2570] dur=0.089ms id=22.22 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=21, name=EpochBlock_23)
+[D:AiRunner]     name="" counters="CPU cycles"[102201, 81385, 4259] dur=0.235ms id=23.23 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=22, name=EpochBlock_24)
+[D:AiRunner]     name="" counters="CPU cycles"[98121, 89314, 2407] dur=0.237ms id=24.24 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=23, name=EpochBlock_25)
+[D:AiRunner]     name="" counters="CPU cycles"[26417, 87753, 4539] dur=0.148ms id=25.25 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=24, name=EpochBlock_26)
+[D:AiRunner]     name="" counters="CPU cycles"[102302, 81311, 4272] dur=0.235ms id=26.26 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=25, name=EpochBlock_27)
+[D:AiRunner]     name="" counters="CPU cycles"[98735, 89155, 2402] dur=0.238ms id=27.27 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=26, name=EpochBlock_28)
+[D:AiRunner]     name="" counters="CPU cycles"[26433, 87761, 4576] dur=0.148ms id=28.28 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=27, name=EpochBlock_29)
+[D:AiRunner]     name="" counters="CPU cycles"[102049, 81033, 4248] dur=0.234ms id=29.29 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=28, name=EpochBlock_30)
+[D:AiRunner]     name="" counters="CPU cycles"[1977, 97753, 715] dur=0.126ms id=30.30 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=29, name=EpochBlock_31)
+[D:AiRunner]     name="" counters="CPU cycles"[101191, 106531, 3552] dur=0.264ms id=31.31 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=30, name=EpochBlock_32)
+[D:AiRunner]     name="" counters="CPU cycles"[31345, 118139, 3931] dur=0.192ms id=32.32 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=31, name=EpochBlock_33)
+[D:AiRunner]     name="" counters="CPU cycles"[1849, 9521, 755] dur=0.015ms id=33.33 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=32, name=EpochBlock_34)
+[D:AiRunner]     name="" counters="CPU cycles"[12278, 418140, 5387] dur=0.545ms id=34.34 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=33, name=EpochBlock_35)
+[D:AiRunner]     name="" counters="CPU cycles"[1857, 136641, 715] dur=0.174ms id=35.35 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=34, name=EpochBlock_36)
+[D:AiRunner]     name="" counters="CPU cycles"[9017, 648177, 4115] dur=0.827ms id=36.36 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=35, name=EpochBlock_37)
+[D:AiRunner]     name="" counters="CPU cycles"[32545, 160017, 4539] dur=0.246ms id=37.37 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=36, name=EpochBlock_38)
+[D:AiRunner]     name="" counters="CPU cycles"[1929, 9521, 792] dur=0.015ms id=38.38 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=37, name=EpochBlock_39)
+[D:AiRunner]     name="" counters="CPU cycles"[12431, 426771, 5574] dur=0.556ms id=39.39 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=38, name=EpochBlock_40)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 136649, 755] dur=0.174ms id=40.40 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=39, name=EpochBlock_41)
+[D:AiRunner]     name="" counters="CPU cycles"[9001, 648651, 4179] dur=0.827ms id=41.41 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=40, name=EpochBlock_42)
+[D:AiRunner]     name="" counters="CPU cycles"[32406, 159804, 4427] dur=0.246ms id=42.42 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=41, name=EpochBlock_43)
+[D:AiRunner]     name="" counters="CPU cycles"[1881, 9521, 755] dur=0.015ms id=43.43 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=42, name=EpochBlock_44)
+[D:AiRunner]     name="" counters="CPU cycles"[12185, 418457, 5427] dur=0.545ms id=44.44 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=43, name=EpochBlock_45)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 136641, 755] dur=0.174ms id=45.45 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=44, name=EpochBlock_46)
+[D:AiRunner]     name="" counters="CPU cycles"[9065, 300361, 4187] dur=0.392ms id=46.46 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=45, name=EpochBlock_47)
+[D:AiRunner]     name="" counters="CPU cycles"[46588, 260582, 3939] dur=0.389ms id=47.47 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=46, name=EpochBlock_48)
+[D:AiRunner]     name="" counters="CPU cycles"[12225, 543307, 5496] dur=0.701ms id=48.48 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=47, name=EpochBlock_49)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 81185, 795] dur=0.105ms id=49.49 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=48, name=EpochBlock_50)
+[D:AiRunner]     name="" counters="CPU cycles"[9289, 502049, 4059] dur=0.644ms id=50.50 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=49, name=EpochBlock_51)
+[D:AiRunner]     name="" counters="CPU cycles"[47729, 445473, 4491] dur=0.622ms id=51.51 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=50, name=EpochBlock_52)
+[D:AiRunner]     name="" counters="CPU cycles"[12113, 533955, 5425] dur=0.689ms id=52.52 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=51, name=EpochBlock_53)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 81177, 752] dur=0.105ms id=53.53 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=52, name=EpochBlock_54)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 499993, 4115] dur=0.641ms id=54.54 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=53, name=EpochBlock_55)
+[D:AiRunner]     name="" counters="CPU cycles"[47883, 445422, 4504] dur=0.622ms id=55.55 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=54, name=EpochBlock_56)
+[D:AiRunner]     name="" counters="CPU cycles"[12217, 541113, 5459] dur=0.698ms id=56.56 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=55, name=EpochBlock_57)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 81177, 755] dur=0.105ms id=57.57 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=56, name=EpochBlock_58)
+[D:AiRunner]     name="" counters="CPU cycles"[9161, 502406, 4176] dur=0.645ms id=58.58 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=57, name=EpochBlock_59)
+[D:AiRunner]     name="" counters="CPU cycles"[47665, 445172, 4470] dur=0.622ms id=59.59 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=58, name=EpochBlock_60)
+[D:AiRunner]     name="" counters="CPU cycles"[12113, 533569, 5525] dur=0.689ms id=60.60 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=59, name=EpochBlock_61)
+[D:AiRunner]     name="" counters="CPU cycles"[6993, 346977, 3272] dur=0.447ms id=61.61 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=60, name=EpochBlock_62)
+[D:AiRunner]     name="" counters="CPU cycles"[8569, 1722, 3738] dur=0.018ms id=62.62 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=61, name=EpochBlock_63)
+[D:AiRunner]     name="" counters="CPU cycles"[18494, 468076, 5083] dur=0.615ms id=63.63 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=62, name=EpochBlock_64)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 75, 3858] dur=0.005ms id=64.64 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, E.64.0, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=63, name=EpochBlock_65)
+[D:AiRunner]     name="" counters="CPU cycles"[15857, 3281, 3616] dur=0.028ms id=65.65 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=64, name=EpochBlock_66)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 3357] dur=0.004ms id=66.66 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, E.66.0, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=65, name=EpochBlock_67)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 2829] dur=0.004ms id=67.67 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, E.67.0, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=66, name=EpochBlock_68)
+[D:AiRunner]     name="" counters="CPU cycles"[4561, 563, 1750] dur=0.009ms id=68.68 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=67, name=EpochBlock_69)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 2293] dur=0.003ms id=69.69 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, E.69.0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INFERENCE DONE
+[D:AiRunner]     name="network" counters="CPU cycles"[1656673, 16101816, 211666, 17982630, 0] dur=22.478ms id=0.0 type=0x0/NONE,"epoch"
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #0 last=False..
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, O_0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #1 last=False..
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, O_1, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #2 last=False..
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, O_2, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #3 last=True..
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, O_3, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner] <- done (target dur=22.463ms)
+[D:AiRunner] -> Requested RUN mode: Mode.DEBUG|PER_LAYER (param=0b100000011, option=0x0)
+[D:AiRunner]    SEND INPUT TENSOR #0 ((1, 224, 224, 3)/uint8) last=True..
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=0, name=EpochBlock_2)
+[D:AiRunner]     name="" counters="CPU cycles"[3515, 121281, 1645] dur=0.158ms id=2.2 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=1, name=EpochBlock_3)
+[D:AiRunner]     name="" counters="CPU cycles"[15369, 363857, 3251] dur=0.478ms id=3.3 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=2, name=EpochBlock_4)
+[D:AiRunner]     name="" counters="CPU cycles"[5649, 241689, 1401] dur=0.311ms id=4.4 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=3, name=EpochBlock_5)
+[D:AiRunner]     name="" counters="CPU cycles"[8793, 242537, 2027] dur=0.317ms id=5.5 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=4, name=EpochBlock_6)
+[D:AiRunner]     name="" counters="CPU cycles"[18513, 644372, 2328] dur=0.832ms id=6.6 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=5, name=EpochBlock_7)
+[D:AiRunner]     name="" counters="CPU cycles"[17945, 643325, 2279] dur=0.829ms id=7.7 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=6, name=EpochBlock_8)
+[D:AiRunner]     name="" counters="CPU cycles"[9593, 64111, 1989] dur=0.095ms id=8.8 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=7, name=EpochBlock_9)
+[D:AiRunner]     name="" counters="CPU cycles"[33833, 363983, 2293] dur=0.500ms id=9.9 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=8, name=EpochBlock_10)
+[D:AiRunner]     name="" counters="CPU cycles"[33489, 377439, 2355] dur=0.517ms id=10.10 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=9, name=EpochBlock_11)
+[D:AiRunner]     name="" counters="CPU cycles"[12289, 67991, 3285] dur=0.104ms id=11.11 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=10, name=EpochBlock_12)
+[D:AiRunner]     name="" counters="CPU cycles"[33441, 363857, 2426] dur=0.500ms id=12.12 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=11, name=EpochBlock_13)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 405673, 832] dur=0.511ms id=13.13 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=12, name=EpochBlock_14)
+[D:AiRunner]     name="" counters="CPU cycles"[36513, 366697, 3684] dur=0.509ms id=14.14 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=13, name=EpochBlock_15)
+[D:AiRunner]     name="" counters="CPU cycles"[14433, 36585, 2664] dur=0.067ms id=15.15 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=14, name=EpochBlock_16)
+[D:AiRunner]     name="" counters="CPU cycles"[53833, 153527, 2933] dur=0.263ms id=16.16 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=15, name=EpochBlock_17)
+[D:AiRunner]     name="" counters="CPU cycles"[1945, 181873, 755] dur=0.231ms id=17.17 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=16, name=EpochBlock_18)
+[D:AiRunner]     name="" counters="CPU cycles"[54929, 194521, 3488] dur=0.316ms id=18.18 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=17, name=EpochBlock_19)
+[D:AiRunner]     name="" counters="CPU cycles"[15641, 60689, 3235] dur=0.099ms id=19.19 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=18, name=EpochBlock_20)
+[D:AiRunner]     name="" counters="CPU cycles"[53550, 153319, 3011] dur=0.262ms id=20.20 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=19, name=EpochBlock_21)
+[D:AiRunner]     name="" counters="CPU cycles"[51825, 152689, 2235] dur=0.258ms id=21.21 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=20, name=EpochBlock_22)
+[D:AiRunner]     name="" counters="CPU cycles"[22281, 45449, 2627] dur=0.088ms id=22.22 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=21, name=EpochBlock_23)
+[D:AiRunner]     name="" counters="CPU cycles"[102225, 81385, 4273] dur=0.235ms id=23.23 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=22, name=EpochBlock_24)
+[D:AiRunner]     name="" counters="CPU cycles"[98553, 89236, 2320] dur=0.238ms id=24.24 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=23, name=EpochBlock_25)
+[D:AiRunner]     name="" counters="CPU cycles"[26697, 87753, 4539] dur=0.149ms id=25.25 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=24, name=EpochBlock_26)
+[D:AiRunner]     name="" counters="CPU cycles"[102366, 81388, 4235] dur=0.235ms id=26.26 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=25, name=EpochBlock_27)
+[D:AiRunner]     name="" counters="CPU cycles"[98329, 89193, 2329] dur=0.237ms id=27.27 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=26, name=EpochBlock_28)
+[D:AiRunner]     name="" counters="CPU cycles"[26993, 87761, 4595] dur=0.149ms id=28.28 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=27, name=EpochBlock_29)
+[D:AiRunner]     name="" counters="CPU cycles"[102089, 81076, 4245] dur=0.234ms id=29.29 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=28, name=EpochBlock_30)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 97761, 715] dur=0.126ms id=30.30 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=29, name=EpochBlock_31)
+[D:AiRunner]     name="" counters="CPU cycles"[100751, 106531, 3526] dur=0.264ms id=31.31 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=30, name=EpochBlock_32)
+[D:AiRunner]     name="" counters="CPU cycles"[31393, 118182, 3928] dur=0.192ms id=32.32 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=31, name=EpochBlock_33)
+[D:AiRunner]     name="" counters="CPU cycles"[1849, 9521, 755] dur=0.015ms id=33.33 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=32, name=EpochBlock_34)
+[D:AiRunner]     name="" counters="CPU cycles"[12337, 418345, 5451] dur=0.545ms id=34.34 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=33, name=EpochBlock_35)
+[D:AiRunner]     name="" counters="CPU cycles"[1857, 136657, 715] dur=0.174ms id=35.35 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=34, name=EpochBlock_36)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 648177, 4115] dur=0.827ms id=36.36 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=35, name=EpochBlock_37)
+[D:AiRunner]     name="" counters="CPU cycles"[33017, 160017, 4531] dur=0.247ms id=37.37 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=36, name=EpochBlock_38)
+[D:AiRunner]     name="" counters="CPU cycles"[1881, 9521, 755] dur=0.015ms id=38.38 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=37, name=EpochBlock_39)
+[D:AiRunner]     name="" counters="CPU cycles"[12399, 427059, 5536] dur=0.556ms id=39.39 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=38, name=EpochBlock_40)
+[D:AiRunner]     name="" counters="CPU cycles"[1905, 136657, 795] dur=0.174ms id=40.40 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=39, name=EpochBlock_41)
+[D:AiRunner]     name="" counters="CPU cycles"[9041, 648505, 4139] dur=0.827ms id=41.41 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=40, name=EpochBlock_42)
+[D:AiRunner]     name="" counters="CPU cycles"[32465, 159841, 4427] dur=0.246ms id=42.42 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=41, name=EpochBlock_43)
+[D:AiRunner]     name="" counters="CPU cycles"[1921, 9521, 755] dur=0.015ms id=43.43 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=42, name=EpochBlock_44)
+[D:AiRunner]     name="" counters="CPU cycles"[12193, 418457, 5459] dur=0.545ms id=44.44 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=43, name=EpochBlock_45)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 136649, 755] dur=0.174ms id=45.45 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=44, name=EpochBlock_46)
+[D:AiRunner]     name="" counters="CPU cycles"[9097, 300145, 4262] dur=0.392ms id=46.46 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=45, name=EpochBlock_47)
+[D:AiRunner]     name="" counters="CPU cycles"[46774, 260628, 3939] dur=0.389ms id=47.47 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=46, name=EpochBlock_48)
+[D:AiRunner]     name="" counters="CPU cycles"[12193, 542396, 5493] dur=0.700ms id=48.48 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=47, name=EpochBlock_49)
+[D:AiRunner]     name="" counters="CPU cycles"[2009, 81177, 795] dur=0.105ms id=49.49 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=48, name=EpochBlock_50)
+[D:AiRunner]     name="" counters="CPU cycles"[9289, 501929, 4123] dur=0.644ms id=50.50 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=49, name=EpochBlock_51)
+[D:AiRunner]     name="" counters="CPU cycles"[48105, 445473, 4491] dur=0.623ms id=51.51 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=50, name=EpochBlock_52)
+[D:AiRunner]     name="" counters="CPU cycles"[12193, 534031, 5488] dur=0.690ms id=52.52 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=51, name=EpochBlock_53)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 81177, 715] dur=0.105ms id=53.53 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=52, name=EpochBlock_54)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 499817, 4115] dur=0.641ms id=54.54 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=53, name=EpochBlock_55)
+[D:AiRunner]     name="" counters="CPU cycles"[47958, 445372, 4507] dur=0.622ms id=55.55 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=54, name=EpochBlock_56)
+[D:AiRunner]     name="" counters="CPU cycles"[12309, 540148, 5459] dur=0.697ms id=56.56 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=55, name=EpochBlock_57)
+[D:AiRunner]     name="" counters="CPU cycles"[1896, 81169, 755] dur=0.105ms id=57.57 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=56, name=EpochBlock_58)
+[D:AiRunner]     name="" counters="CPU cycles"[9113, 502324, 4176] dur=0.645ms id=58.58 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=57, name=EpochBlock_59)
+[D:AiRunner]     name="" counters="CPU cycles"[47881, 445129, 4427] dur=0.622ms id=59.59 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=58, name=EpochBlock_60)
+[D:AiRunner]     name="" counters="CPU cycles"[12177, 533609, 5424] dur=0.689ms id=60.60 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=59, name=EpochBlock_61)
+[D:AiRunner]     name="" counters="CPU cycles"[7073, 346937, 3272] dur=0.447ms id=61.61 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=60, name=EpochBlock_62)
+[D:AiRunner]     name="" counters="CPU cycles"[8646, 1685, 3738] dur=0.018ms id=62.62 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=61, name=EpochBlock_63)
+[D:AiRunner]     name="" counters="CPU cycles"[18249, 468153, 5083] dur=0.614ms id=63.63 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=62, name=EpochBlock_64)
+[D:AiRunner]     name="" counters="CPU cycles"[82, 76, 3959] dur=0.005ms id=64.64 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, E.64.0, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=63, name=EpochBlock_65)
+[D:AiRunner]     name="" counters="CPU cycles"[15785, 3321, 3576] dur=0.028ms id=65.65 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=64, name=EpochBlock_66)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 3351] dur=0.004ms id=66.66 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, E.66.0, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=65, name=EpochBlock_67)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 2829] dur=0.004ms id=67.67 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, E.67.0, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=66, name=EpochBlock_68)
+[D:AiRunner]     name="" counters="CPU cycles"[4561, 606, 1710] dur=0.009ms id=68.68 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=67, name=EpochBlock_69)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 2291] dur=0.003ms id=69.69 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, E.69.0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INFERENCE DONE
+[D:AiRunner]     name="network" counters="CPU cycles"[1658877, 16100067, 211614, 17982919, 0] dur=22.479ms id=0.0 type=0x0/NONE,"epoch"
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #0 last=False..
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, O_0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #1 last=False..
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, O_1, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #2 last=False..
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, O_2, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #3 last=True..
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, O_3, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner] <- done (target dur=22.463ms)
+[D:AiRunner] -> Requested RUN mode: Mode.DEBUG|PER_LAYER (param=0b100000011, option=0x0)
+[D:AiRunner]    SEND INPUT TENSOR #0 ((1, 224, 224, 3)/uint8) last=True..
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=0, name=EpochBlock_2)
+[D:AiRunner]     name="" counters="CPU cycles"[3523, 121204, 1640] dur=0.158ms id=2.2 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=1, name=EpochBlock_3)
+[D:AiRunner]     name="" counters="CPU cycles"[15401, 363857, 3259] dur=0.478ms id=3.3 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=2, name=EpochBlock_4)
+[D:AiRunner]     name="" counters="CPU cycles"[5633, 241689, 1441] dur=0.311ms id=4.4 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=3, name=EpochBlock_5)
+[D:AiRunner]     name="" counters="CPU cycles"[8617, 242575, 2029] dur=0.317ms id=5.5 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=4, name=EpochBlock_6)
+[D:AiRunner]     name="" counters="CPU cycles"[18433, 644329, 2331] dur=0.831ms id=6.6 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=5, name=EpochBlock_7)
+[D:AiRunner]     name="" counters="CPU cycles"[17865, 643325, 2327] dur=0.829ms id=7.7 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=6, name=EpochBlock_8)
+[D:AiRunner]     name="" counters="CPU cycles"[9569, 64111, 1989] dur=0.095ms id=8.8 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=7, name=EpochBlock_9)
+[D:AiRunner]     name="" counters="CPU cycles"[33753, 363945, 2329] dur=0.500ms id=9.9 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=8, name=EpochBlock_10)
+[D:AiRunner]     name="" counters="CPU cycles"[33473, 377401, 2350] dur=0.517ms id=10.10 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=9, name=EpochBlock_11)
+[D:AiRunner]     name="" counters="CPU cycles"[12289, 67953, 3283] dur=0.104ms id=11.11 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=10, name=EpochBlock_12)
+[D:AiRunner]     name="" counters="CPU cycles"[33489, 363857, 2392] dur=0.500ms id=12.12 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=11, name=EpochBlock_13)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 405689, 795] dur=0.510ms id=13.13 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=12, name=EpochBlock_14)
+[D:AiRunner]     name="" counters="CPU cycles"[36081, 366697, 3608] dur=0.508ms id=14.14 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=13, name=EpochBlock_15)
+[D:AiRunner]     name="" counters="CPU cycles"[14409, 36623, 2573] dur=0.067ms id=15.15 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=14, name=EpochBlock_16)
+[D:AiRunner]     name="" counters="CPU cycles"[53793, 153566, 2917] dur=0.263ms id=16.16 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=15, name=EpochBlock_17)
+[D:AiRunner]     name="" counters="CPU cycles"[1985, 181929, 755] dur=0.231ms id=17.17 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=16, name=EpochBlock_18)
+[D:AiRunner]     name="" counters="CPU cycles"[54577, 194481, 3544] dur=0.316ms id=18.18 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=17, name=EpochBlock_19)
+[D:AiRunner]     name="" counters="CPU cycles"[15985, 60694, 3232] dur=0.100ms id=19.19 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=18, name=EpochBlock_20)
+[D:AiRunner]     name="" counters="CPU cycles"[53262, 153316, 2976] dur=0.262ms id=20.20 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=19, name=EpochBlock_21)
+[D:AiRunner]     name="" counters="CPU cycles"[52001, 152689, 2275] dur=0.259ms id=21.21 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=20, name=EpochBlock_22)
+[D:AiRunner]     name="" counters="CPU cycles"[22545, 45449, 2571] dur=0.088ms id=22.22 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=21, name=EpochBlock_23)
+[D:AiRunner]     name="" counters="CPU cycles"[102271, 81347, 4372] dur=0.235ms id=23.23 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=22, name=EpochBlock_24)
+[D:AiRunner]     name="" counters="CPU cycles"[98399, 89233, 2349] dur=0.237ms id=24.24 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=23, name=EpochBlock_25)
+[D:AiRunner]     name="" counters="CPU cycles"[26361, 87713, 4539] dur=0.148ms id=25.25 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=24, name=EpochBlock_26)
+[D:AiRunner]     name="" counters="CPU cycles"[102233, 81385, 4235] dur=0.235ms id=26.26 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=25, name=EpochBlock_27)
+[D:AiRunner]     name="" counters="CPU cycles"[98375, 89155, 2390] dur=0.237ms id=27.27 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=26, name=EpochBlock_28)
+[D:AiRunner]     name="" counters="CPU cycles"[26473, 87753, 4539] dur=0.148ms id=28.28 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=27, name=EpochBlock_29)
+[D:AiRunner]     name="" counters="CPU cycles"[102065, 81033, 4310] dur=0.234ms id=29.29 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=28, name=EpochBlock_30)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 97761, 715] dur=0.126ms id=30.30 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=29, name=EpochBlock_31)
+[D:AiRunner]     name="" counters="CPU cycles"[101009, 106569, 3614] dur=0.264ms id=31.31 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=30, name=EpochBlock_32)
+[D:AiRunner]     name="" counters="CPU cycles"[31937, 118180, 3928] dur=0.193ms id=32.32 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=31, name=EpochBlock_33)
+[D:AiRunner]     name="" counters="CPU cycles"[1921, 9553, 755] dur=0.015ms id=33.33 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=32, name=EpochBlock_34)
+[D:AiRunner]     name="" counters="CPU cycles"[12225, 418257, 5387] dur=0.545ms id=34.34 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=33, name=EpochBlock_35)
+[D:AiRunner]     name="" counters="CPU cycles"[1857, 136649, 715] dur=0.174ms id=35.35 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=34, name=EpochBlock_36)
+[D:AiRunner]     name="" counters="CPU cycles"[9009, 648161, 4115] dur=0.827ms id=36.36 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=35, name=EpochBlock_37)
+[D:AiRunner]     name="" counters="CPU cycles"[32521, 160025, 4507] dur=0.246ms id=37.37 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=36, name=EpochBlock_38)
+[D:AiRunner]     name="" counters="CPU cycles"[1929, 9521, 755] dur=0.015ms id=38.38 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=37, name=EpochBlock_39)
+[D:AiRunner]     name="" counters="CPU cycles"[12401, 426993, 5499] dur=0.556ms id=39.39 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=38, name=EpochBlock_40)
+[D:AiRunner]     name="" counters="CPU cycles"[1905, 136684, 792] dur=0.174ms id=40.40 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=39, name=EpochBlock_41)
+[D:AiRunner]     name="" counters="CPU cycles"[9089, 648611, 4179] dur=0.827ms id=41.41 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=40, name=EpochBlock_42)
+[D:AiRunner]     name="" counters="CPU cycles"[32854, 159804, 4491] dur=0.246ms id=42.42 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=41, name=EpochBlock_43)
+[D:AiRunner]     name="" counters="CPU cycles"[1921, 9521, 795] dur=0.015ms id=43.43 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=42, name=EpochBlock_44)
+[D:AiRunner]     name="" counters="CPU cycles"[12185, 418417, 5427] dur=0.545ms id=44.44 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=43, name=EpochBlock_45)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 136649, 755] dur=0.174ms id=45.45 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=44, name=EpochBlock_46)
+[D:AiRunner]     name="" counters="CPU cycles"[9065, 300257, 4298] dur=0.392ms id=46.46 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=45, name=EpochBlock_47)
+[D:AiRunner]     name="" counters="CPU cycles"[46561, 260665, 3939] dur=0.389ms id=47.47 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=46, name=EpochBlock_48)
+[D:AiRunner]     name="" counters="CPU cycles"[12265, 538706, 5458] dur=0.696ms id=48.48 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=47, name=EpochBlock_49)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 81185, 755] dur=0.105ms id=49.49 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=48, name=EpochBlock_50)
+[D:AiRunner]     name="" counters="CPU cycles"[9305, 501793, 4123] dur=0.644ms id=50.50 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=49, name=EpochBlock_51)
+[D:AiRunner]     name="" counters="CPU cycles"[47793, 445473, 4491] dur=0.622ms id=51.51 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=50, name=EpochBlock_52)
+[D:AiRunner]     name="" counters="CPU cycles"[12185, 534037, 5488] dur=0.690ms id=52.52 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=51, name=EpochBlock_53)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 81185, 752] dur=0.105ms id=53.53 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=52, name=EpochBlock_54)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 499905, 4115] dur=0.641ms id=54.54 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=53, name=EpochBlock_55)
+[D:AiRunner]     name="" counters="CPU cycles"[47886, 445295, 4507] dur=0.622ms id=55.55 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=54, name=EpochBlock_56)
+[D:AiRunner]     name="" counters="CPU cycles"[12457, 540145, 5459] dur=0.698ms id=56.56 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=55, name=EpochBlock_57)
+[D:AiRunner]     name="" counters="CPU cycles"[1969, 81193, 755] dur=0.105ms id=57.57 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=56, name=EpochBlock_58)
+[D:AiRunner]     name="" counters="CPU cycles"[9233, 501993, 4139] dur=0.644ms id=58.58 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=57, name=EpochBlock_59)
+[D:AiRunner]     name="" counters="CPU cycles"[48665, 445129, 4465] dur=0.623ms id=59.59 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=58, name=EpochBlock_60)
+[D:AiRunner]     name="" counters="CPU cycles"[12225, 533553, 5489] dur=0.689ms id=60.60 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=59, name=EpochBlock_61)
+[D:AiRunner]     name="" counters="CPU cycles"[6889, 346939, 3235] dur=0.446ms id=61.61 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=60, name=EpochBlock_62)
+[D:AiRunner]     name="" counters="CPU cycles"[8622, 1685, 3738] dur=0.018ms id=62.62 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=61, name=EpochBlock_63)
+[D:AiRunner]     name="" counters="CPU cycles"[18249, 468057, 5083] dur=0.614ms id=63.63 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=62, name=EpochBlock_64)
+[D:AiRunner]     name="" counters="CPU cycles"[82, 36, 3894] dur=0.005ms id=64.64 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, E.64.0, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=63, name=EpochBlock_65)
+[D:AiRunner]     name="" counters="CPU cycles"[15753, 3321, 3547] dur=0.028ms id=65.65 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=64, name=EpochBlock_66)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 3275] dur=0.004ms id=66.66 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, E.66.0, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=65, name=EpochBlock_67)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 2833] dur=0.004ms id=67.67 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, E.67.0, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=66, name=EpochBlock_68)
+[D:AiRunner]     name="" counters="CPU cycles"[4537, 563, 1746] dur=0.009ms id=68.68 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=67, name=EpochBlock_69)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 2263] dur=0.003ms id=69.69 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, E.69.0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INFERENCE DONE
+[D:AiRunner]     name="network" counters="CPU cycles"[1658111, 16095576, 211626, 17977908, 0] dur=22.472ms id=0.0 type=0x0/NONE,"epoch"
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #0 last=False..
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, O_0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #1 last=False..
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, O_1, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #2 last=False..
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, O_2, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #3 last=True..
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, O_3, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner] <- done (target dur=22.457ms)
+[D:AiRunner] -> Requested RUN mode: Mode.DEBUG|PER_LAYER (param=0b100000011, option=0x0)
+[D:AiRunner]    SEND INPUT TENSOR #0 ((1, 224, 224, 3)/uint8) last=True..
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=0, name=EpochBlock_2)
+[D:AiRunner]     name="" counters="CPU cycles"[3521, 121151, 1609] dur=0.158ms id=2.2 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=1, name=EpochBlock_3)
+[D:AiRunner]     name="" counters="CPU cycles"[15361, 363857, 3329] dur=0.478ms id=3.3 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=2, name=EpochBlock_4)
+[D:AiRunner]     name="" counters="CPU cycles"[5657, 241689, 1363] dur=0.311ms id=4.4 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=3, name=EpochBlock_5)
+[D:AiRunner]     name="" counters="CPU cycles"[8617, 242537, 1987] dur=0.316ms id=5.5 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=4, name=EpochBlock_6)
+[D:AiRunner]     name="" counters="CPU cycles"[18441, 644329, 2331] dur=0.831ms id=6.6 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=5, name=EpochBlock_7)
+[D:AiRunner]     name="" counters="CPU cycles"[17905, 643325, 2327] dur=0.829ms id=7.7 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=6, name=EpochBlock_8)
+[D:AiRunner]     name="" counters="CPU cycles"[9529, 64111, 1989] dur=0.095ms id=8.8 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=7, name=EpochBlock_9)
+[D:AiRunner]     name="" counters="CPU cycles"[33817, 363945, 2329] dur=0.500ms id=9.9 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=8, name=EpochBlock_10)
+[D:AiRunner]     name="" counters="CPU cycles"[33401, 377401, 2275] dur=0.516ms id=10.10 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=9, name=EpochBlock_11)
+[D:AiRunner]     name="" counters="CPU cycles"[12185, 67953, 3316] dur=0.104ms id=11.11 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=10, name=EpochBlock_12)
+[D:AiRunner]     name="" counters="CPU cycles"[33273, 363857, 2406] dur=0.499ms id=12.12 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=11, name=EpochBlock_13)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 405673, 795] dur=0.510ms id=13.13 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=12, name=EpochBlock_14)
+[D:AiRunner]     name="" counters="CPU cycles"[36145, 366689, 3608] dur=0.508ms id=14.14 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=13, name=EpochBlock_15)
+[D:AiRunner]     name="" counters="CPU cycles"[14337, 36585, 2571] dur=0.067ms id=15.15 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=14, name=EpochBlock_16)
+[D:AiRunner]     name="" counters="CPU cycles"[53601, 153489, 2912] dur=0.263ms id=16.16 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=15, name=EpochBlock_17)
+[D:AiRunner]     name="" counters="CPU cycles"[1985, 181940, 752] dur=0.231ms id=17.17 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=16, name=EpochBlock_18)
+[D:AiRunner]     name="" counters="CPU cycles"[54593, 194521, 3451] dur=0.316ms id=18.18 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=17, name=EpochBlock_19)
+[D:AiRunner]     name="" counters="CPU cycles"[15745, 60732, 3232] dur=0.100ms id=19.19 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=18, name=EpochBlock_20)
+[D:AiRunner]     name="" counters="CPU cycles"[53711, 153318, 2973] dur=0.263ms id=20.20 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=19, name=EpochBlock_21)
+[D:AiRunner]     name="" counters="CPU cycles"[52329, 152697, 2235] dur=0.259ms id=21.21 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=20, name=EpochBlock_22)
+[D:AiRunner]     name="" counters="CPU cycles"[22329, 45449, 2571] dur=0.088ms id=22.22 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=21, name=EpochBlock_23)
+[D:AiRunner]     name="" counters="CPU cycles"[102175, 81347, 4304] dur=0.235ms id=23.23 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=22, name=EpochBlock_24)
+[D:AiRunner]     name="" counters="CPU cycles"[98201, 89193, 2352] dur=0.237ms id=24.24 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=23, name=EpochBlock_25)
+[D:AiRunner]     name="" counters="CPU cycles"[26601, 87718, 4560] dur=0.149ms id=25.25 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=24, name=EpochBlock_26)
+[D:AiRunner]     name="" counters="CPU cycles"[102561, 81309, 4259] dur=0.235ms id=26.26 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=25, name=EpochBlock_27)
+[D:AiRunner]     name="" counters="CPU cycles"[98521, 89193, 2352] dur=0.238ms id=27.27 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=26, name=EpochBlock_28)
+[D:AiRunner]     name="" counters="CPU cycles"[26777, 87841, 4571] dur=0.149ms id=28.28 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=27, name=EpochBlock_29)
+[D:AiRunner]     name="" counters="CPU cycles"[102073, 81033, 4286] dur=0.234ms id=29.29 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=28, name=EpochBlock_30)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 97761, 752] dur=0.126ms id=30.30 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=29, name=EpochBlock_31)
+[D:AiRunner]     name="" counters="CPU cycles"[100887, 106491, 3550] dur=0.264ms id=31.31 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=30, name=EpochBlock_32)
+[D:AiRunner]     name="" counters="CPU cycles"[31409, 118174, 3928] dur=0.192ms id=32.32 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=31, name=EpochBlock_33)
+[D:AiRunner]     name="" counters="CPU cycles"[1921, 9521, 755] dur=0.015ms id=33.33 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=32, name=EpochBlock_34)
+[D:AiRunner]     name="" counters="CPU cycles"[12358, 418212, 5451] dur=0.545ms id=34.34 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=33, name=EpochBlock_35)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 136649, 715] dur=0.174ms id=35.35 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=34, name=EpochBlock_36)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 648329, 4115] dur=0.827ms id=36.36 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=35, name=EpochBlock_37)
+[D:AiRunner]     name="" counters="CPU cycles"[32705, 160017, 4531] dur=0.247ms id=37.37 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=36, name=EpochBlock_38)
+[D:AiRunner]     name="" counters="CPU cycles"[1881, 9521, 755] dur=0.015ms id=38.38 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=37, name=EpochBlock_39)
+[D:AiRunner]     name="" counters="CPU cycles"[12431, 427171, 5574] dur=0.556ms id=39.39 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=38, name=EpochBlock_40)
+[D:AiRunner]     name="" counters="CPU cycles"[1905, 136649, 755] dur=0.174ms id=40.40 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=39, name=EpochBlock_41)
+[D:AiRunner]     name="" counters="CPU cycles"[9009, 648729, 4139] dur=0.827ms id=41.41 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=40, name=EpochBlock_42)
+[D:AiRunner]     name="" counters="CPU cycles"[32478, 159804, 4427] dur=0.246ms id=42.42 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=41, name=EpochBlock_43)
+[D:AiRunner]     name="" counters="CPU cycles"[1881, 9521, 795] dur=0.015ms id=43.43 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=42, name=EpochBlock_44)
+[D:AiRunner]     name="" counters="CPU cycles"[12241, 418369, 5459] dur=0.545ms id=44.44 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=43, name=EpochBlock_45)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 136649, 755] dur=0.174ms id=45.45 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=44, name=EpochBlock_46)
+[D:AiRunner]     name="" counters="CPU cycles"[9113, 300305, 4262] dur=0.392ms id=46.46 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=45, name=EpochBlock_47)
+[D:AiRunner]     name="" counters="CPU cycles"[46926, 260620, 3939] dur=0.389ms id=47.47 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=46, name=EpochBlock_48)
+[D:AiRunner]     name="" counters="CPU cycles"[12305, 541939, 5496] dur=0.700ms id=48.48 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=47, name=EpochBlock_49)
+[D:AiRunner]     name="" counters="CPU cycles"[1969, 81161, 795] dur=0.105ms id=49.49 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=48, name=EpochBlock_50)
+[D:AiRunner]     name="" counters="CPU cycles"[9249, 502049, 4123] dur=0.644ms id=50.50 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=49, name=EpochBlock_51)
+[D:AiRunner]     name="" counters="CPU cycles"[47921, 445473, 4427] dur=0.622ms id=51.51 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=50, name=EpochBlock_52)
+[D:AiRunner]     name="" counters="CPU cycles"[12209, 533868, 5500] dur=0.689ms id=52.52 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=51, name=EpochBlock_53)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 81161, 715] dur=0.105ms id=53.53 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=52, name=EpochBlock_54)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 499961, 4152] dur=0.641ms id=54.54 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=53, name=EpochBlock_55)
+[D:AiRunner]     name="" counters="CPU cycles"[47961, 445341, 4507] dur=0.622ms id=55.55 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=54, name=EpochBlock_56)
+[D:AiRunner]     name="" counters="CPU cycles"[12326, 540092, 5459] dur=0.697ms id=56.56 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=55, name=EpochBlock_57)
+[D:AiRunner]     name="" counters="CPU cycles"[1865, 81201, 755] dur=0.105ms id=57.57 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=56, name=EpochBlock_58)
+[D:AiRunner]     name="" counters="CPU cycles"[9121, 502529, 4139] dur=0.645ms id=58.58 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=57, name=EpochBlock_59)
+[D:AiRunner]     name="" counters="CPU cycles"[48665, 445129, 4604] dur=0.623ms id=59.59 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=58, name=EpochBlock_60)
+[D:AiRunner]     name="" counters="CPU cycles"[12105, 533601, 5451] dur=0.689ms id=60.60 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=59, name=EpochBlock_61)
+[D:AiRunner]     name="" counters="CPU cycles"[7081, 347017, 3272] dur=0.447ms id=61.61 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=60, name=EpochBlock_62)
+[D:AiRunner]     name="" counters="CPU cycles"[8582, 1685, 3738] dur=0.018ms id=62.62 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=61, name=EpochBlock_63)
+[D:AiRunner]     name="" counters="CPU cycles"[18438, 468052, 5120] dur=0.615ms id=63.63 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=62, name=EpochBlock_64)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 75, 3818] dur=0.005ms id=64.64 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, E.64.0, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=63, name=EpochBlock_65)
+[D:AiRunner]     name="" counters="CPU cycles"[15793, 3281, 3576] dur=0.028ms id=65.65 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=64, name=EpochBlock_66)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 3317] dur=0.004ms id=66.66 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, E.66.0, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=65, name=EpochBlock_67)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 2829] dur=0.004ms id=67.67 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, E.67.0, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=66, name=EpochBlock_68)
+[D:AiRunner]     name="" counters="CPU cycles"[4561, 606, 1687] dur=0.009ms id=68.68 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=67, name=EpochBlock_69)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 2293] dur=0.003ms id=69.69 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, E.69.0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INFERENCE DONE
+[D:AiRunner]     name="network" counters="CPU cycles"[1658488, 16099703, 211475, 17982292, 0] dur=22.478ms id=0.0 type=0x0/NONE,"epoch"
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #0 last=False..
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, O_0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #1 last=False..
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, O_1, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #2 last=False..
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, O_2, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #3 last=True..
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, O_3, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner] <- done (target dur=22.462ms)
+[D:AiRunner] -> Requested RUN mode: Mode.DEBUG|PER_LAYER (param=0b100000011, option=0x0)
+[D:AiRunner]    SEND INPUT TENSOR #0 ((1, 224, 224, 3)/uint8) last=True..
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=0, name=EpochBlock_2)
+[D:AiRunner]     name="" counters="CPU cycles"[3521, 121156, 1602] dur=0.158ms id=2.2 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=1, name=EpochBlock_3)
+[D:AiRunner]     name="" counters="CPU cycles"[15353, 363897, 3219] dur=0.478ms id=3.3 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=2, name=EpochBlock_4)
+[D:AiRunner]     name="" counters="CPU cycles"[5665, 241689, 1403] dur=0.311ms id=4.4 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=3, name=EpochBlock_5)
+[D:AiRunner]     name="" counters="CPU cycles"[8657, 242537, 2027] dur=0.317ms id=5.5 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=4, name=EpochBlock_6)
+[D:AiRunner]     name="" counters="CPU cycles"[18369, 644329, 2331] dur=0.831ms id=6.6 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=5, name=EpochBlock_7)
+[D:AiRunner]     name="" counters="CPU cycles"[17897, 643325, 2364] dur=0.829ms id=7.7 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=6, name=EpochBlock_8)
+[D:AiRunner]     name="" counters="CPU cycles"[9569, 64155, 2022] dur=0.095ms id=8.8 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=7, name=EpochBlock_9)
+[D:AiRunner]     name="" counters="CPU cycles"[33745, 363983, 2330] dur=0.500ms id=9.9 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=8, name=EpochBlock_10)
+[D:AiRunner]     name="" counters="CPU cycles"[33409, 377401, 2389] dur=0.516ms id=10.10 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=9, name=EpochBlock_11)
+[D:AiRunner]     name="" counters="CPU cycles"[12193, 67953, 3356] dur=0.104ms id=11.11 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=10, name=EpochBlock_12)
+[D:AiRunner]     name="" counters="CPU cycles"[33441, 363857, 2369] dur=0.500ms id=12.12 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=11, name=EpochBlock_13)
+[D:AiRunner]     name="" counters="CPU cycles"[1897, 405681, 832] dur=0.511ms id=13.13 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=12, name=EpochBlock_14)
+[D:AiRunner]     name="" counters="CPU cycles"[36129, 366665, 3646] dur=0.508ms id=14.14 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=13, name=EpochBlock_15)
+[D:AiRunner]     name="" counters="CPU cycles"[14369, 36585, 2627] dur=0.067ms id=15.15 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=14, name=EpochBlock_16)
+[D:AiRunner]     name="" counters="CPU cycles"[53841, 153612, 2965] dur=0.263ms id=16.16 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=15, name=EpochBlock_17)
+[D:AiRunner]     name="" counters="CPU cycles"[1945, 181905, 755] dur=0.231ms id=17.17 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=16, name=EpochBlock_18)
+[D:AiRunner]     name="" counters="CPU cycles"[55321, 194441, 3451] dur=0.317ms id=18.18 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=17, name=EpochBlock_19)
+[D:AiRunner]     name="" counters="CPU cycles"[15673, 60689, 3235] dur=0.099ms id=19.19 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=18, name=EpochBlock_20)
+[D:AiRunner]     name="" counters="CPU cycles"[53879, 153315, 2976] dur=0.263ms id=20.20 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=19, name=EpochBlock_21)
+[D:AiRunner]     name="" counters="CPU cycles"[52193, 152729, 2283] dur=0.259ms id=21.21 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=20, name=EpochBlock_22)
+[D:AiRunner]     name="" counters="CPU cycles"[22305, 45449, 2571] dur=0.088ms id=22.22 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=21, name=EpochBlock_23)
+[D:AiRunner]     name="" counters="CPU cycles"[102169, 81385, 4384] dur=0.235ms id=23.23 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=22, name=EpochBlock_24)
+[D:AiRunner]     name="" counters="CPU cycles"[98177, 89316, 2421] dur=0.237ms id=24.24 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=23, name=EpochBlock_25)
+[D:AiRunner]     name="" counters="CPU cycles"[26145, 87753, 4539] dur=0.148ms id=25.25 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=24, name=EpochBlock_26)
+[D:AiRunner]     name="" counters="CPU cycles"[102566, 81311, 4235] dur=0.235ms id=26.26 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=25, name=EpochBlock_27)
+[D:AiRunner]     name="" counters="CPU cycles"[98159, 89155, 2291] dur=0.237ms id=27.27 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=26, name=EpochBlock_28)
+[D:AiRunner]     name="" counters="CPU cycles"[26521, 87761, 4539] dur=0.149ms id=28.28 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=27, name=EpochBlock_29)
+[D:AiRunner]     name="" counters="CPU cycles"[102425, 81033, 4354] dur=0.235ms id=29.29 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=28, name=EpochBlock_30)
+[D:AiRunner]     name="" counters="CPU cycles"[1937, 97761, 715] dur=0.126ms id=30.30 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=29, name=EpochBlock_31)
+[D:AiRunner]     name="" counters="CPU cycles"[100743, 106453, 3590] dur=0.263ms id=31.31 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=30, name=EpochBlock_32)
+[D:AiRunner]     name="" counters="CPU cycles"[31641, 118169, 3970] dur=0.192ms id=32.32 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=31, name=EpochBlock_33)
+[D:AiRunner]     name="" counters="CPU cycles"[2001, 9601, 755] dur=0.015ms id=33.33 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=32, name=EpochBlock_34)
+[D:AiRunner]     name="" counters="CPU cycles"[12281, 418329, 5387] dur=0.545ms id=34.34 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=33, name=EpochBlock_35)
+[D:AiRunner]     name="" counters="CPU cycles"[1849, 136657, 715] dur=0.174ms id=35.35 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=34, name=EpochBlock_36)
+[D:AiRunner]     name="" counters="CPU cycles"[8969, 648033, 4115] dur=0.826ms id=36.36 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=35, name=EpochBlock_37)
+[D:AiRunner]     name="" counters="CPU cycles"[32785, 160017, 4539] dur=0.247ms id=37.37 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=36, name=EpochBlock_38)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 9521, 792] dur=0.015ms id=38.38 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=37, name=EpochBlock_39)
+[D:AiRunner]     name="" counters="CPU cycles"[12431, 426699, 5534] dur=0.556ms id=39.39 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=38, name=EpochBlock_40)
+[D:AiRunner]     name="" counters="CPU cycles"[1857, 136641, 795] dur=0.174ms id=40.40 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=39, name=EpochBlock_41)
+[D:AiRunner]     name="" counters="CPU cycles"[9001, 648681, 4219] dur=0.827ms id=41.41 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=40, name=EpochBlock_42)
+[D:AiRunner]     name="" counters="CPU cycles"[32478, 159804, 4427] dur=0.246ms id=42.42 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=41, name=EpochBlock_43)
+[D:AiRunner]     name="" counters="CPU cycles"[1921, 9521, 795] dur=0.015ms id=43.43 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=42, name=EpochBlock_44)
+[D:AiRunner]     name="" counters="CPU cycles"[12193, 418353, 5427] dur=0.545ms id=44.44 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=43, name=EpochBlock_45)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 136633, 755] dur=0.174ms id=45.45 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=44, name=EpochBlock_46)
+[D:AiRunner]     name="" counters="CPU cycles"[9113, 300281, 4302] dur=0.392ms id=46.46 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=45, name=EpochBlock_47)
+[D:AiRunner]     name="" counters="CPU cycles"[46577, 260665, 3939] dur=0.389ms id=47.47 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=46, name=EpochBlock_48)
+[D:AiRunner]     name="" counters="CPU cycles"[12225, 546899, 5459] dur=0.706ms id=48.48 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=47, name=EpochBlock_49)
+[D:AiRunner]     name="" counters="CPU cycles"[1977, 81185, 755] dur=0.105ms id=49.49 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=48, name=EpochBlock_50)
+[D:AiRunner]     name="" counters="CPU cycles"[9289, 502233, 4059] dur=0.644ms id=50.50 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=49, name=EpochBlock_51)
+[D:AiRunner]     name="" counters="CPU cycles"[47726, 445436, 4491] dur=0.622ms id=51.51 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=50, name=EpochBlock_52)
+[D:AiRunner]     name="" counters="CPU cycles"[12185, 533957, 5488] dur=0.690ms id=52.52 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=51, name=EpochBlock_53)
+[D:AiRunner]     name="" counters="CPU cycles"[1889, 81169, 715] dur=0.105ms id=53.53 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=52, name=EpochBlock_54)
+[D:AiRunner]     name="" counters="CPU cycles"[9049, 500009, 4115] dur=0.641ms id=54.54 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=53, name=EpochBlock_55)
+[D:AiRunner]     name="" counters="CPU cycles"[48002, 445338, 4504] dur=0.622ms id=55.55 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=54, name=EpochBlock_56)
+[D:AiRunner]     name="" counters="CPU cycles"[12302, 540404, 5459] dur=0.698ms id=56.56 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=55, name=EpochBlock_57)
+[D:AiRunner]     name="" counters="CPU cycles"[1857, 81177, 755] dur=0.105ms id=57.57 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=56, name=EpochBlock_58)
+[D:AiRunner]     name="" counters="CPU cycles"[9113, 502302, 4136] dur=0.644ms id=58.58 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=57, name=EpochBlock_59)
+[D:AiRunner]     name="" counters="CPU cycles"[48201, 445129, 4491] dur=0.622ms id=59.59 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=58, name=EpochBlock_60)
+[D:AiRunner]     name="" counters="CPU cycles"[12129, 533601, 5526] dur=0.689ms id=60.60 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=59, name=EpochBlock_61)
+[D:AiRunner]     name="" counters="CPU cycles"[7057, 346977, 3235] dur=0.447ms id=61.61 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=60, name=EpochBlock_62)
+[D:AiRunner]     name="" counters="CPU cycles"[8569, 1681, 3739] dur=0.017ms id=62.62 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=61, name=EpochBlock_63)
+[D:AiRunner]     name="" counters="CPU cycles"[18521, 468065, 5019] dur=0.615ms id=63.63 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=62, name=EpochBlock_64)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 3929] dur=0.005ms id=64.64 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, E.64.0, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=63, name=EpochBlock_65)
+[D:AiRunner]     name="" counters="CPU cycles"[16417, 3281, 3507] dur=0.029ms id=65.65 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=64, name=EpochBlock_66)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 3317] dur=0.004ms id=66.66 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, E.66.0, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=65, name=EpochBlock_67)
+[D:AiRunner]     name="" counters="CPU cycles"[47, 36, 2867] dur=0.004ms id=67.67 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, E.67.0, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=66, name=EpochBlock_68)
+[D:AiRunner]     name="" counters="CPU cycles"[4545, 606, 1711] dur=0.009ms id=68.68 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=67, name=EpochBlock_69)
+[D:AiRunner]     name="" counters="CPU cycles"[45, 36, 2263] dur=0.003ms id=69.69 type=0x1000002/INTERNAL,"epoch (SW)"
+[D:AiRunner]    INTERNAL TENSOR #0
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, E.69.0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]     last=True, data_size=0
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INFERENCE DONE
+[D:AiRunner]     name="network" counters="CPU cycles"[1658327, 16104479, 211827, 17987025, 0] dur=22.484ms id=0.0 type=0x0/NONE,"epoch"
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #0 last=False..
+[D:AiRunner]     IOTensor: Dequantize_223_out_0, O_0, , 0x342e0210 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #1 last=False..
+[D:AiRunner]     IOTensor: Dequantize_229_out_0, O_1, , 0x342e0100 f32[1,63], 252 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #2 last=False..
+[D:AiRunner]     IOTensor: Dequantize_219_out_0, O_2, , 0x342e0200 f32[1,1], 4 Bytes
+[D:AiRunner]    RECEIVE OUTPUT TENSOR #3 last=True..
+[D:AiRunner]     IOTensor: Dequantize_226_out_0, O_3, , 0x342e0000 f32[1,63], 252 Bytes
+[D:AiRunner] <- done (target dur=22.468ms)
+[D:AiRunner] _release_all(Proto-buffer driver v2.0 (msg v3.1) (Serial driver v1.0 - /dev/tty.usbmodemCDC_ACM0011:115200) ['network'])

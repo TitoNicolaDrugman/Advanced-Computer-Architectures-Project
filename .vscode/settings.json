@@ -8,5 +8,12 @@
       "problemMatcher": []
     }
   ],
-  "python.analysis.extraPaths": ["./stedgeaicore/scripts/ai_runner"]
+  "python.analysis.extraPaths": ["./stedgeaicore/scripts/ai_runner"],
+  "files.associations": {
+    "*.css": "css",
+    "*.html": "html",
+    "*.rmd": "markdown",
+    "mcu_cache.h": "c",
+    "app_config.h": "c"
+  }
 }

@@ -1,12 +1,12 @@
 {
-    "configurations": [
-        {
-            "name": "Python Debugger: Current File with Arguments",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal",
-            "args": "-d serial:COM4:921600 -b 10 -v 2 --cfile \"C:/Users/brink/Documents/University/Polimi/ACA/Advanced-Computer-Architectures-Project/profiling/st_ai_output/network.c\""
-        }
-    ]
+  "configurations": [
+    {
+      "name": "Python Debugger: NPU Profiler with Arguments",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/stedgeaicore/scripts/ai_runner/examples/npu_profiler.py",
+      "console": "integratedTerminal",
+      "args": "-d serial:/dev/tty.usbmodemCDC_ACM0011:921600 --debug -v 2 --cfile \"${workspaceFolder}/profiling/results/hand_landmarks_output_20250720_194313/st_ai_ws/neural_art__network/\""
+    }
+  ]
 }

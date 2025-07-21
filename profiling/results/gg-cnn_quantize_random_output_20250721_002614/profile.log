@@ -1,0 +1,764 @@
+ NPU Utility - AiRunner Profiler (version 0.3)
+ Creating date : Mon Jul 21 00:26:36 2025
+[D] 
+[D] -> CNpuNetworkDesc (v0.2), file="results/gg-cnn_quantize_random_output_20250721_002614/st_ai_ws/neural_art__network/network.c"
+[D]    -> Parsing the compiler options.. 14127
+[D]    <- done "atonn-v1.1.1-14-ge619e8606 (1, 1, 1, 14) 27/06/2025"
+[D]    -> Parsing the memory pool descriptors.. nblines=14127
+[D]       adding MPOOL:  7 rw/c/a/- 0x90000000(  32767.99 KB)      5.49 MB :   5621.76 KB -    0:0    0:0 'hyperRAM'/'xSPI1'
+[D]       adding MPOOL:  8 ro/c/a/- 0x71000000( 114687.99 KB)    179.20 KB :    179.20 KB -    0:0    0:0 'octoFlash'/'xSPI2'
+[D]       adding MPOOL:  1 rw/-/a/- 0x342e0000(    448.00 KB)    448.00 KB :    448.00 KB -    0:0    0:0 'npuRAM5'/'AXISRAM5'
+[D]       adding MPOOL:  2 rw/-/a/- 0x34270000(    448.00 KB)    448.00 KB :    448.00 KB -    0:0    0:0 'npuRAM4'/'AXISRAM4'
+[D]       adding MPOOL:  3 rw/-/a/- 0x34200000(    448.00 KB)    448.00 KB :    448.00 KB -    0:0    0:0 'npuRAM3'/'AXISRAM3'
+[D]       adding MPOOL:  0 rw/-/a/- 0x34350000(    447.99 KB)    444.50 KB :    444.50 KB -    0:0    0:0 'npuRAM6'/'AXISRAM6'
+[D]       adding MPOOL: 11 rw/-/a/- 0x34100000(   2815.99 KB)      2.75 MB :   2816.00 KB -    0:0    0:0 'cpuRAM2_npuRAM3_npuRAM4_npuRAM5_npuRAM6'/'AXISRAM2_AXISRAM3_AXISRAM4_AXISRAM5_AXISRAM6'
+[D]       adding MPOOL:  4 rw/-/a/- 0x34100000(   1024.00 KB)      1.00 MB :   1024.00 KB -    0:0    0:0 'cpuRAM2'/'AXISRAM2'
+[D]       adding MPOOL:  5 rw/-/a/- 0x34064000(      0.00 KB)          0 B :      0.00 KB -    0:0    0:0 'cpuRAM1'/'AXISRAM1'
+[D]       adding MPOOL:  6 rw/-/a/- 0x34000000(      0.00 KB)          0 B :      0.00 KB -    0:0    0:0 'flexMEM'/'AXIFLEXMEM'
+[D]       filtering/sorting the mpools
+[D]       MPOOL:  7 rw/c/a/- 0x90000000(  32767.99 KB)      5.49 MB :   5621.76 KB -    0:0    0:0 'hyperRAM'/'xSPI1'
+[D]       MPOOL:  8 ro/c/a/- 0x71000000( 114687.99 KB)    179.20 KB :    179.20 KB -    0:0    0:0 'octoFlash'/'xSPI2'
+[D]       MPOOL:  0 rw/-/a/- 0x34350000(    447.99 KB)    444.50 KB :    444.50 KB -    0:0    0:0 'npuRAM6'/'AXISRAM6' part of 11
+[D]       MPOOL:  1 rw/-/a/- 0x342e0000(    448.00 KB)    448.00 KB :    448.00 KB -    0:0    0:0 'npuRAM5'/'AXISRAM5' part of 11
+[D]       MPOOL:  2 rw/-/a/- 0x34270000(    448.00 KB)    448.00 KB :    448.00 KB -    0:0    0:0 'npuRAM4'/'AXISRAM4' part of 11
+[D]       MPOOL:  3 rw/-/a/- 0x34200000(    448.00 KB)    448.00 KB :    448.00 KB -    0:0    0:0 'npuRAM3'/'AXISRAM3' part of 11
+[D]       MPOOL: 11 rw/-/a/v 0x34100000(   2815.99 KB)      2.75 MB :   2816.00 KB -    0:0    0:0 'vpool'/'' uses 1 ,2 ,3 ,0 ,4
+[D]       MPOOL:  4 rw/-/a/- 0x34100000(   1024.00 KB)      1.00 MB :   1024.00 KB -    0:0    0:0 'cpuRAM2'/'AXISRAM2' part of 11
+[D]       MPOOL:  5 rw/-/a/- 0x34064000(      0.00 KB)          0 B :      0.00 KB -    0:0    0:0 'cpuRAM1'/'AXISRAM1'
+[D]       MPOOL:  6 rw/-/a/- 0x34000000(      0.00 KB)          0 B :      0.00 KB -    0:0    0:0 'flexMEM'/'AXIFLEXMEM'
+[D]    <- 10 memory pool descriptors found after filtering.
+[D]    -> Parsing the buffer lists.. nblines=14127
+[D]       BUFFER: A 'Input_0_out_0'/(0x342e0000UL + 0)/90,000 epoch=0 INT8 8b/Q7.0 (0) [1, 1, 300, 300] batch=1 cat=input mpools=[1, 11] pc=0 [0.00392156792804599] [-128]
+[D]       BUFFER: P 'Conv2D_22_weights'/(0x71000000UL + 102400)/51,200 epoch=0 FLOAT 32b [32, 5, 5, 16] batch=16 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_26_weights'/(0x71000000UL + 0)/102,400 epoch=0 FLOAT 32b [32, 5, 5, 32] batch=32 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Resize_29_size'/(0x71000000UL + 182832)/32 epoch=0 INT64 64b/Q63.0 (0) [4] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_31_weights'/(0x71000000UL + 153600)/4,608 epoch=0 INT8 8b/Q7.0 (0) [16, 4, 3, 3, 8] batch=8 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Resize_34_size'/(0x71000000UL + 182768)/32 epoch=0 INT64 64b/Q63.0 (0) [4] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_36_weights'/(0x71000000UL + 177408)/2,304 epoch=0 INT8 8b/Q7.0 (0) [16, 4, 3, 3, 4] batch=4 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_39_weights'/(0x71000000UL + 182944)/16 epoch=0 INT8 8b/Q7.0 (0) [1, 16, 1, 1] batch=16 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_41_weights'/(0x71000000UL + 182960)/16 epoch=0 INT8 8b/Q7.0 (0) [1, 16, 1, 1] batch=16 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_43_weights'/(0x71000000UL + 182976)/16 epoch=0 INT8 8b/Q7.0 (0) [1, 16, 1, 1] batch=16 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_45_weights'/(0x71000000UL + 182992)/16 epoch=0 INT8 8b/Q7.0 (0) [1, 16, 1, 1] batch=16 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_4_zero_off_2'/(0x71000000UL + 183392)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_4_mul_scale_3'/(0x71000000UL + 182544)/32 epoch=0 FXP 16b/Q-15.30 (0) [4, 1, 1, 4] batch=4 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_4_off_bias_8'/(0x71000000UL + 182032)/64 epoch=0 FXP 32b/Q11.20 (0) [4, 1, 1, 4] batch=4 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_8_zero_off_11'/(0x71000000UL + 183312)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_8_mul_scale_12'/(0x71000000UL + 182576)/32 epoch=0 FXP 16b/Q-12.27 (0) [4, 1, 1, 4] batch=4 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_8_off_bias_17'/(0x71000000UL + 182096)/64 epoch=0 FXP 32b/Q11.20 (0) [4, 1, 1, 4] batch=4 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_13_zero_off_20'/(0x71000000UL + 183344)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_13_mul_scale_21'/(0x71000000UL + 182608)/32 epoch=0 FXP 16b/Q-11.26 (0) [4, 1, 1, 4] batch=4 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_13_off_bias_26'/(0x71000000UL + 182160)/64 epoch=0 FXP 32b/Q11.20 (0) [4, 1, 1, 4] batch=4 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_17_zero_off_29'/(0x71000000UL + 183360)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_17_mul_scale_30'/(0x71000000UL + 182640)/32 epoch=0 FXP 16b/Q-10.25 (0) [4, 1, 1, 4] batch=4 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_17_off_bias_35'/(0x71000000UL + 182224)/64 epoch=0 FXP 32b/Q11.20 (0) [4, 1, 1, 4] batch=4 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_22_zero_off_38'/(0x71000000UL + 183376)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_22_mul_scale_39'/(0x71000000UL + 182288)/64 epoch=0 FXP 16b/Q-10.25 (0) [32, 1, 1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_22_off_bias_44'/(0x71000000UL + 181776)/128 epoch=0 FXP 32b/Q11.20 (0) [32, 1, 1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_26_zero_off_47'/(0x71000000UL + 183408)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_26_mul_scale_48'/(0x71000000UL + 182352)/64 epoch=0 FXP 16b/Q-9.24 (0) [32, 1, 1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_26_off_bias_53'/(0x71000000UL + 181648)/128 epoch=0 FXP 32b/Q11.20 (0) [32, 1, 1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_31_zero_off_56'/(0x71000000UL + 183328)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_31_mul_scale_57'/(0x71000000UL + 182672)/32 epoch=0 FXP 16b/Q-10.25 (0) [2, 1, 1, 8] batch=8 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_31_off_bias_62'/(0x71000000UL + 181968)/64 epoch=0 FXP 32b/Q11.20 (0) [2, 1, 1, 8] batch=8 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_36_zero_off_65'/(0x71000000UL + 183232)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_36_mul_scale_66'/(0x71000000UL + 182704)/32 epoch=0 FXP 16b/Q-10.25 (0) [2, 1, 1, 8] batch=8 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_36_off_bias_71'/(0x71000000UL + 181904)/64 epoch=0 FXP 32b/Q11.20 (0) [2, 1, 1, 8] batch=8 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_39_zero_off_74'/(0x71000000UL + 183248)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_39_mul_scale_75'/(0x71000000UL + 183168)/2 epoch=0 FXP 16b/Q-13.28 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_39_off_bias_80'/(0x71000000UL + 183120)/2 epoch=0 FXP 16b/Q2.13 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_41_zero_off_83'/(0x71000000UL + 183264)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_41_mul_scale_84'/(0x71000000UL + 183184)/2 epoch=0 FXP 16b/Q-14.29 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_41_off_bias_89'/(0x71000000UL + 183136)/2 epoch=0 FXP 16b/Q2.13 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_43_zero_off_92'/(0x71000000UL + 183280)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_43_mul_scale_93'/(0x71000000UL + 183200)/2 epoch=0 FXP 16b/Q-14.29 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_43_off_bias_98'/(0x71000000UL + 183152)/2 epoch=0 FXP 16b/Q1.14 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_45_zero_off_101'/(0x71000000UL + 183296)/1 epoch=0 INT8 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 1 1
+[D]       BUFFER: P 'Conv2D_45_mul_scale_102'/(0x71000000UL + 183216)/2 epoch=0 FXP 16b/Q-14.29 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_45_off_bias_107'/(0x71000000UL + 183104)/2 epoch=0 FXP 16b/Q1.14 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_4_weights_submask_0_0_0_0_16_1_3_6_109'/(0x71000000UL + 179712)/288 epoch=0 INT8 8b/Q7.0 (0) [16, 1, 3, 6] batch=1 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_4_weights_submask_0_0_3_0_16_1_3_6_110'/(0x71000000UL + 180000)/288 epoch=0 INT8 8b/Q7.0 (0) [16, 1, 3, 6] batch=1 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_4_weights_submask_0_0_6_0_16_1_3_6_111'/(0x71000000UL + 180288)/288 epoch=0 INT8 8b/Q7.0 (0) [16, 1, 3, 6] batch=1 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_4_weights_submask_0_0_9_0_16_1_2_6_112'/(0x71000000UL + 181296)/192 epoch=0 INT8 8b/Q7.0 (0) [16, 1, 2, 6] batch=1 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_4_weights_submask_0_0_0_6_16_1_3_5_113'/(0x71000000UL + 180576)/240 epoch=0 INT8 8b/Q7.0 (0) [16, 1, 3, 5] batch=1 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_4_weights_submask_0_0_3_6_16_1_3_5_114'/(0x71000000UL + 180816)/240 epoch=0 INT8 8b/Q7.0 (0) [16, 1, 3, 5] batch=1 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_4_weights_submask_0_0_6_6_16_1_3_5_115'/(0x71000000UL + 181056)/240 epoch=0 INT8 8b/Q7.0 (0) [16, 1, 3, 5] batch=1 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_4_weights_submask_0_0_9_6_16_1_2_5_116'/(0x71000000UL + 181488)/160 epoch=0 INT8 8b/Q7.0 (0) [16, 1, 2, 5] batch=1 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_8_weights_submask_0_0_0_0_16_16_3_5_117'/(0x71000000UL + 158208)/3,840 epoch=0 INT8 8b/Q7.0 (0) [16, 4, 3, 5, 4] batch=4 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_8_weights_submask_0_0_3_0_16_16_2_5_118'/(0x71000000UL + 169728)/2,560 epoch=0 INT8 8b/Q7.0 (0) [16, 4, 2, 5, 4] batch=4 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_13_weights_submask_0_0_0_0_16_16_3_5_119'/(0x71000000UL + 162048)/3,840 epoch=0 INT8 8b/Q7.0 (0) [16, 4, 3, 5, 4] batch=4 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_13_weights_submask_0_0_3_0_16_16_2_5_120'/(0x71000000UL + 172288)/2,560 epoch=0 INT8 8b/Q7.0 (0) [16, 4, 2, 5, 4] batch=4 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_17_weights_submask_0_0_0_0_16_16_3_5_121'/(0x71000000UL + 165888)/3,840 epoch=0 INT8 8b/Q7.0 (0) [16, 4, 3, 5, 4] batch=4 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Conv2D_17_weights_submask_0_0_3_0_16_16_2_5_122'/(0x71000000UL + 174848)/2,560 epoch=0 INT8 8b/Q7.0 (0) [16, 4, 2, 5, 4] batch=4 cat=input mpools=[8] pc=1 16 16
+[D]       BUFFER: P 'Canoninc_default_init_for_ROI_optional_input_223'/(0x71000000UL + 182800)/32 epoch=0 FLOAT 32b [1, 8, 1, 1] batch=8 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Canoninc_default_init_for_SCALES_optional_input_224'/(0x71000000UL + 182912)/16 epoch=0 FLOAT 32b [1, 4, 1, 1] batch=4 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Canoninc_default_init_for_ROI_optional_input_225'/(0x71000000UL + 182736)/32 epoch=0 FLOAT 32b [1, 8, 1, 1] batch=8 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Canoninc_default_init_for_SCALES_optional_input_226'/(0x71000000UL + 182896)/16 epoch=0 FLOAT 32b [1, 4, 1, 1] batch=4 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Pad_inserted_id245_pad_kern_245'/(0x71000000UL + 182928)/16 epoch=0 FXP 8b/Q8.0 (1) [16, 1, 1, 1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Pad_inserted_id250_pad_kern_250'/(0x71000000UL + 182416)/64 epoch=0 FXP 16b/Q15.0 (0) [32, 1, 1, 1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Pad_inserted_id259_pad_kern_259'/(0x71000000UL + 182864)/32 epoch=0 FXP 8b/Q8.0 (1) [32, 1, 1, 1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Pad_inserted_id264_pad_kern_264'/(0x71000000UL + 182480)/64 epoch=0 FXP 16b/Q15.0 (0) [32, 1, 1, 1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'SpaceToDepth_inserted_id246_281_atonn_internal_scale'/(0x71000000UL + 183088)/4 epoch=0 FLOAT 32b [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'SpaceToDepth_inserted_id246_281_atonn_internal_offset'/(0x71000000UL + 183504)/1 epoch=0 FXP 8b/Q8.0 (1) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'SpaceToDepth_inserted_id260_284_atonn_internal_scale'/(0x71000000UL + 183040)/4 epoch=0 FLOAT 32b [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'SpaceToDepth_inserted_id260_284_atonn_internal_offset'/(0x71000000UL + 183456)/1 epoch=0 FXP 8b/Q8.0 (1) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_26_off_bias_51_287_atonn_internal_scale'/(0x71000000UL + 183056)/4 epoch=0 FLOAT 32b [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_26_off_bias_51_287_atonn_internal_offset'/(0x71000000UL + 183472)/1 epoch=0 FXP 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Resize_29_289_atonn_internal_scale'/(0x71000000UL + 183072)/4 epoch=0 FLOAT 32b [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Resize_29_289_atonn_internal_offset'/(0x71000000UL + 183488)/1 epoch=0 FXP 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_31_off_bias_60_291_atonn_internal_scale'/(0x71000000UL + 183008)/4 epoch=0 FLOAT 32b [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Conv2D_31_off_bias_60_291_atonn_internal_offset'/(0x71000000UL + 183424)/1 epoch=0 FXP 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Resize_34_293_atonn_internal_scale'/(0x71000000UL + 183024)/4 epoch=0 FLOAT 32b [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: P 'Resize_34_293_atonn_internal_offset'/(0x71000000UL + 183440)/1 epoch=0 FXP 8b/Q7.0 (0) [1] batch=1 cat=input mpools=[8] pc=0 
+[D]       BUFFER: A 'Quantize_40_out_0'/(0x342e0000UL + 0)/90,000 epoch=33 INT8 8b/Q7.0 (0) [1, 1, 300, 300] batch=1 cat=output mpools=[1, 11] pc=0 [0.00393478805199265] [-110]
+[D]       BUFFER: A 'Quantize_42_out_0'/(0x342e0000UL + 90000)/90,000 epoch=34 INT8 8b/Q7.0 (0) [1, 1, 300, 300] batch=1 cat=output mpools=[1, 11] pc=0 [0.00418800069019198] [-128]
+[D]       BUFFER: A 'Quantize_44_out_0'/(0x342e0000UL + 180000)/90,000 epoch=34 INT8 8b/Q7.0 (0) [1, 1, 300, 300] batch=1 cat=output mpools=[1, 11] pc=0 [0.00329943955875933] [49]
+[D]       BUFFER: A 'Quantize_46_out_0'/(0x342e0000UL + 270000)/90,000 epoch=36 INT8 8b/Q7.0 (0) [1, 1, 300, 300] batch=1 cat=output mpools=[1, 11] pc=0 [0.00252130418084562] [-118]
+[D]       I: BUFFER: A 'Input_0_out_0'/(0x342e0000UL + 0)/90,000 epoch=0 INT8 8b/Q7.0 (0) [1, 1, 300, 300] batch=1 cat=input mpools=[1, 11] pc=0 [0.00392156792804599] [-128]
+[D]       O: BUFFER: A 'Quantize_40_out_0'/(0x342e0000UL + 0)/90,000 epoch=33 INT8 8b/Q7.0 (0) [1, 1, 300, 300] batch=1 cat=output mpools=[1, 11] pc=0 [0.00393478805199265] [-110]
+[D]       O: BUFFER: A 'Quantize_42_out_0'/(0x342e0000UL + 90000)/90,000 epoch=34 INT8 8b/Q7.0 (0) [1, 1, 300, 300] batch=1 cat=output mpools=[1, 11] pc=0 [0.00418800069019198] [-128]
+[D]       O: BUFFER: A 'Quantize_44_out_0'/(0x342e0000UL + 180000)/90,000 epoch=34 INT8 8b/Q7.0 (0) [1, 1, 300, 300] batch=1 cat=output mpools=[1, 11] pc=0 [0.00329943955875933] [49]
+[D]       O: BUFFER: A 'Quantize_46_out_0'/(0x342e0000UL + 270000)/90,000 epoch=36 INT8 8b/Q7.0 (0) [1, 1, 300, 300] batch=1 cat=output mpools=[1, 11] pc=0 [0.00252130418084562] [-118]
+[D]       -> Retreive the buffers mapped on different memory pools..
+[D]       <- 0 buffer(s) found
+[D]       -> Mempool contents
+[D]          MPOOL:  7 rw/c/a/- 0x90000000(  32767.99 KB)      5.49 MB :   5621.76 KB -    0:0    0:0 'hyperRAM'/'xSPI1'
+[D]          MPOOL:  8 ro/c/a/- 0x71000000( 114687.99 KB)    179.20 KB :    179.20 KB -    0:0   80:0 'octoFlash'/'xSPI2' (with params)
+[D]          MPOOL:  0 rw/-/a/- 0x34350000(    447.99 KB)    444.50 KB :    444.50 KB -    0:0    0:0 'npuRAM6'/'AXISRAM6' part of 11
+[D]          MPOOL:  1 rw/-/a/- 0x342e0000(    448.00 KB)    448.00 KB :    351.56 KB -    5:0    0:0 'npuRAM5'/'AXISRAM5' part of 11
+[D]          MPOOL:  2 rw/-/a/- 0x34270000(    448.00 KB)    448.00 KB :    448.00 KB -    0:0    0:0 'npuRAM4'/'AXISRAM4' part of 11
+[D]          MPOOL:  3 rw/-/a/- 0x34200000(    448.00 KB)    448.00 KB :    448.00 KB -    0:0    0:0 'npuRAM3'/'AXISRAM3' part of 11
+[D]          MPOOL: 11 rw/-/a/v 0x34100000(   2815.99 KB)      2.75 MB :    351.56 KB -    5:0    0:0 'vpool'/'' uses 1 ,2 ,3 ,0 ,4
+[D]          MPOOL:  4 rw/-/a/- 0x34100000(   1024.00 KB)      1.00 MB :   1024.00 KB -    0:0    0:0 'cpuRAM2'/'AXISRAM2' part of 11
+[D]          MPOOL:  5 rw/-/a/- 0x34064000(      0.00 KB)          0 B :      0.00 KB -    0:0    0:0 'cpuRAM1'/'AXISRAM1'
+[D]          MPOOL:  6 rw/-/a/- 0x34000000(      0.00 KB)          0 B :      0.00 KB -    0:0    0:0 'flexMEM'/'AXIFLEXMEM'
+[D]       <-
+[D]    <- 85 buffer(s) found. ({'input': [1, 80], 'output': [4, 0], 'internal': [0, 0]})
+[D]    -> Parsing the list of the epoch descriptors.. nblines=14127
+[D]       -> Parsing the start/end epoch functions.. nblines=14127
+[D]          -> parsing LL_ATON_Start_EpochBlock_1 (line 126 to 269)
+[D]             ARITH_ACC.0.Sub node='Conv2D_4_suboff_0'
+[D]             STR_ENG.2.DmaIn 1:90000
+[D]             STR_ENG.9.DmaOut 1:90000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_1 {'ARITH_ACC': 1, 'STR_ENG': 2}
+[D]          -> parsing LL_ATON_End_EpochBlock_1 (line 271 to 293)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_1 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_2 (line 298 to 985)
+[D]             CONV_ACC.0.Conv node='Conv2D_4_subm_0'
+[D]             CONV_ACC.1.Conv node='Conv2D_4_subm_1'
+[D]             ARITH_ACC.1.Add node='Conv2D_4_add_0'
+[D]             CONV_ACC.2.Conv node='Conv2D_4_subm_2'
+[D]             CONV_ACC.3.Conv node='Conv2D_4_subm_3'
+[D]             ARITH_ACC.2.Add node='Conv2D_4_add_1'
+[D]             ARITH_ACC.3.Add node='Conv2D_4_add_4'
+[D]             STR_ENG.6.DmaIn 1:90000
+[D]             STR_ENG.0.DmaIn 8:288
+[D]             STR_ENG.9.DmaIn 1:90000
+[D]             STR_ENG.8.DmaIn 8:288
+[D]             STR_ENG.7.DmaIn 1:90000
+[D]             STR_ENG.3.DmaIn 8:288
+[D]             STR_ENG.5.DmaIn 1:90000
+[D]             STR_ENG.4.DmaIn 8:192
+[D]             STR_ENG.2.DmaOut 7:2880000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_2 {'CONV_ACC': 4, 'ARITH_ACC': 3, 'STR_ENG': 9}
+[D]          -> parsing LL_ATON_End_EpochBlock_2 (line 987 to 1035)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_2 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_3 (line 1040 to 1727)
+[D]             CONV_ACC.0.Conv node='Conv2D_4_subm_4'
+[D]             CONV_ACC.1.Conv node='Conv2D_4_subm_5'
+[D]             ARITH_ACC.0.Add node='Conv2D_4_add_2'
+[D]             CONV_ACC.2.Conv node='Conv2D_4_subm_6'
+[D]             CONV_ACC.3.Conv node='Conv2D_4_subm_7'
+[D]             ARITH_ACC.1.Add node='Conv2D_4_add_3'
+[D]             ARITH_ACC.2.Add node='Conv2D_4_add_5'
+[D]             STR_ENG.2.DmaIn 1:90000
+[D]             STR_ENG.9.DmaIn 8:240
+[D]             STR_ENG.0.DmaIn 1:90000
+[D]             STR_ENG.5.DmaIn 8:240
+[D]             STR_ENG.1.DmaIn 1:90000
+[D]             STR_ENG.3.DmaIn 8:240
+[D]             STR_ENG.4.DmaIn 1:90000
+[D]             STR_ENG.8.DmaIn 8:160
+[D]             STR_ENG.6.DmaOut 7:2880000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_3 {'CONV_ACC': 4, 'ARITH_ACC': 3, 'STR_ENG': 9}
+[D]          -> parsing LL_ATON_End_EpochBlock_3 (line 1729 to 1777)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_3 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_4 (line 1782 to 2116)
+[D]             ARITH_ACC.3.Add node='Conv2D_4_add_6'
+[D]             ARITH_ACC.0.Mul node='Conv2D_4_mul_scale_4'
+[D]             ARITH_ACC.1.Add node='Conv2D_4_off_bias_6'
+[D]             ARITH_ACC.2.Sub node='Conv2D_8_suboff_9'
+[D]             STR_ENG.3.DmaIn 7:2880000
+[D]             STR_ENG.7.DmaIn 7:2880000
+[D]             STR_ENG.4.DmaOut 11:1440000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_4 {'ARITH_ACC': 4, 'STR_ENG': 3}
+[D]          -> parsing LL_ATON_End_EpochBlock_4 (line 2118 to 2148)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_4 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_5 (line 2153 to 2598)
+[D]             CONV_ACC.0.Conv node='Conv2D_8_subm_1'
+[D]             CONV_ACC.1.Conv node='Conv2D_8_subm_1_ca_pipe_1'
+[D]             CONV_ACC.2.Conv node='Conv2D_8_subm_1_ca_pipe_2'
+[D]             CONV_ACC.3.Conv node='Conv2D_8_subm_1_ca_pipe_3'
+[D]             STR_ENG.0.DmaIn 11:1440000
+[D]             STR_ENG.2.DmaIn 8:2560
+[D]             STR_ENG.3.DmaIn 11:1440000
+[D]             STR_ENG.9.DmaIn 11:1440000
+[D]             STR_ENG.7.DmaIn 11:1440000
+[D]             STR_ENG.8.DmaOut 7:2880000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_5 {'CONV_ACC': 4, 'STR_ENG': 6}
+[D]          -> parsing LL_ATON_End_EpochBlock_5 (line 2600 to 2639)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_5 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_6 (line 2644 to 3373)
+[D]             CONV_ACC.0.Conv node='Conv2D_8_subm_0'
+[D]             CONV_ACC.1.Conv node='Conv2D_8_subm_0_ca_pipe_1'
+[D]             CONV_ACC.2.Conv node='Conv2D_8_subm_0_ca_pipe_2'
+[D]             CONV_ACC.3.Conv node='Conv2D_8_subm_0_ca_pipe_3'
+[D]             ARITH_ACC.0.Add node='Conv2D_8_add_0'
+[D]             ARITH_ACC.1.Mul node='Conv2D_8_mul_scale_13'
+[D]             ARITH_ACC.2.Add node='Conv2D_8_off_bias_15'
+[D]             POOL_ACC.0.MaxPool node='MaxPool_11'
+[D]             ARITH_ACC.3.Sub node='Conv2D_13_suboff_18'
+[D]             STR_ENG.0.DmaIn 11:1440000
+[D]             STR_ENG.7.DmaIn 8:3840
+[D]             STR_ENG.5.DmaIn 11:1440000
+[D]             STR_ENG.8.DmaIn 11:1440000
+[D]             STR_ENG.9.DmaIn 11:1440000
+[D]             STR_ENG.2.DmaIn 7:2880000
+[D]             STR_ENG.1.DmaOut 1:360000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_6 {'CONV_ACC': 4, 'ARITH_ACC': 4, 'POOL_ACC': 1, 'STR_ENG': 7}
+[D]          -> parsing LL_ATON_End_EpochBlock_6 (line 3375 to 3426)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_6 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_7 (line 3431 to 3873)
+[D]             CONV_ACC.0.Conv node='Conv2D_13_subm_1'
+[D]             CONV_ACC.1.Conv node='Conv2D_13_subm_1_ca_pipe_1'
+[D]             CONV_ACC.2.Conv node='Conv2D_13_subm_1_ca_pipe_2'
+[D]             CONV_ACC.3.Conv node='Conv2D_13_subm_1_ca_pipe_3'
+[D]             STR_ENG.7.DmaIn 1:360000
+[D]             STR_ENG.5.DmaIn 8:2560
+[D]             STR_ENG.2.DmaIn 1:360000
+[D]             STR_ENG.8.DmaIn 1:360000
+[D]             STR_ENG.1.DmaIn 1:360000
+[D]             STR_ENG.0.DmaOut 11:720000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_7 {'CONV_ACC': 4, 'STR_ENG': 6}
+[D]          -> parsing LL_ATON_End_EpochBlock_7 (line 3875 to 3914)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_7 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_8 (line 3919 to 4599)
+[D]             CONV_ACC.0.Conv node='Conv2D_13_subm_0'
+[D]             CONV_ACC.1.Conv node='Conv2D_13_subm_0_ca_pipe_1'
+[D]             CONV_ACC.2.Conv node='Conv2D_13_subm_0_ca_pipe_2'
+[D]             CONV_ACC.3.Conv node='Conv2D_13_subm_0_ca_pipe_3'
+[D]             ARITH_ACC.0.Add node='Conv2D_13_add_0'
+[D]             ARITH_ACC.1.Mul node='Conv2D_13_mul_scale_22'
+[D]             ARITH_ACC.2.Add node='Conv2D_13_off_bias_24'
+[D]             ARITH_ACC.3.Sub node='Conv2D_17_suboff_27'
+[D]             STR_ENG.8.DmaIn 1:360000
+[D]             STR_ENG.1.DmaIn 8:3840
+[D]             STR_ENG.2.DmaIn 1:360000
+[D]             STR_ENG.3.DmaIn 1:360000
+[D]             STR_ENG.4.DmaIn 1:360000
+[D]             STR_ENG.6.DmaIn 11:720000
+[D]             STR_ENG.5.DmaOut 2:360000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_8 {'CONV_ACC': 4, 'ARITH_ACC': 4, 'STR_ENG': 7}
+[D]          -> parsing LL_ATON_End_EpochBlock_8 (line 4601 to 4650)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_8 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_9 (line 4655 to 5098)
+[D]             CONV_ACC.0.Conv node='Conv2D_17_subm_1'
+[D]             CONV_ACC.1.Conv node='Conv2D_17_subm_1_ca_pipe_1'
+[D]             CONV_ACC.2.Conv node='Conv2D_17_subm_1_ca_pipe_2'
+[D]             CONV_ACC.3.Conv node='Conv2D_17_subm_1_ca_pipe_3'
+[D]             STR_ENG.8.DmaIn 2:360000
+[D]             STR_ENG.7.DmaIn 8:2560
+[D]             STR_ENG.4.DmaIn 2:360000
+[D]             STR_ENG.2.DmaIn 2:360000
+[D]             STR_ENG.9.DmaIn 2:360000
+[D]             STR_ENG.3.DmaOut 11:720000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_9 {'CONV_ACC': 4, 'STR_ENG': 6}
+[D]          -> parsing LL_ATON_End_EpochBlock_9 (line 5100 to 5139)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_9 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_10 (line 5144 to 5869)
+[D]             CONV_ACC.0.Conv node='Conv2D_17_subm_0'
+[D]             CONV_ACC.1.Conv node='Conv2D_17_subm_0_ca_pipe_1'
+[D]             CONV_ACC.2.Conv node='Conv2D_17_subm_0_ca_pipe_2'
+[D]             CONV_ACC.3.Conv node='Conv2D_17_subm_0_ca_pipe_3'
+[D]             ARITH_ACC.0.Add node='Conv2D_17_add_0'
+[D]             ARITH_ACC.1.Mul node='Conv2D_17_mul_scale_31'
+[D]             ARITH_ACC.2.Add node='Conv2D_17_off_bias_33'
+[D]             POOL_ACC.1.MaxPool node='MaxPool_20'
+[D]             ARITH_ACC.3.Sub node='Conv2D_22_suboff_36'
+[D]             STR_ENG.5.DmaIn 2:360000
+[D]             STR_ENG.4.DmaIn 8:3840
+[D]             STR_ENG.1.DmaIn 2:360000
+[D]             STR_ENG.0.DmaIn 2:360000
+[D]             STR_ENG.3.DmaIn 2:360000
+[D]             STR_ENG.6.DmaIn 11:720000
+[D]             STR_ENG.8.DmaOut 1:90000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_10 {'CONV_ACC': 4, 'ARITH_ACC': 4, 'POOL_ACC': 1, 'STR_ENG': 7}
+[D]          -> parsing LL_ATON_End_EpochBlock_10 (line 5871 to 5922)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_10 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_11 (line 5928 to 6022)
+[D]             NULL.0.Identity node='Pad_inserted_id245_conv_identity'
+[D]             STR_ENG.5.DmaIn 1:90000
+[D]             STR_ENG.3.DmaOut 1:90000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_11 {'NULL': 1, 'STR_ENG': 2}
+[D]          -> parsing LL_ATON_End_EpochBlock_11 (line 6024 to 6044)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_11 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_12 (line 6049 to 6231)
+[D]             CONV_ACC.0.Conv node='Pad_inserted_id245'
+[D]             STR_ENG.5.DmaIn 1:90000
+[D]             STR_ENG.7.DmaIn 8:16
+[D]             STR_ENG.3.DmaOut 1:92416
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_12 {'CONV_ACC': 1, 'STR_ENG': 3}
+[D]          -> parsing LL_ATON_End_EpochBlock_12 (line 6233 to 6257)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_12 {}
+[D]          -> parsing LL_ATON_End_EpochBlock_13 (line 6262 to 6353)
+[D]             PROCESSOR.0.SpaceToDepth node='SpaceToDepth_inserted_id246'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_13 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_End_EpochBlock_14 (line 6358 to 6410)
+[D]             PROCESSOR.0.DequantizeLinear node='DequantizeLinear_inserted_id256'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_14 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_End_EpochBlock_15 (line 6415 to 6476)
+[D]             PROCESSOR.0.Conv node='Conv2D_22'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_15 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_End_EpochBlock_16 (line 6481 to 6562)
+[D]             PROCESSOR.0.Cast node='Cast_inserted_id257'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_16 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_End_EpochBlock_17 (line 6567 to 6648)
+[D]             PROCESSOR.0.DepthToSpace node='DepthToSpace_inserted_id249'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_17 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_Start_EpochBlock_18 (line 6654 to 6748)
+[D]             NULL.0.Identity node='Pad_inserted_id250_conv_identity'
+[D]             STR_ENG.2.DmaIn 1:369664
+[D]             STR_ENG.9.DmaOut 2:369664
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_18 {'NULL': 1, 'STR_ENG': 2}
+[D]          -> parsing LL_ATON_End_EpochBlock_18 (line 6750 to 6770)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_18 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_19 (line 6775 to 7195)
+[D]             CONV_ACC.1.Conv node='Pad_inserted_id250'
+[D]             ARITH_ACC.0.Mul node='Conv2D_22_mul_scale_40'
+[D]             ARITH_ACC.1.Add node='Conv2D_22_off_bias_42'
+[D]             ARITH_ACC.2.Sub node='Conv2D_26_suboff_45'
+[D]             CONV_ACC.2.Conv node='Pad_inserted_id259'
+[D]             STR_ENG.0.DmaIn 2:369664
+[D]             STR_ENG.7.DmaIn 8:64
+[D]             STR_ENG.1.DmaIn 8:32
+[D]             STR_ENG.8.DmaOut 1:184832
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_19 {'CONV_ACC': 2, 'ARITH_ACC': 3, 'STR_ENG': 4}
+[D]          -> parsing LL_ATON_End_EpochBlock_19 (line 7197 to 7231)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_19 {}
+[D]          -> parsing LL_ATON_End_EpochBlock_20 (line 7236 to 7327)
+[D]             PROCESSOR.0.SpaceToDepth node='SpaceToDepth_inserted_id260'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_20 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_End_EpochBlock_21 (line 7332 to 7384)
+[D]             PROCESSOR.0.DequantizeLinear node='DequantizeLinear_inserted_id270'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_21 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_End_EpochBlock_22 (line 7389 to 7450)
+[D]             PROCESSOR.0.Conv node='Conv2D_26'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_22 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_End_EpochBlock_23 (line 7455 to 7536)
+[D]             PROCESSOR.0.Cast node='Cast_inserted_id271'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_23 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_End_EpochBlock_24 (line 7541 to 7622)
+[D]             PROCESSOR.0.DepthToSpace node='DepthToSpace_inserted_id263'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_24 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_Start_EpochBlock_25 (line 7628 to 7722)
+[D]             NULL.0.Identity node='Pad_inserted_id264_conv_identity'
+[D]             STR_ENG.8.DmaIn 1:369664
+[D]             STR_ENG.3.DmaOut 2:369664
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_25 {'NULL': 1, 'STR_ENG': 2}
+[D]          -> parsing LL_ATON_End_EpochBlock_25 (line 7724 to 7744)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_25 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_26 (line 7749 to 8033)
+[D]             CONV_ACC.3.Conv node='Pad_inserted_id264'
+[D]             ARITH_ACC.3.Mul node='Conv2D_26_mul_scale_49'
+[D]             ARITH_ACC.0.Add node='Conv2D_26_off_bias_51'
+[D]             STR_ENG.1.DmaIn 2:369664
+[D]             STR_ENG.7.DmaIn 8:64
+[D]             STR_ENG.8.DmaOut 1:180000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_26 {'CONV_ACC': 1, 'ARITH_ACC': 2, 'STR_ENG': 3}
+[D]          -> parsing LL_ATON_End_EpochBlock_26 (line 8035 to 8063)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_26 {}
+[D]          -> parsing LL_ATON_End_EpochBlock_27 (line 8068 to 8171)
+[D]             PROCESSOR.0.Resize node='Resize_29'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_27 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_Start_EpochBlock_28 (line 8176 to 8318)
+[D]             ARITH_ACC.1.Sub node='Conv2D_31_suboff_54'
+[D]             STR_ENG.5.DmaIn 11:720000
+[D]             STR_ENG.0.DmaOut 11:720000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_28 {'ARITH_ACC': 1, 'STR_ENG': 2}
+[D]          -> parsing LL_ATON_End_EpochBlock_28 (line 8320 to 8342)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_28 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_29 (line 8347 to 8895)
+[D]             CONV_ACC.0.Conv node='Conv2D_31'
+[D]             CONV_ACC.1.Conv node='Conv2D_31_ca_pipe_1'
+[D]             CONV_ACC.2.Conv node='Conv2D_31_ca_pipe_2'
+[D]             CONV_ACC.3.Conv node='Conv2D_31_ca_pipe_3'
+[D]             ARITH_ACC.2.Mul node='Conv2D_31_mul_scale_58'
+[D]             ARITH_ACC.0.Add node='Conv2D_31_off_bias_60'
+[D]             STR_ENG.3.DmaIn 11:720000
+[D]             STR_ENG.4.DmaIn 8:4608
+[D]             STR_ENG.9.DmaIn 11:720000
+[D]             STR_ENG.6.DmaIn 11:720000
+[D]             STR_ENG.8.DmaIn 11:720000
+[D]             STR_ENG.0.DmaOut 1:360000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_29 {'CONV_ACC': 4, 'ARITH_ACC': 2, 'STR_ENG': 6}
+[D]          -> parsing LL_ATON_End_EpochBlock_29 (line 8897 to 8940)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_29 {}
+[D]          -> parsing LL_ATON_End_EpochBlock_30 (line 8945 to 9048)
+[D]             PROCESSOR.0.Resize node='Resize_34'
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_30 {'PROCESSOR': 1}
+[D]          -> parsing LL_ATON_Start_EpochBlock_31 (line 9053 to 9198)
+[D]             ARITH_ACC.3.Sub node='Conv2D_36_suboff_63'
+[D]             STR_ENG.2.DmaIn 11:1440000
+[D]             STR_ENG.8.DmaOut 11:1440000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_31 {'ARITH_ACC': 1, 'STR_ENG': 2}
+[D]          -> parsing LL_ATON_End_EpochBlock_31 (line 9200 to 9222)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_31 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_32 (line 9227 to 9860)
+[D]             CONV_ACC.0.Conv node='Conv2D_36'
+[D]             CONV_ACC.1.Conv node='Conv2D_36_ca_pipe_1'
+[D]             CONV_ACC.2.Conv node='Conv2D_36_ca_pipe_2'
+[D]             CONV_ACC.3.Conv node='Conv2D_36_ca_pipe_3'
+[D]             ARITH_ACC.1.Mul node='Conv2D_36_mul_scale_67'
+[D]             ARITH_ACC.0.Add node='Conv2D_36_off_bias_69'
+[D]             ARITH_ACC.2.Sub node='Conv2D_39_suboff_72'
+[D]             STR_ENG.5.DmaIn 11:1440000
+[D]             STR_ENG.9.DmaIn 8:2304
+[D]             STR_ENG.0.DmaIn 11:1440000
+[D]             STR_ENG.7.DmaIn 11:1440000
+[D]             STR_ENG.1.DmaIn 11:1440000
+[D]             STR_ENG.2.DmaOut 11:1440000
+[D]             STR_ENG.8.DmaOut 7:1440000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_32 {'CONV_ACC': 4, 'ARITH_ACC': 3, 'STR_ENG': 7}
+[D]          -> parsing LL_ATON_End_EpochBlock_32 (line 9862 to 9909)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_32 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_33 (line 9914 to 10437)
+[D]             CONV_ACC.0.Conv node='Conv2D_39'
+[D]             ARITH_ACC.3.Mul node='Conv2D_39_mul_scale_76'
+[D]             ARITH_ACC.0.Add node='Conv2D_39_off_bias_78'
+[D]             ARITH_ACC.1.Sub node='Conv2D_41_suboff_81'
+[D]             ARITH_ACC.2.Sub node='Conv2D_43_suboff_90'
+[D]             STR_ENG.2.DmaIn 7:1440000
+[D]             STR_ENG.0.DmaIn 8:16
+[D]             STR_ENG.8.DmaIn 11:1440000
+[D]             STR_ENG.1.DmaIn 11:1440000
+[D]             STR_ENG.4.DmaOut 1:90000
+[D]             STR_ENG.5.DmaOut 7:1440000
+[D]             STR_ENG.6.DmaOut 7:1440000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_33 {'CONV_ACC': 1, 'ARITH_ACC': 4, 'STR_ENG': 7}
+[D]          -> parsing LL_ATON_End_EpochBlock_33 (line 10439 to 10477)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_33 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_34 (line 10482 to 11024)
+[D]             CONV_ACC.1.Conv node='Conv2D_41'
+[D]             ARITH_ACC.0.Mul node='Conv2D_41_mul_scale_85'
+[D]             ARITH_ACC.1.Add node='Conv2D_41_off_bias_87'
+[D]             CONV_ACC.2.Conv node='Conv2D_43'
+[D]             ARITH_ACC.2.Mul node='Conv2D_43_mul_scale_94'
+[D]             ARITH_ACC.3.Add node='Conv2D_43_off_bias_96'
+[D]             STR_ENG.2.DmaIn 7:1440000
+[D]             STR_ENG.6.DmaIn 8:16
+[D]             STR_ENG.9.DmaIn 7:1440000
+[D]             STR_ENG.1.DmaIn 8:16
+[D]             STR_ENG.0.DmaOut 1:90000
+[D]             STR_ENG.5.DmaOut 1:90000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_34 {'CONV_ACC': 2, 'ARITH_ACC': 4, 'STR_ENG': 6}
+[D]          -> parsing LL_ATON_End_EpochBlock_34 (line 11026 to 11065)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_34 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_35 (line 11070 to 11214)
+[D]             ARITH_ACC.0.Sub node='Conv2D_45_suboff_99'
+[D]             STR_ENG.7.DmaIn 11:1440000
+[D]             STR_ENG.4.DmaOut 7:1440000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_35 {'ARITH_ACC': 1, 'STR_ENG': 2}
+[D]          -> parsing LL_ATON_End_EpochBlock_35 (line 11216 to 11238)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_35 {}
+[D]          -> parsing LL_ATON_Start_EpochBlock_36 (line 11243 to 11531)
+[D]             CONV_ACC.3.Conv node='Conv2D_45'
+[D]             ARITH_ACC.1.Mul node='Conv2D_45_mul_scale_103'
+[D]             ARITH_ACC.2.Add node='Conv2D_45_off_bias_105'
+[D]             STR_ENG.1.DmaIn 7:1440000
+[D]             STR_ENG.5.DmaIn 8:16
+[D]             STR_ENG.6.DmaOut 1:90000
+[D]          <- done - FCT:LL_ATON_Start_EpochBlock_36 {'CONV_ACC': 1, 'ARITH_ACC': 2, 'STR_ENG': 3}
+[D]          -> parsing LL_ATON_End_EpochBlock_36 (line 11533 to 11561)
+[D]          <- done - FCT:LL_ATON_End_EpochBlock_36 {}
+[D]       <- 60 start/end epoch functions found
+[D]       EPOCH: 000 EpochBlock_1 LL_ATON_Start_EpochBlock_1/LL_ATON_End_EpochBlock_1 ['epoch_start', 'epoch_end', 'pure_hw'] [2] -> [9] EpochType.HW
+[D]         ['hw.sub', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 001 EpochBlock_2 LL_ATON_Start_EpochBlock_2/LL_ATON_End_EpochBlock_2 ['epoch_start', 'epoch_end', 'pure_hw'] [0, 3, 4, 5, 6, 7, 8, 9] -> [2] EpochType.HW
+[D]         ['hw.conv', 'hw.conv', 'hw.add', 'hw.conv', 'hw.conv', 'hw.add', 'hw.add', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 002 EpochBlock_3 LL_ATON_Start_EpochBlock_3/LL_ATON_End_EpochBlock_3 ['epoch_start', 'epoch_end', 'pure_hw'] [0, 1, 2, 3, 4, 5, 8, 9] -> [6] EpochType.HW
+[D]         ['hw.conv', 'hw.conv', 'hw.add', 'hw.conv', 'hw.conv', 'hw.add', 'hw.add', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 003 EpochBlock_4 LL_ATON_Start_EpochBlock_4/LL_ATON_End_EpochBlock_4 ['epoch_start', 'epoch_end', 'pure_hw'] [3, 7] -> [4] EpochType.HW
+[D]         ['hw.add', 'hw.mul', 'hw.add', 'hw.sub', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 004 EpochBlock_5 LL_ATON_Start_EpochBlock_5/LL_ATON_End_EpochBlock_5 ['epoch_start', 'epoch_end', 'pure_hw'] [0, 2, 3, 7, 9] -> [8] EpochType.HW
+[D]         ['hw.conv', 'hw.conv', 'hw.conv', 'hw.conv', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 005 EpochBlock_6 LL_ATON_Start_EpochBlock_6/LL_ATON_End_EpochBlock_6 ['epoch_start', 'epoch_end', 'pure_hw'] [0, 2, 5, 7, 8, 9] -> [1] EpochType.HW
+[D]         ['hw.conv', 'hw.conv', 'hw.conv', 'hw.conv', 'hw.add', 'hw.mul', 'hw.add', 'hw.maxpool', 'hw.sub', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 006 EpochBlock_7 LL_ATON_Start_EpochBlock_7/LL_ATON_End_EpochBlock_7 ['epoch_start', 'epoch_end', 'pure_hw'] [1, 2, 5, 7, 8] -> [0] EpochType.HW
+[D]         ['hw.conv', 'hw.conv', 'hw.conv', 'hw.conv', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 007 EpochBlock_8 LL_ATON_Start_EpochBlock_8/LL_ATON_End_EpochBlock_8 ['epoch_start', 'epoch_end', 'pure_hw'] [1, 2, 3, 4, 6, 8] -> [5] EpochType.HW
+[D]         ['hw.conv', 'hw.conv', 'hw.conv', 'hw.conv', 'hw.add', 'hw.mul', 'hw.add', 'hw.sub', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 008 EpochBlock_9 LL_ATON_Start_EpochBlock_9/LL_ATON_End_EpochBlock_9 ['epoch_start', 'epoch_end', 'pure_hw'] [2, 4, 7, 8, 9] -> [3] EpochType.HW
+[D]         ['hw.conv', 'hw.conv', 'hw.conv', 'hw.conv', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 009 EpochBlock_10 LL_ATON_Start_EpochBlock_10/LL_ATON_End_EpochBlock_10 ['epoch_start', 'epoch_end', 'pure_hw'] [0, 1, 3, 4, 5, 6] -> [8] EpochType.HW
+[D]         ['hw.conv', 'hw.conv', 'hw.conv', 'hw.conv', 'hw.add', 'hw.mul', 'hw.add', 'hw.maxpool', 'hw.sub', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 010 EpochBlock_11 LL_ATON_Start_EpochBlock_11/LL_ATON_End_EpochBlock_11 ['epoch_start', 'epoch_end', 'pure_hw'] [5] -> [3] EpochType.HW
+[D]         ['hw.memcpy.identity', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 011 EpochBlock_12 LL_ATON_Start_EpochBlock_12/LL_ATON_End_EpochBlock_12 ['epoch_start', 'epoch_end', 'pure_hw'] [5, 7] -> [3] EpochType.HW
+[D]         ['hw.conv', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 012 EpochBlock_13 /LL_ATON_End_EpochBlock_13 ['epoch_start', 'epoch_end', 'hybrid'] [] -> [] EpochType.HYBRID
+[D]         ['hybrid.spacetodepth']
+[D]       EPOCH: 013 EpochBlock_14 /LL_ATON_End_EpochBlock_14 ['epoch_start', 'epoch_end', 'pure_sw'] [] -> [] EpochType.SW
+[D]         ['sw.dequantizelinear']
+[D]       EPOCH: 014 EpochBlock_15 /LL_ATON_End_EpochBlock_15 ['epoch_start', 'epoch_end', 'pure_sw'] [] -> [] EpochType.SW
+[D]         ['sw.conv']
+[D]       EPOCH: 015 EpochBlock_16 /LL_ATON_End_EpochBlock_16 ['epoch_start', 'epoch_end', 'hybrid'] [] -> [] EpochType.HYBRID
+[D]         ['hybrid.cast']
+[D]       EPOCH: 016 EpochBlock_17 /LL_ATON_End_EpochBlock_17 ['epoch_start', 'epoch_end', 'hybrid'] [] -> [] EpochType.HYBRID
+[D]         ['hybrid.depthtospace']
+[D]       EPOCH: 017 EpochBlock_18 LL_ATON_Start_EpochBlock_18/LL_ATON_End_EpochBlock_18 ['epoch_start', 'epoch_end', 'pure_hw'] [2] -> [9] EpochType.HW
+[D]         ['hw.memcpy.identity', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 018 EpochBlock_19 LL_ATON_Start_EpochBlock_19/LL_ATON_End_EpochBlock_19 ['epoch_start', 'epoch_end', 'pure_hw'] [0, 1, 7] -> [8] EpochType.HW
+[D]         ['hw.conv', 'hw.mul', 'hw.add', 'hw.sub', 'hw.conv', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 019 EpochBlock_20 /LL_ATON_End_EpochBlock_20 ['epoch_start', 'epoch_end', 'hybrid'] [] -> [] EpochType.HYBRID
+[D]         ['hybrid.spacetodepth']
+[D]       EPOCH: 020 EpochBlock_21 /LL_ATON_End_EpochBlock_21 ['epoch_start', 'epoch_end', 'pure_sw'] [] -> [] EpochType.SW
+[D]         ['sw.dequantizelinear']
+[D]       EPOCH: 021 EpochBlock_22 /LL_ATON_End_EpochBlock_22 ['epoch_start', 'epoch_end', 'pure_sw'] [] -> [] EpochType.SW
+[D]         ['sw.conv']
+[D]       EPOCH: 022 EpochBlock_23 /LL_ATON_End_EpochBlock_23 ['epoch_start', 'epoch_end', 'hybrid'] [] -> [] EpochType.HYBRID
+[D]         ['hybrid.cast']
+[D]       EPOCH: 023 EpochBlock_24 /LL_ATON_End_EpochBlock_24 ['epoch_start', 'epoch_end', 'hybrid'] [] -> [] EpochType.HYBRID
+[D]         ['hybrid.depthtospace']
+[D]       EPOCH: 024 EpochBlock_25 LL_ATON_Start_EpochBlock_25/LL_ATON_End_EpochBlock_25 ['epoch_start', 'epoch_end', 'pure_hw'] [8] -> [3] EpochType.HW
+[D]         ['hw.memcpy.identity', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 025 EpochBlock_26 LL_ATON_Start_EpochBlock_26/LL_ATON_End_EpochBlock_26 ['epoch_start', 'epoch_end', 'pure_hw'] [1, 7] -> [8] EpochType.HW
+[D]         ['hw.conv', 'hw.mul', 'hw.add', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 026 EpochBlock_27 /LL_ATON_End_EpochBlock_27 ['epoch_start', 'epoch_end', 'pure_sw'] [] -> [] EpochType.SW
+[D]         ['sw.resize']
+[D]       EPOCH: 027 EpochBlock_28 LL_ATON_Start_EpochBlock_28/LL_ATON_End_EpochBlock_28 ['epoch_start', 'epoch_end', 'pure_hw'] [5] -> [0] EpochType.HW
+[D]         ['hw.sub', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 028 EpochBlock_29 LL_ATON_Start_EpochBlock_29/LL_ATON_End_EpochBlock_29 ['epoch_start', 'epoch_end', 'pure_hw'] [3, 4, 6, 8, 9] -> [0] EpochType.HW
+[D]         ['hw.conv', 'hw.conv', 'hw.conv', 'hw.conv', 'hw.mul', 'hw.add', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 029 EpochBlock_30 /LL_ATON_End_EpochBlock_30 ['epoch_start', 'epoch_end', 'pure_sw'] [] -> [] EpochType.SW
+[D]         ['sw.resize']
+[D]       EPOCH: 030 EpochBlock_31 LL_ATON_Start_EpochBlock_31/LL_ATON_End_EpochBlock_31 ['epoch_start', 'epoch_end', 'pure_hw'] [2] -> [8] EpochType.HW
+[D]         ['hw.sub', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 031 EpochBlock_32 LL_ATON_Start_EpochBlock_32/LL_ATON_End_EpochBlock_32 ['epoch_start', 'epoch_end', 'pure_hw'] [0, 1, 5, 7, 9] -> [2, 8] EpochType.HW
+[D]         ['hw.conv', 'hw.conv', 'hw.conv', 'hw.conv', 'hw.mul', 'hw.add', 'hw.sub', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout', 'hw.dmaout']
+[D]       EPOCH: 032 EpochBlock_33 LL_ATON_Start_EpochBlock_33/LL_ATON_End_EpochBlock_33 ['epoch_start', 'epoch_end', 'pure_hw'] [0, 1, 2, 8] -> [4, 5, 6] EpochType.HW
+[D]         ['hw.conv', 'hw.mul', 'hw.add', 'hw.sub', 'hw.sub', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout', 'hw.dmaout', 'hw.dmaout']
+[D]       EPOCH: 033 EpochBlock_34 LL_ATON_Start_EpochBlock_34/LL_ATON_End_EpochBlock_34 ['epoch_start', 'epoch_end', 'pure_hw'] [1, 2, 6, 9] -> [0, 5] EpochType.HW
+[D]         ['hw.conv', 'hw.mul', 'hw.add', 'hw.conv', 'hw.mul', 'hw.add', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmain', 'hw.dmaout', 'hw.dmaout']
+[D]       EPOCH: 034 EpochBlock_35 LL_ATON_Start_EpochBlock_35/LL_ATON_End_EpochBlock_35 ['epoch_start', 'epoch_end', 'pure_hw'] [7] -> [4] EpochType.HW
+[D]         ['hw.sub', 'hw.dmain', 'hw.dmaout']
+[D]       EPOCH: 035 EpochBlock_36 LL_ATON_Start_EpochBlock_36/LL_ATON_End_EpochBlock_36 ['epoch_start', 'epoch_end', 'pure_hw'] [1, 5] -> [6] EpochType.HW
+[D]         ['hw.conv', 'hw.mul', 'hw.add', 'hw.dmain', 'hw.dmain', 'hw.dmaout']
+[D]    <- 36 epoch descriptors found (60)
+[D]    
+[D]    -> CNpuNetworkJson (v0.1), file="results/gg-cnn_quantize_random_output_20250721_002614/st_ai_ws/neural_art__network/c_info.json"
+[D]       JSON schema version : 2.0
+[D]       
+[D]       CNpuNetworkJson: 38 n_ops=3177000000 cycles=24607844 m_cycles=79077777 ops/cycle ideal/min=129.1/40.2
+[D]       
+[D]       ┌───────────────┬───────────┬─────────────┬────────────┬──────────────┬────────────────────┬─────────────────────┬───────────────┬─────────────┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+[D]       │ name          │ mapping   │       n_ops │   n_cycles │   r/w cycles │         max cycles │   n_ops/cycle C-M-R │   r/w (Bytes) │   BW (MB/s) │ mpool:BW (MB/s) [r/w bytes]                                                                                                                                                                        │
+[D]       ├───────────────┼───────────┼─────────────┼────────────┼──────────────┼────────────────────┼─────────────────────┼───────────────┼─────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+[D]       │ EpochBlock_0  │ NODE_HW   │           0 │          0 │            0 │          0   0.00% │    0.0    0.0  0.00 │             0 │       0.000 │                                                                                                                                                                                                    │
+[D]       │ EpochBlock_1  │ NODE_HW   │      90,000 │     90,000 │       28,124 │     90,000   0.11% │    1.0    1.0  1.00 │       180,000 │    1907.349 │ npuRAM5:1907.349 [90000/90000]                                                                                                                                                                     │
+[D]       │ EpochBlock_2  │ NODE_HW   │ 194,400,000 │  1,440,000 │    3,831,336 │  7,200,000   9.10% │  135.0   27.0  0.20 │     4,321,056 │     572.344 │ hyperRAM:381.470 [0/2880000] octoFlash:0.140 [1056/0] npuRAM5:190.735 [1440000/0]                                                                                                                  │
+[D]       │ EpochBlock_3  │ NODE_HW   │ 162,720,000 │  1,440,000 │    3,830,280 │  7,200,000   9.10% │  113.0   22.6  0.20 │     4,320,880 │     572.321 │ hyperRAM:381.470 [0/2880000] octoFlash:0.117 [880/0] npuRAM5:190.735 [1440000/0]                                                                                                                   │
+[D]       │ EpochBlock_4  │ NODE_HW   │   5,760,000 │  1,440,000 │    7,588,840 │ 14,400,000  18.21% │    4.0    0.4  0.10 │     7,200,000 │     476.837 │ hyperRAM:381.470 [5760000/0] npuRAM3:25.923 [0/391424] cpuRAM2:69.444 [0/1048576]                                                                                                                  │
+[D]       │ EpochBlock_5  │ NODE_HW   │ 460,800,000 │  1,440,000 │    3,370,720 │  3,600,000   4.55% │  320.0  128.0  0.40 │     7,202,560 │    1908.027 │ hyperRAM:381.470 [0/1440000] octoFlash:0.678 [2560/0] npuRAM3:414.768 [1565696/0] cpuRAM2:1111.111 [4194304/0]                                                                                     │
+[D]       │ EpochBlock_6  │ NODE_HW   │ 695,880,000 │  1,440,000 │    5,234,650 │  7,200,000   9.10% │  483.2   96.7  0.20 │     9,003,840 │    1192.602 │ hyperRAM:381.470 [2880000/0] octoFlash:0.509 [3840/0] npuRAM5:47.684 [0/360000] npuRAM3:207.384 [1565696/0] cpuRAM2:555.556 [4194304/0]                                                            │
+[D]       │ EpochBlock_7  │ NODE_HW   │ 115,200,000 │    360,000 │      296,610 │    360,000   0.46% │  320.0  320.0  1.00 │     1,802,560 │    4775.153 │ octoFlash:6.782 [2560/0] npuRAM5:3814.697 [1440000/0] cpuRAM2:953.674 [0/360000]                                                                                                                   │
+[D]       │ EpochBlock_8  │ NODE_HW   │ 174,240,000 │    360,000 │      416,790 │    360,000   0.46% │  484.0  484.0  1.00 │     2,523,840 │    6685.893 │ octoFlash:10.173 [3840/0] npuRAM5:3814.697 [1440000/0] npuRAM4:953.674 [0/360000] cpuRAM2:1907.349 [720000/0]                                                                                      │
+[D]       │ EpochBlock_9  │ NODE_HW   │ 115,200,000 │    360,000 │      268,484 │    360,000   0.46% │  320.0  320.0  1.00 │     1,802,560 │    4775.153 │ octoFlash:6.782 [2560/0] npuRAM5:488.430 [0/184376] npuRAM4:3814.697 [1440000/0] npuRAM6:465.245 [0/175624]                                                                                        │
+[D]       │ EpochBlock_10 │ NODE_HW   │ 173,970,000 │    360,000 │      318,351 │    360,000   0.46% │  483.2  483.2  1.00 │     2,253,840 │    5970.637 │ octoFlash:10.173 [3840/0] npuRAM5:1215.278 [368752/90000] npuRAM4:3814.697 [1440000/0] npuRAM6:930.489 [351248/0]                                                                                  │
+[D]       │ EpochBlock_11 │ NODE_HW   │           0 │          0 │       28,124 │     28,125   0.04% │    0.0    0.0  0.00 │       180,000 │    6103.516 │ npuRAM5:6103.516 [90000/90000]                                                                                                                                                                     │
+[D]       │ EpochBlock_12 │ NODE_HW   │           0 │     92,416 │       28,598 │     92,416   0.12% │    0.0    0.0  1.00 │       182,432 │    1882.582 │ octoFlash:0.165 [16/0] npuRAM5:1882.417 [90000/92416]                                                                                                                                              │
+[D]       │ EpochBlock_13 │ NODE_SW   │           0 │     92,416 │       28,880 │     92,416   0.12% │    0.0    0.0  1.00 │       184,832 │    1907.349 │ npuRAM5:953.674 [92416/0] npuRAM4:953.674 [0/92416]                                                                                                                                                │
+[D]       │ EpochBlock_14 │ NODE_SW   │           0 │    184,834 │       28,892 │    184,834   0.23% │    0.0    0.0  1.00 │       462,085 │    2384.186 │ octoFlash:0.026 [5/0] npuRAM5:1907.328 [0/369664] npuRAM4:476.832 [92416/0]                                                                                                                        │
+[D]       │ EpochBlock_15 │ NODE_SW   │ 144,000,000 │    290,048 │      149,000 │    307,200   0.39% │  496.5  468.8  0.94 │     1,160,192 │    3601.710 │ octoFlash:158.946 [51200/0] npuRAM5:1147.588 [369664/0] cpuRAM2:2295.176 [0/739328]                                                                                                                │
+[D]       │ EpochBlock_16 │ NODE_SW   │           0 │    369,664 │      115,520 │    369,664   0.47% │    0.0    0.0  1.00 │     1,108,992 │    2861.023 │ cpuRAM2:2861.023 [739328/369664]                                                                                                                                                                   │
+[D]       │ EpochBlock_17 │ NODE_SW   │           0 │    369,664 │       86,640 │    369,664   0.47% │    0.0    0.0  1.00 │       739,328 │    1907.349 │ npuRAM5:953.674 [0/369664] cpuRAM2:953.674 [369664/0]                                                                                                                                              │
+[D]       │ EpochBlock_18 │ NODE_HW   │           0 │          0 │       57,760 │     57,760   0.07% │    0.0    0.0  0.00 │       739,328 │   12207.031 │ npuRAM5:6103.516 [369664/0] npuRAM4:6103.516 [0/369664]                                                                                                                                            │
+[D]       │ EpochBlock_19 │ NODE_HW   │     540,000 │    184,832 │       58,144 │    184,832   0.23% │    2.9    2.9  1.00 │       554,592 │    2861.518 │ octoFlash:0.495 [96/0] npuRAM5:953.674 [0/184832] npuRAM4:1907.349 [369664/0]                                                                                                                      │
+[D]       │ EpochBlock_20 │ NODE_SW   │           0 │    184,832 │       57,760 │    184,832   0.23% │    0.0    0.0  1.00 │       369,664 │    1907.349 │ npuRAM5:1907.349 [184832/184832]                                                                                                                                                                   │
+[D]       │ EpochBlock_21 │ NODE_SW   │           0 │    369,666 │       86,652 │    369,666   0.47% │    0.0    0.0  1.00 │       924,165 │    2384.186 │ octoFlash:0.013 [5/0] npuRAM5:476.835 [184832/0] cpuRAM2:1907.338 [0/739328]                                                                                                                       │
+[D]       │ EpochBlock_22 │ NODE_SW   │ 288,000,000 │    395,264 │      252,320 │    614,400   0.78% │  728.6  468.8  0.64 │     1,581,056 │    2454.122 │ octoFlash:158.946 [102400/0] npuRAM3:667.572 [0/430080] cpuRAM2:1627.604 [739328/309248]                                                                                                           │
+[D]       │ EpochBlock_23 │ NODE_SW   │           0 │    369,664 │       81,920 │    369,664   0.47% │    0.0    0.0  1.00 │     1,108,992 │    2861.023 │ npuRAM3:1664.307 [430080/215040] cpuRAM2:1196.716 [309248/154624]                                                                                                                                  │
+[D]       │ EpochBlock_24 │ NODE_SW   │           0 │    369,664 │       69,840 │    369,664   0.47% │    0.0    0.0  1.00 │       739,328 │    1907.349 │ npuRAM5:953.674 [0/369664] npuRAM3:554.769 [215040/0] cpuRAM2:398.905 [154624/0]                                                                                                                   │
+[D]       │ EpochBlock_25 │ NODE_HW   │           0 │          0 │       57,760 │     57,760   0.07% │    0.0    0.0  0.00 │       739,328 │   12207.031 │ npuRAM5:6103.516 [369664/0] npuRAM4:6103.516 [0/369664]                                                                                                                                            │
+[D]       │ EpochBlock_26 │ NODE_HW   │     360,000 │    184,832 │       57,197 │    184,832   0.23% │    1.9    1.9  1.00 │       549,728 │    2836.422 │ octoFlash:0.330 [64/0] npuRAM5:928.743 [0/180000] npuRAM4:1907.349 [369664/0]                                                                                                                      │
+[D]       │ EpochBlock_27 │ NODE_SW   │           0 │    900,024 │      140,769 │    900,024   1.14% │    0.0    0.0  1.00 │       900,090 │     953.744 │ octoFlash:0.095 [90/0] npuRAM5:486.098 [180000/278752] npuRAM6:467.551 [0/441248]                                                                                                                  │
+[D]       │ EpochBlock_28 │ NODE_HW   │     720,000 │    720,000 │      337,500 │    720,000   0.91% │    1.0    1.0  1.00 │     1,440,000 │    1907.349 │ npuRAM5:369.220 [278752/0] npuRAM6:584.454 [441248/0] cpuRAM2:953.674 [0/720000]                                                                                                                   │
+[D]       │ EpochBlock_29 │ NODE_HW   │ 208,080,000 │    360,000 │      533,898 │    450,000   0.57% │  578.0  462.4  0.80 │     1,804,608 │    3824.463 │ octoFlash:9.766 [4608/0] npuRAM5:762.939 [0/360000] cpuRAM2:3051.758 [1440000/0]                                                                                                                   │
+[D]       │ EpochBlock_30 │ NODE_SW   │           0 │  1,800,024 │      445,234 │  1,800,024   2.28% │    0.0    0.0  1.00 │     1,800,090 │     953.709 │ octoFlash:0.048 [90/0] npuRAM5:190.732 [360000/0] npuRAM3:207.381 [0/391424] cpuRAM2:555.548 [0/1048576]                                                                                           │
+[D]       │ EpochBlock_31 │ NODE_HW   │   1,440,000 │  1,440,000 │      613,839 │  1,440,000   1.82% │    1.0    1.0  1.00 │     2,879,999 │    1907.348 │ npuRAM5:303.819 [0/458752] npuRAM4:303.819 [0/458752] npuRAM3:303.819 [391424/67328] npuRAM6:301.445 [0/455167] cpuRAM2:694.444 [1048576/0]                                                        │
+[D]       │ EpochBlock_32 │ NODE_HW   │ 419,040,000 │  1,440,000 │    4,452,660 │  3,600,000   4.55% │  291.0  116.4  0.40 │     5,762,300 │    1526.488 │ hyperRAM:381.470 [0/1440000] octoFlash:0.610 [2304/0] npuRAM5:243.056 [917504/0] npuRAM4:243.056 [917504/0] npuRAM3:139.364 [134656/391424] npuRAM6:241.156 [910332/0] cpuRAM2:277.778 [0/1048576] │
+[D]       │ EpochBlock_33 │ NODE_HW   │   5,940,000 │  1,440,000 │   11,591,838 │ 10,800,000  13.66% │    4.1    0.6  0.13 │     7,290,016 │     643.732 │ hyperRAM:381.470 [1440000/2880000] octoFlash:0.001 [16/0] npuRAM5:7.947 [0/90000] npuRAM3:69.128 [782848/0] cpuRAM2:185.185 [2097152/0]                                                            │
+[D]       │ EpochBlock_34 │ NODE_HW   │   6,120,000 │  1,440,000 │    7,228,316 │  7,200,000   9.10% │    4.2    0.8  0.20 │     3,060,032 │     405.316 │ hyperRAM:381.470 [2880000/0] octoFlash:0.004 [32/0] npuRAM5:23.842 [0/180000]                                                                                                                      │
+[D]       │ EpochBlock_35 │ NODE_HW   │   1,440,000 │  1,440,000 │    3,988,840 │  3,600,000   4.55% │    1.0    0.4  0.40 │     2,880,000 │     762.939 │ hyperRAM:381.470 [0/1440000] npuRAM3:103.692 [391424/0] cpuRAM2:277.778 [1048576/0]                                                                                                                │
+[D]       │ EpochBlock_36 │ NODE_HW   │   3,060,000 │  1,440,000 │    3,614,158 │  3,600,000   4.55% │    2.1    0.8  0.40 │     1,530,016 │     405.316 │ hyperRAM:381.470 [1440000/0] octoFlash:0.004 [16/0] npuRAM5:23.842 [0/90000]                                                                                                                       │
+[D]       │ EpochBlock_37 │ NODE_SW   │           0 │          0 │            0 │          0   0.00% │    0.0    0.0  0.00 │             0 │       0.000 │                                                                                                                                                                                                    │
+[D]       └───────────────┴───────────┴─────────────┴────────────┴──────────────┴────────────────────┴─────────────────────┴───────────────┴─────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+[D]        Table: JSON info - mapping, memory accesses and cycles per epoch
+[D]       
+[D]    <- CNpuNetworkJson: 38 n_ops=3177000000 cycles=24607844 m_cycles=79077777 ops/cycle ideal/min=129.1/40.2
+[D] <- CNpuNetworkDesc done
+ Creating AiRunner session with `serial:/dev/tty.usbmodemCDC_ACM0011` descriptor
+[D] creating "AiRunner" object (v3.2)
+[D] resolving('desc' parameter: 'serial:/dev/tty.usbmodemCDC_ACM0011')..
+[D] creating <stm_ai_runner.pb_mgr_drv.AiPbMsg object at 0x1072db700> (v2.0)
+[D] creating <stm_ai_runner.serial_hw_drv.SerialHwDriver object at 0x1072da680>
+[D] 'desc' parameter for 'AiPbMsg' driver: '/dev/tty.usbmodemCDC_ACM0011'
+[D] connecting..
+[D] baud=115200 device=/dev/tty.usbmodemCDC_ACM0011 timeout=0.1 io_hw_log=None
+[D] 0: {'device': '/dev/tty.usbmodemCDC_ACM0011'}
+[D] -> [sync msg]
+[D]    version: 769
+[D]    capability: 1
+[D]    rtid: 65540
+[D] <- [sync msg]
+[D] CMD_SYNC v3.1
+[D] connection successful
+[D] -> [sys_info msg]
+[D]    devid: 1158
+[D]    sclock: 800000000
+[D]    hclock: 400000000
+[D]    cache: 83954688
+[D]    com_param: 382
+[D]    extra: 0
+[D]    extra: 1000000000
+[D]    extra: 900000000
+[D]    extra: 0
+[D] <- [sys_info msg]
+[D] -> [model_info msg]
+[D]    name: "network"
+[D]    rtid: 117506052
+[D]    signature: ""
+[D]    compile_datetime: "Jul 20 2025 23:11:43"
+[D]    runtime_version: 167837696
+[D]    tool_version: 16843008
+[D]    n_macc: 0
+[D]    n_nodes: 36
+[D]    n_inputs: 1
+[D]    inputs {
+[D]      name: "Input_0_out_0"
+[D]      format: 8651840
+[D]      size: 90000
+[D]      n_dims: 4
+[D]      dims: 1
+[D]      dims: 1
+[D]      dims: 300
+[D]      dims: 300
+[D]      scale: 0.003921568
+[D]      zeropoint: -128
+[D]      addr: 875429888
+[D]      flags: 1025
+[D]    }
+[D]    n_outputs: 4
+[D]    outputs {
+[D]      name: "Quantize_40_out_0"
+[D]      format: 8651840
+[D]      size: 90000
+[D]      n_dims: 4
+[D]      dims: 1
+[D]      dims: 1
+[D]      dims: 300
+[D]      dims: 300
+[D]      scale: 0.003934788
+[D]      zeropoint: -110
+[D]      addr: 875429888
+[D]      flags: 1026
+[D]    }
+[D]    outputs {
+[D]      name: "Quantize_42_out_0"
+[D]      format: 8651840
+[D]      size: 90000
+[D]      n_dims: 4
+[D]      dims: 1
+[D]      dims: 1
+[D]      dims: 300
+[D]      dims: 300
+[D]      scale: 0.0041880007
+[D]      zeropoint: -128
+[D]      addr: 875519888
+[D]      flags: 1026
+[D]    }
+[D]    outputs {
+[D]      name: "Quantize_44_out_0"
+[D]      format: 8651840
+[D]      size: 90000
+[D]      n_dims: 4
+[D]      dims: 1
+[D]      dims: 1
+[D]      dims: 300
+[D]      dims: 300
+[D]      scale: 0.0032994396
+[D]      zeropoint: 49
+[D]      addr: 875609888
+[D]      flags: 1026
+[D]    }
+[D]    outputs {
+[D]      name: "Quantize_46_out_0"
+[D]      format: 8651840
+[D]      size: 90000
+[D]      n_dims: 4
+[D]      dims: 1
+[D]      dims: 1
+[D]      dims: 300
+[D]      dims: 300
+[D]      scale: 0.0025213042
+[D]      zeropoint: -118
+[D]      addr: 875699888
+[D]      flags: 1026
+[D]    }
+[D]    n_activations: 1
+[D]    activations {
+[D]      name: ""
+[D]      format: 263232
+[D]      size: 0
+[D]      n_dims: 1
+[D]      dims: 0
+[D]      scale: 0.0
+[D]      zeropoint: 0
+[D]      addr: 0
+[D]      flags: 8
+[D]    }
+[D]    n_params: 1
+[D]    params {
+[D]      name: ""
+[D]      format: 263232
+[D]      size: 0
+[D]      n_dims: 1
+[D]      dims: 0
+[D]      scale: 0.0
+[D]      zeropoint: 0
+[D]      addr: 0
+[D]      flags: 8
+[D]    }
+[D]    runtime_desc: "atonn-v1.1.1-14-ge619e860 AE536891"
+[D] <- [model_info msg]
+[D] RT_DECODER: ST Neural ART (LL_ATON api), id=0x7010004, compiler=GCC, act=False, params=False, macc=False
+[D] DEV_DECODER: stm32 family - 0x486 - STM32N6xx @800/400MHz, ['fpu', 'core_icache', 'core_dcache', 'npu_freq=1000MHz', 'nic_freq=900MHz']
+[D] discover() found="network"
+ Proto-buffer driver v2.0 (msg v3.1) (Serial driver v1.0 - /dev/tty.usbmodemCDC_ACM0011:115200) ['network']
+  
+  Summary 'network' - ['network']
+  ----------------------------------------------------------------------------------------------------------------------------------
+  I[1/1] 'Input_0_out_0'       :   int8[1,1,300,300], 90000 Bytes, QLinear(0.003921568,-128,int8), activations                      
+  O[1/4] 'Quantize_40_out_0'   :   int8[1,1,300,300], 90000 Bytes, QLinear(0.003934788,-110,int8), activations                      
+  O[2/4] 'Quantize_42_out_0'   :   int8[1,1,300,300], 90000 Bytes, QLinear(0.004188001,-128,int8), activations                      
+  O[3/4] 'Quantize_44_out_0'   :   int8[1,1,300,300], 90000 Bytes, QLinear(0.003299440,49,int8), activations                        
+  O[4/4] 'Quantize_46_out_0'   :   int8[1,1,300,300], 90000 Bytes, QLinear(0.002521304,-118,int8), activations                      
+  n_nodes                      :   36                                                                                               
+  compile_datetime             :   Jul 20 2025 23:11:43                                                                             
+  ----------------------------------------------------------------------------------------------------------------------------------
+  protocol                     :   Proto-buffer driver v2.0 (msg v3.1) (Serial driver v1.0 - /dev/tty.usbmodemCDC_ACM0011:115200)   
+  tools                        :   ST Neural ART (LL_ATON api) v1.1.1                                                               
+  runtime lib                  :   atonn-v1.1.1-14-ge619e860 (optimized SW lib v10.1.0-ae536891 GCC)                                
+  capabilities                 :   IO_ONLY, PER_LAYER, PER_LAYER_WITH_DATA                                                          
+  device.desc                  :   stm32 family - 0x486 - STM32N6xx @800/400MHz                                                     
+  device.attrs                 :   fpu,core_icache,core_dcache,npu_freq=1000MHz,nic_freq=900MHz                                     
+  ----------------------------------------------------------------------------------------------------------------------------------
+[D] creating AiRunnerProfile object

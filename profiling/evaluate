@@ -11,17 +11,27 @@ fi
 # Set the model name
 MODEL_NAME=$1
 
-OUTPUT_DIR=${MODEL_NAME%.*}_output_$(date +"%Y%m%d_%H%M%S")
+# Step 1: Strip the extension
+MODEL_NO_EXT="${MODEL_NAME%.*}"
+
+# Step 2: Extract just the filename (no path)
+FILENAME_WITHOUT_EXT="$(basename "$MODEL_NO_EXT")"
+
+# Step 3: Build the output directory name
+OUTPUT_DIR="./results/${FILENAME_WITHOUT_EXT}_output_$(date +"%Y%m%d_%H%M%S")"
+echo "Output directory: $OUTPUT_DIR"
 # Create output directory if it doesn't exist
 mkdir -p $OUTPUT_DIR
 
-stedgeai generate -m $MODEL_NAME --target stm32n6 --st-neural-art profile-allmems--O3
+stedgeai generate -m $MODEL_NAME --target stm32n6 --st-neural-art profile-allmems--O3 --output $OUTPUT_DIR
 
-python $STEDGEAI_CORE_DIR/scripts/N6_scripts/n6_loader.py --n6-loader-config ./config_files/mac/config_n6l.json # or N6-Nucleo-USB
+mv st_ai_ws $OUTPUT_DIR
 
-#stedgeai validate -m $MODEL_NAME --target stm32 --mode -d /dev/tty
+python $STEDGEAI_CORE_DIR/scripts/N6_scripts/n6_loader.py --n6-loader-config ./config_files/mac/config_n6l.json --network-file $OUTPUT_DIR/network.c 
 
 export PYTHONPATH=$STEDGEAI_CORE_DIR/scripts/ai_runner:$PYTHONPATH
-python $STEDGEAI_CORE_DIR/scripts/ai_runner/examples/checker.py -d serial:/dev/tty.usbmodemCDC_ACM0011
+#python $STEDGEAI_CORE_DIR/scripts/ai_runner/examples/ai_checker.py --debug -b 10 -v 2 -d serial:/dev/tty.usbmodemCDC_ACM0011  > $OUTPUT_DIR/checker.log
 
+python $STEDGEAI_CORE_DIR/scripts/ai_runner/examples/npu_profiler.py --debug -b 10 -v 2 -d serial:/dev/tty.usbmodemCDC_ACM0011 --cfile $OUTPUT_DIR/st_ai_ws/neural_art__network > $OUTPUT_DIR/profile.log
 
+mv *log $OUTPUT_DIR

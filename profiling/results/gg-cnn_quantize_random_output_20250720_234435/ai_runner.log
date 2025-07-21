@@ -1,0 +1,142 @@
+[D:AiRunner] creating "AiRunner" object (v3.2)
+[D:AiRunner] resolving('desc' parameter: 'serial:/dev/tty.usbmodemCDC_ACM0011')..
+[D:AiRunner] creating <stm_ai_runner.pb_mgr_drv.AiPbMsg object at 0x104dfaa10> (v2.0)
+[D:AiRunner] creating <stm_ai_runner.serial_hw_drv.SerialHwDriver object at 0x104dfa6e0>
+[D:AiRunner] 'desc' parameter for 'AiPbMsg' driver: '/dev/tty.usbmodemCDC_ACM0011'
+[D:AiRunner] connecting..
+[D:AiRunner] baud=115200 device=/dev/tty.usbmodemCDC_ACM0011 timeout=0.1 io_hw_log=None
+[D:AiRunner] 0: {'device': '/dev/tty.usbmodemCDC_ACM0011'}
+[D:AiRunner] -> [sync msg]
+[D:AiRunner]    version: 769
+[D:AiRunner]    capability: 1
+[D:AiRunner]    rtid: 65540
+[D:AiRunner] <- [sync msg]
+[D:AiRunner] CMD_SYNC v3.1
+[D:AiRunner] connection successful
+[D:AiRunner] -> [sys_info msg]
+[D:AiRunner]    devid: 1158
+[D:AiRunner]    sclock: 800000000
+[D:AiRunner]    hclock: 400000000
+[D:AiRunner]    cache: 83954688
+[D:AiRunner]    com_param: 382
+[D:AiRunner]    extra: 0
+[D:AiRunner]    extra: 1000000000
+[D:AiRunner]    extra: 900000000
+[D:AiRunner]    extra: 0
+[D:AiRunner] <- [sys_info msg]
+[D:AiRunner] -> [model_info msg]
+[D:AiRunner]    name: "network"
+[D:AiRunner]    rtid: 117506052
+[D:AiRunner]    signature: ""
+[D:AiRunner]    compile_datetime: "Jul 20 2025 23:11:43"
+[D:AiRunner]    runtime_version: 167837696
+[D:AiRunner]    tool_version: 16843008
+[D:AiRunner]    n_macc: 0
+[D:AiRunner]    n_nodes: 36
+[D:AiRunner]    n_inputs: 1
+[D:AiRunner]    inputs {
+[D:AiRunner]      name: "Input_0_out_0"
+[D:AiRunner]      format: 8651840
+[D:AiRunner]      size: 90000
+[D:AiRunner]      n_dims: 4
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 300
+[D:AiRunner]      dims: 300
+[D:AiRunner]      scale: 0.003921568
+[D:AiRunner]      zeropoint: -128
+[D:AiRunner]      addr: 875429888
+[D:AiRunner]      flags: 1025
+[D:AiRunner]    }
+[D:AiRunner]    n_outputs: 4
+[D:AiRunner]    outputs {
+[D:AiRunner]      name: "Quantize_40_out_0"
+[D:AiRunner]      format: 8651840
+[D:AiRunner]      size: 90000
+[D:AiRunner]      n_dims: 4
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 300
+[D:AiRunner]      dims: 300
+[D:AiRunner]      scale: 0.003934788
+[D:AiRunner]      zeropoint: -110
+[D:AiRunner]      addr: 875429888
+[D:AiRunner]      flags: 1026
+[D:AiRunner]    }
+[D:AiRunner]    outputs {
+[D:AiRunner]      name: "Quantize_42_out_0"
+[D:AiRunner]      format: 8651840
+[D:AiRunner]      size: 90000
+[D:AiRunner]      n_dims: 4
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 300
+[D:AiRunner]      dims: 300
+[D:AiRunner]      scale: 0.0041880007
+[D:AiRunner]      zeropoint: -128
+[D:AiRunner]      addr: 875519888
+[D:AiRunner]      flags: 1026
+[D:AiRunner]    }
+[D:AiRunner]    outputs {
+[D:AiRunner]      name: "Quantize_44_out_0"
+[D:AiRunner]      format: 8651840
+[D:AiRunner]      size: 90000
+[D:AiRunner]      n_dims: 4
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 300
+[D:AiRunner]      dims: 300
+[D:AiRunner]      scale: 0.0032994396
+[D:AiRunner]      zeropoint: 49
+[D:AiRunner]      addr: 875609888
+[D:AiRunner]      flags: 1026
+[D:AiRunner]    }
+[D:AiRunner]    outputs {
+[D:AiRunner]      name: "Quantize_46_out_0"
+[D:AiRunner]      format: 8651840
+[D:AiRunner]      size: 90000
+[D:AiRunner]      n_dims: 4
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 1
+[D:AiRunner]      dims: 300
+[D:AiRunner]      dims: 300
+[D:AiRunner]      scale: 0.0025213042
+[D:AiRunner]      zeropoint: -118
+[D:AiRunner]      addr: 875699888
+[D:AiRunner]      flags: 1026
+[D:AiRunner]    }
+[D:AiRunner]    n_activations: 1
+[D:AiRunner]    activations {
+[D:AiRunner]      name: ""
+[D:AiRunner]      format: 263232
+[D:AiRunner]      size: 0
+[D:AiRunner]      n_dims: 1
+[D:AiRunner]      dims: 0
+[D:AiRunner]      scale: 0.0
+[D:AiRunner]      zeropoint: 0
+[D:AiRunner]      addr: 0
+[D:AiRunner]      flags: 8
+[D:AiRunner]    }
+[D:AiRunner]    n_params: 1
+[D:AiRunner]    params {
+[D:AiRunner]      name: ""
+[D:AiRunner]      format: 263232
+[D:AiRunner]      size: 0
+[D:AiRunner]      n_dims: 1
+[D:AiRunner]      dims: 0
+[D:AiRunner]      scale: 0.0
+[D:AiRunner]      zeropoint: 0
+[D:AiRunner]      addr: 0
+[D:AiRunner]      flags: 8
+[D:AiRunner]    }
+[D:AiRunner]    runtime_desc: "atonn-v1.1.1-14-ge619e860 AE536891"
+[D:AiRunner] <- [model_info msg]
+[D:AiRunner] RT_DECODER: ST Neural ART (LL_ATON api), id=0x7010004, compiler=GCC, act=False, params=False, macc=False
+[D:AiRunner] DEV_DECODER: stm32 family - 0x486 - STM32N6xx @800/400MHz, ['fpu', 'core_icache', 'core_dcache', 'npu_freq=1000MHz', 'nic_freq=900MHz']
+[D:AiRunner] discover() found="network"
+[D:AiRunner] -> Requested RUN mode: Mode.DEBUG|PER_LAYER (param=0b100000011, option=0x1)
+[D:AiRunner]    SEND INPUT TENSOR #0 ((1, 1, 300, 300)/int8) last=True..
+[D:AiRunner]    ----------------------------------------
+[D:AiRunner]    INTERNAL OPERATOR (idx=0, name=EpochBlock_1)
+[D:AiRunner]     name="" counters="CPU cycles"[4194, 73033, 1604] dur=0.099ms id=1.1 type=0x5000000/INTERNAL|WITHOUT_TENSOR,"epoch"
+[D:AiRunner]    ----------------------------------------
