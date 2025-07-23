@@ -1,5 +1,0 @@
-07/20/2025 11:43:49 PM  __main__ -- Preparing compiler GCC
-07/20/2025 11:43:49 PM  __main__ -- Setting a breakpoint in main.c at line 137 (before the infinite loop)
-07/20/2025 11:43:49 PM  __main__ -- Copying network.c to project: -> /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/stedgeaicore/Projects/STM32N6570-DK/Applications/NPU_Validation/X-CUBE-AI/App/network.c
-07/20/2025 11:43:49 PM  __main__ -- Copying results/tiny_transformer_output_20250720_234342/network.c failed (file does not exist)
-07/20/2025 11:43:49 PM  __main__ -- Start operation did not achieve successfully

@@ -1,0 +1,3 @@
+ST Edge AI Core v2.2.0-20266 2adc00962
+PASS:   0%|          | 0/99 [00:00<?, ?it/s]PASS:  11%|█         | 11/99 [00:03<00:29,  3.00it/s]                                                     
+NOT IMPLEMENTED: Slice on batch dimension not supported

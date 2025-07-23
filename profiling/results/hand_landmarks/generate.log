@@ -1,0 +1,178 @@
+ST Edge AI Core v2.2.0-20266 2adc00962
+PASS:   0%|          | 0/99 [00:00<?, ?it/s]PASS:  11%|█         | 11/99 [00:02<00:19,  4.52it/s]PASS:  12%|█▏        | 12/99 [00:02<00:18,  4.80it/s]PASS:  24%|██▍       | 24/99 [00:02<00:05, 13.20it/s]PASS:  40%|████      | 40/99 [00:02<00:02, 26.96it/s]PASS:  53%|█████▎    | 52/99 [00:02<00:01, 37.82it/s]PASS:  67%|██████▋   | 66/99 [00:02<00:00, 52.23it/s]PASS:  80%|███████▉  | 79/99 [00:03<00:00, 64.89it/s]PASS:  92%|█████████▏| 91/99 [00:03<00:00, 44.43it/s]                                                      >>>> EXECUTING NEURAL ART COMPILER
+PASS:  92%|█████████▏| 91/99 [00:03<00:00, 44.43it/s]                                                        /Applications/ST/STEdgeAI/2.2/Utilities/macarm/atonn -i "/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/results/hand_landmarks_output_20250722_013949/hand_landmarks_OE_3_3_0.onnx" --json-quant-file "/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/results/hand_landmarks_output_20250722_013949/hand_landmarks_OE_3_3_0_Q.json" -g "network.c" --load-mdesc "/Applications/ST/STEdgeAI/2.2/Utilities/configs/stm32n6.mdesc" --load-mpool "/Applications/ST/STEdgeAI/2.2/Utilities/macarm/targets/stm32/resources/mpools/stm32n6.mpool" --save-mpool-file "/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/st_ai_ws/neural_art__network/stm32n6.mpool" --out-dir-prefix "/Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/st_ai_ws/neural_art__network/" --native-float --mvei --cache-maintenance --Ocache-opt --enable-virtual-mem-pools --Os --optimization 3 --Oauto-sched --output-info-file "c_info.json"
+PASS:  92%|█████████▏| 91/99 [00:03<00:00, 44.43it/s]                                                      <<<< DONE EXECUTING NEURAL ART COMPILER
+PASS:  92%|█████████▏| 91/99 [00:04<00:00, 44.43it/s]                                                      
+ Exec/report summary (generate)
+ -------------------------------------------------------------------------------------------------------------------------------------------
+ model file         :   /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/pretrained_models/hand_landmarks.tflite                   
+ type               :   tflite                                                                                                              
+ c_name             :   network                                                                                                             
+ options            :   allocate-inputs, allocate-outputs                                                                                   
+ optimization       :   balanced                                                                                                            
+ target/series      :   stm32n6npu                                                                                                          
+ workspace dir      :   /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/st_ai_ws                                        
+ output dir         :   /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/results/hand_landmarks_output_20250722_013949   
+ model_fmt          :   ss/ua per channel                                                                                                   
+ model_name         :   hand_landmarks                                                                                                      
+ model_hash         :   0x7d85df88921547c92bf5a07eceaaad77                                                                                  
+ params #           :   2,715,680 items (2.65 MiB)                                                                                          
+ -------------------------------------------------------------------------------------------------------------------------------------------
+ input 1/1          :   'Input_0_out_0', uint8(1x224x224x3), 147.00 KBytes, QLinear(0.003921568,0,uint8), activations                       
+ output 1/4         :   'Dequantize_223_out_0', f32(1x1), 4 Bytes, activations                                                              
+ output 2/4         :   'Dequantize_229_out_0', f32(1x63), 252 Bytes, activations                                                           
+ output 3/4         :   'Dequantize_219_out_0', f32(1x1), 4 Bytes, activations                                                              
+ output 4/4         :   'Dequantize_226_out_0', f32(1x63), 252 Bytes, activations                                                           
+ outputs (total)    :   512 Bytes                                                                                                           
+ macc               :   0                                                                                                                   
+ weights (ro)       :   3,362,177 B (3.21 MiB) (1 segment) / -7,500,543(-69.0%) vs float model                                              
+ activations (rw)   :   1,781,248 B (1.70 MiB) (4 segments) *                                                                               
+ ram (total)        :   1,781,248 B (1.70 MiB) = 1,781,248 + 0 + 0                                                                          
+ -------------------------------------------------------------------------------------------------------------------------------------------
+ (*) 'input'/'output' buffers are allocated in the activations buffer
+PASS:  92%|█████████▏| 91/99 [00:04<00:00, 44.43it/s]                                                     
+Computing AI RT data/code size (target=stm32n6npu)..
+PASS:  92%|█████████▏| 91/99 [00:04<00:00, 44.43it/s]                                                     
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     Compilation details
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                        ---------------------------------------------------------------------------------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     Compiler version: 1.1.1-14
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     Compiler arguments:  -i /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/results/hand_landmarks_output_20250722_013949/hand_landmarks_OE_3_3_0.onnx --json-quant-file /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/results/hand_landmarks_output_20250722_013949/hand_landmarks_OE_3_3_0_Q.json -g network.c --load-mdesc /Applications/ST/STEdgeAI/2.2/Utilities/configs/stm32n6.mdesc --load-mpool /Applications/ST/STEdgeAI/2.2/Utilities/macarm/targets/stm32/resources/mpools/stm32n6.mpool --save-mpool-file /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/st_ai_ws/neural_art__network/stm32n6.mpool --out-dir-prefix /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/st_ai_ws/neural_art__network/ --native-float --mvei --cache-maintenance --Ocache-opt --enable-virtual-mem-pools --Os --optimization 3 --Oauto-sched --output-info-file c_info.json
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     ====================================================================================
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     Memory usage information  (input/output buffers are included in activations)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                        ---------------------------------------------------------------------------------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	flexMEM    [0x34000000 - 0x34000000]:          0  B /          0  B  (  0.00 % used) -- weights:          0  B (  0.00 % used)  activations:          0  B (  0.00 % used)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	cpuRAM1    [0x34064000 - 0x34064000]:          0  B /          0  B  (  0.00 % used) -- weights:          0  B (  0.00 % used)  activations:          0  B (  0.00 % used)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	cpuRAM2    [0x34100000 - 0x34200000]:    784.000 kB /      1.000 MB  ( 76.56 % used) -- weights:          0  B (  0.00 % used)  activations:    784.000 kB ( 76.56 % used)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	npuRAM3    [0x34200000 - 0x34270000]:     73.500 kB /    448.000 kB  ( 16.41 % used) -- weights:          0  B (  0.00 % used)  activations:     73.500 kB ( 16.41 % used)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	npuRAM4    [0x34270000 - 0x342E0000]:    441.000 kB /    448.000 kB  ( 98.44 % used) -- weights:          0  B (  0.00 % used)  activations:    441.000 kB ( 98.44 % used)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	npuRAM5    [0x342E0000 - 0x34350000]:    441.000 kB /    448.000 kB  ( 98.44 % used) -- weights:          0  B (  0.00 % used)  activations:    441.000 kB ( 98.44 % used)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	npuRAM6    [0x34350000 - 0x343C0000]:          0  B /    448.000 kB  (  0.00 % used) -- weights:          0  B (  0.00 % used)  activations:          0  B (  0.00 % used)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	octoFlash  [0x71000000 - 0x78000000]:      3.206 MB /    112.000 MB  (  2.86 % used) -- weights:      3.206 MB (  2.86 % used)  activations:          0  B (  0.00 % used)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	hyperRAM   [0x90000000 - 0x92000000]:          0  B /     32.000 MB  (  0.00 % used) -- weights:          0  B (  0.00 % used)  activations:          0  B (  0.00 % used)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     Total:                                             4.905 MB                                  -- weights:      3.206 MB                  activations:      1.699 MB
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     ====================================================================================
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     Used memory ranges
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                        ---------------------------------------------------------------------------------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	cpuRAM2    [0x34100000 - 0x34200000]: 0x34100000-0x341C4000
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	npuRAM3    [0x34200000 - 0x34270000]: 0x34200000-0x34212600
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	npuRAM4    [0x34270000 - 0x342E0000]: 0x34270000-0x342DE400
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	npuRAM5    [0x342E0000 - 0x34350000]: 0x342E0000-0x3434E400
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     	octoFlash  [0x71000000 - 0x78000000]: 0x71000000-0x71334D90
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     ====================================================================================
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     Epochs details
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                        ---------------------------------------------------------------------------------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     Total number of epochs: 69 of which 4 implemented in software
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch ID   HW/SW/EC Operation (SW only)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 1       HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 2       HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 3       HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 4       HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 5       HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 6       HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 7       HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 8       HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 9       HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 10      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 11      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 12      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 13      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 14      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 15      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 16      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 17      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 18      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 19      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 20      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 21      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 22      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 23      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 24      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 25      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 26      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 27      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 28      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 29      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 30      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 31      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 32      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 33      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 34      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 35      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 36      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 37      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 38      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 39      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 40      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 41      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 42      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 43      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 44      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 45      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 46      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 47      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 48      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 49      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 50      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 51      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 52      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 53      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 54      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 55      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 56      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 57      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 58      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 59      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 60      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 61      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 62      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 63      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 64     -SW-   (  DequantizeLinear  )
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 65      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 66     -SW-   (  DequantizeLinear  )
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 67     -SW-   (  DequantizeLinear  )
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 68      HW
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     epoch 69     -SW-   (  DequantizeLinear  )
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     ====================================================================================
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      Requested memory size by section - "stm32n6npu" target
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      ------------------------------- -------- ----------- ------ -----------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      module                              text      rodata   data         bss
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      ------------------------------- -------- ----------- ------ -----------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      network.o                         12,568     239,361      0           0
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      NetworkRuntime1020_CM55_GCC.a      3,068           0      0           0
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      ll_aton_reloc_network.o                0           0      0           0
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      lib (toolchain)*                     902         624      0           0
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      ll atonn runtime                   6,894      11,448      0          29
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      ------------------------------- -------- ----------- ------ -----------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      RT total**                        23,432     251,433      0          29
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      ------------------------------- -------- ----------- ------ -----------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      weights                                0   3,362,177      0           0
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      activations                            0           0      0   1,781,248
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      io                                     0           0      0           0
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      ------------------------------- -------- ----------- ------ -----------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      TOTAL                             23,432   3,613,610      0   1,781,277
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      ------------------------------- -------- ----------- ------ -----------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      *  toolchain objects (libm/libgcc*)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      ** RT AI runtime objects (kernels+infrastructure)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                       Summary - "stm32n6npu" target
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                       --------------------------------------------------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                                    FLASH (ro)     %*    RAM (rw)      %
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                       --------------------------------------------------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                       RT total        274,865   7.6%          29   0.0%
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                       --------------------------------------------------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                       TOTAL         3,637,042          1,781,277
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                       --------------------------------------------------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                       *  rt/total
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      Generated files (5)
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      --------------------------------------------------------------------------------------------------------------------------------------------------
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/results/hand_landmarks_output_20250722_013949/hand_landmarks_OE_3_3_0.onnx
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/results/hand_landmarks_output_20250722_013949/hand_landmarks_OE_3_3_0_Q.json
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/results/hand_landmarks_output_20250722_013949/network.c
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/results/hand_landmarks_output_20250722_013949/network_atonbuf.xSPI2.raw
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                      /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/results/hand_landmarks_output_20250722_013949/network.h
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     
+Creating txt report file /Users/lucabrini/Documents/PoliMI/Courses/ACA/aca-stm32n6/profiling/results/hand_landmarks_output_20250722_013949/network_generate_report.txt
+PASS:  92%|█████████▏| 91/99 [00:10<00:00, 44.43it/s]                                                     elapsed time (generate): 13.419s

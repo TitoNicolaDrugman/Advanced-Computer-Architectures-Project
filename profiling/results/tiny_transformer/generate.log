@@ -1,0 +1,65 @@
+ST Edge AI Core v2.2.0-20266 2adc00962
+PASS:   0%|          | 0/99 [00:00<?, ?it/s]PASS:  11%|█         | 11/99 [00:04<00:32,  2.73it/s]PASS:  12%|█▏        | 12/99 [00:04<00:29,  2.96it/s]PASS:  39%|███▉      | 39/99 [00:04<00:03, 15.31it/s]PASS:  63%|██████▎   | 62/99 [00:04<00:01, 28.62it/s]PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_5 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_before_dense_0 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_before_dense_4 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_before_dense_8 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: gemm_14 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_after_dense_3 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_15 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: gemm_8 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_after_dense_7 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_9 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: gemm_6 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_after_dense_11 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_7 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: gemm_11 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_12 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: nl_13 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: gemm_16 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_17 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_before_dense_12 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: gemm_18 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_after_dense_15 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_19 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reduce_20 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: Squared_diff_22_Sub is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: Squared_diff_22_Mul is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reduce_23 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_24 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: Rsqrt_25_Sqrt is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: Squared_diff_25_Mul is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_26 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_29 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: nl_21 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_27 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_28 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_30 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_before_dense_16 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: gemm_31 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_after_dense_19 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: nl_31_nl is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_before_dense_20 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: gemm_32 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_after_dense_23 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_33 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reduce_34 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: Squared_diff_36_Sub is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: Squared_diff_36_Mul is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reduce_37 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_38 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: Rsqrt_39_Sqrt is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: Squared_diff_39_Mul is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_40 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_43 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: nl_35 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_41 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_42 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_44 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: eltwise_44_0_reshaped is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: pool_45 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: pool_45_0_reshaped is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: reshape_45_reshape is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: gemm_46 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     WARNING: nl_47 is not quantized
+PASS:  88%|████████▊ | 87/99 [00:04<00:00, 46.54it/s]                                                     
+NOT IMPLEMENTED: Case of Gather in ONNX Exporter not supported

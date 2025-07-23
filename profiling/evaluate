@@ -23,9 +23,10 @@ echo "Output directory: $OUTPUT_DIR"
 # Create output directory if it doesn't exist
 mkdir -p $OUTPUT_DIR
 
-stedgeai generate -m $MODEL_NAME --target stm32n6 --st-neural-art profile-allmems--O3 --output $OUTPUT_DIR
+stedgeai generate -m $MODEL_NAME --target stm32n6 --st-neural-art profile-allmems--O3 --output $OUTPUT_DIR > generate.log
 
 mv st_ai_ws $OUTPUT_DIR
+mv generate.log $OUTPUT_DIR
 
 python $STEDGEAI_CORE_DIR/scripts/N6_scripts/n6_loader.py --n6-loader-config ./config_files/mac/config_n6l.json --network-file $OUTPUT_DIR/network.c 
 
